@@ -80,6 +80,7 @@
   <div class="tabs">
     <button class="tab active" data-tab="buyzone">Buy Zone Today</button>
     <button class="tab" data-tab="journal">Trade Journal</button>
+    <button class="tab" data-tab="stats">Journal Stats</button>
   </div>
 
   <div class="tab-panel active" id="panel-buyzone">
@@ -131,6 +132,15 @@
         <tbody id="journalBody"></tbody>
       </table>
     </div>
+  </div>
+
+  <div class="tab-panel" id="panel-stats">
+    <div class="notice">
+      Aggregate counts only, computed from your private journal — no individual
+      trades, prices, or notes are shown here. This is the only journal-related
+      data that's public.
+    </div>
+    <div id="statsContent"><div class="empty">Loading stats...</div></div>
   </div>
 
   <p class="footer">
@@ -346,6 +356,93 @@ document.getElementById("importFile").addEventListener("change", (evt) => {
 
 loadBuyZone();
 renderJournal();
+
+// ---------- Journal Stats tab (aggregate only, from journal_stats.json) ----------
+const CHART_COLORS = ["#39FF14", "#ff9d00", "#5a8a5a", "#2fa8ff", "#ff4444", "#c9a227", "#8a5aff", "#39ffe0", "#ff5aa8", "#a8ff5a"];
+
+function pieSVG(data, size=180){
+  const total = Object.values(data).reduce((a,b) => a+b, 0);
+  if(total === 0) return '<div class="empty">No data yet.</div>';
+  const r = size/2 - 4, cx = size/2, cy = size/2;
+  let angle = -90, paths = [];
+  Object.entries(data).forEach(([label, val], i) => {
+    const slice = (val/total) * 360;
+    const x1 = cx + r*Math.cos(angle*Math.PI/180), y1 = cy + r*Math.sin(angle*Math.PI/180);
+    angle += slice;
+    const x2 = cx + r*Math.cos(angle*Math.PI/180), y2 = cy + r*Math.sin(angle*Math.PI/180);
+    const largeArc = slice > 180 ? 1 : 0;
+    paths.push(`<path d="M${cx},${cy} L${x1},${y1} A${r},${r} 0 ${largeArc} 1 ${x2},${y2} Z" fill="${CHART_COLORS[i % CHART_COLORS.length]}" opacity="0.85"/>`);
+  });
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${paths.join("")}</svg>`;
+}
+
+function barSVG(data, width=500, barHeight=26){
+  const entries = Object.entries(data);
+  if(entries.length === 0) return '<div class="empty">No data yet.</div>';
+  const max = Math.max(...entries.map(([,v]) => v));
+  const height = entries.length * (barHeight + 8);
+  let bars = entries.map(([label, val], i) => {
+    const w = max > 0 ? (val/max) * (width - 100) : 0;
+    const y = i * (barHeight + 8);
+    return `
+      <text x="0" y="${y + barHeight/2 + 4}" fill="#c9f7c9" font-family="Courier New,monospace" font-size="12">${label}</text>
+      <rect x="70" y="${y}" width="${w}" height="${barHeight}" fill="${CHART_COLORS[i % CHART_COLORS.length]}" opacity="0.85"/>
+      <text x="${70 + w + 8}" y="${y + barHeight/2 + 4}" fill="#39FF14" font-family="Courier New,monospace" font-size="12">${val}</text>
+    `;
+  }).join("");
+  return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">${bars}</svg>`;
+}
+
+function legendHTML(data){
+  let html = '<div style="font-family:Courier New,monospace;font-size:11.5px;margin-top:10px;">';
+  Object.entries(data).forEach(([label,val], i) => {
+    html += `<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+        <span style="width:10px;height:10px;background:${CHART_COLORS[i % CHART_COLORS.length]};display:inline-block;"></span>
+        <span style="color:#c9f7c9;">${label}: ${val}</span>
+      </div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+async function loadStats(){
+  try{
+    const res = await fetch("journal_stats.json?t=" + Date.now());
+    if(!res.ok) throw new Error("Stats not synced yet");
+    const stats = await res.json();
+
+    if(stats.total_entries === 0){
+      document.getElementById("statsContent").innerHTML = '<div class="empty">No journal entries logged yet.</div>';
+      return;
+    }
+
+    const actionData = { "Buy": stats.buy_count, "Sell": stats.sell_count };
+    const html = `
+      <div style="font-family:'Courier New',monospace;font-size:13px;color:var(--neon);margin-bottom:20px;">
+        ${stats.total_entries} total entries logged
+      </div>
+      <div style="display:flex;gap:40px;flex-wrap:wrap;margin-bottom:30px;">
+        <div>
+          <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:8px;">BUY vs SELL</div>
+          ${pieSVG(actionData)}
+          ${legendHTML(actionData)}
+        </div>
+        <div style="flex:1;min-width:280px;">
+          <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:8px;">TOP TICKERS BY ENTRY COUNT</div>
+          ${barSVG(stats.entries_by_ticker)}
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:8px;">ENTRIES BY MONTH</div>
+        ${barSVG(stats.entries_by_month, 500, 22)}
+      </div>
+    `;
+    document.getElementById("statsContent").innerHTML = html;
+  }catch(e){
+    document.getElementById("statsContent").innerHTML = '<div class="empty">Could not load stats: ' + e.message + '</div>';
+  }
+}
+loadStats();
 </script>
 </body>
 </html>
