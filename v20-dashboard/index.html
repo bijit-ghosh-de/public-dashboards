@@ -7,19 +7,30 @@
   :root{
     --bg:#000000; --card:#0a0f0a; --line:#1a3d1a;
     --neon:#39FF14; --text:#c9f7c9; --text-dim:#5a8a5a;
-    --skip:#ff4444; --unclear:#666;
+    --skip:#ff4444; --unclear:#666; --sell:#ff9d00;
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--bg);color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
-  .wrap{max-width:900px;margin:0 auto;padding:40px 20px 80px;}
-  h1{font-family:'Courier New',monospace;font-weight:700;font-size:24px;margin-bottom:2px;letter-spacing:1px;color:var(--neon);}
-  .updated{color:var(--text-dim);font-size:12px;margin-bottom:30px;font-family:'Courier New',monospace;}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px;}
+  h1{font-family:'Courier New',monospace;font-weight:700;font-size:22px;margin-bottom:2px;letter-spacing:1px;color:var(--neon);}
+  .updated{color:var(--text-dim);font-size:12px;margin-bottom:20px;font-family:'Courier New',monospace;}
+
+  .tabs{display:flex;gap:2px;margin-bottom:20px;border-bottom:1px solid var(--line);}
+  .tab{
+    font-family:'Courier New',monospace;font-size:13px;padding:10px 18px;
+    background:none;border:none;color:var(--text-dim);cursor:pointer;
+    border-bottom:2px solid transparent;
+  }
+  .tab.active{color:var(--neon);border-bottom-color:var(--neon);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
   th{text-align:left;color:var(--neon);border-bottom:1px solid var(--line);
-    padding:8px 10px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;
-    font-family:'Courier New',monospace;}
-  td{padding:9px 10px;border-bottom:1px solid var(--line);font-family:'Courier New',monospace;}
+    padding:8px 8px;font-weight:600;font-size:10.5px;text-transform:uppercase;letter-spacing:0.4px;
+    font-family:'Courier New',monospace;white-space:nowrap;}
+  td{padding:8px 8px;border-bottom:1px solid var(--line);font-family:'Courier New',monospace;white-space:nowrap;}
   tr:hover td{background:var(--card);}
   .status{font-size:11px;padding:3px 8px;border-radius:2px;white-space:nowrap;font-weight:700;}
   .status.zone{background:rgba(57,255,20,0.15);color:var(--neon);}
@@ -27,23 +38,113 @@
   .status.between{background:rgba(102,102,102,0.15);color:var(--unclear);}
   .empty{color:var(--text-dim);font-style:italic;padding:30px 0;font-family:'Courier New',monospace;}
   .ticker{color:var(--neon);font-weight:700;}
-  .footer{color:#3a5a3a;font-size:11px;margin-top:24px;}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);margin-bottom:16px;}
+  .footer{color:#3a5a3a;font-size:11px;margin-top:24px;line-height:1.6;}
+
+  .journal-form{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:10px;background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:16px;
+  }
+  .journal-form label{display:block;font-family:'Courier New',monospace;font-size:10.5px;
+    color:var(--text-dim);margin-bottom:5px;text-transform:uppercase;}
+  .journal-form input, .journal-form select, .journal-form textarea{
+    width:100%;background:#000;border:1px solid var(--line);color:var(--text);
+    font-family:'Courier New',monospace;font-size:12.5px;padding:7px 8px;
+  }
+  .journal-form .notes-field{grid-column:1 / -1;}
+  .journal-form textarea{resize:vertical;min-height:44px;}
+  .btn{
+    font-family:'Courier New',monospace;font-size:12px;background:transparent;
+    border:1px solid var(--neon);color:var(--neon);padding:9px 16px;cursor:pointer;
+  }
+  .btn:hover{background:rgba(57,255,20,0.1);}
+  .btn.secondary{border-color:var(--line);color:var(--text-dim);}
+  .btn.secondary:hover{border-color:var(--text-dim);color:var(--text);}
+  .btn-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+  .action-buy{color:var(--neon);font-weight:700;}
+  .action-sell{color:var(--sell);font-weight:700;}
+  .del-btn{color:var(--skip);cursor:pointer;font-family:'Courier New',monospace;font-size:11px;background:none;border:none;}
+  .notice{
+    font-family:'Courier New',monospace;font-size:11px;color:var(--text-dim);
+    background:var(--card);border:1px solid var(--line);padding:10px 14px;margin-bottom:16px;
+  }
+  .notice b{color:var(--neon);}
+  #importFile{display:none;}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>V20 SCREENER · DAILY BUY ZONE</h1>
   <div class="updated" id="updated">Loading...</div>
-  <div id="content"><div class="empty">Loading data...</div></div>
-  <p class="footer">Facts-based screen only. Not a buy/sell recommendation.</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="buyzone">Buy Zone Today</button>
+    <button class="tab" data-tab="journal">Trade Journal</button>
+  </div>
+
+  <div class="tab-panel active" id="panel-buyzone">
+    <div id="content"><div class="empty">Loading data...</div></div>
+  </div>
+
+  <div class="tab-panel" id="panel-journal">
+    <div class="notice">
+      <b>Stored in this browser only.</b> Use "Export CSV" regularly and commit the
+      file to your repo for permanent, cross-device storage — this journal does not
+      sync anywhere on its own. Use "Import CSV" to reload a previously exported file.
+    </div>
+
+    <div class="journal-form">
+      <div>
+        <label>Ticker</label>
+        <input type="text" id="j-ticker" placeholder="AAPL">
+      </div>
+      <div>
+        <label>Action</label>
+        <select id="j-action">
+          <option value="BUY">Buy</option>
+          <option value="SELL">Sell</option>
+        </select>
+      </div>
+      <div>
+        <label>Date</label>
+        <input type="date" id="j-date">
+      </div>
+      <div>
+        <label>Price</label>
+        <input type="number" id="j-price" step="0.01" placeholder="optional">
+      </div>
+      <div class="notes-field">
+        <label>Notes</label>
+        <textarea id="j-notes" placeholder="Why this trade, conviction level, what you're watching..."></textarea>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="j-add">Add entry</button>
+      <button class="btn secondary" id="j-export">Export CSV</button>
+      <button class="btn secondary" id="j-import-btn">Import CSV</button>
+      <input type="file" id="importFile" accept=".csv">
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Date</th><th>Ticker</th><th>Action</th><th>Price</th><th>Notes</th><th></th></tr></thead>
+        <tbody id="journalBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="footer">
+    Facts-based screen only. Not a buy/sell recommendation.<br>
+    "Historical matches" = number of times this ticker has hit the V20 pattern in the last 5 years.
+    "Avg days to sell" = average trading days from re-entering the buy zone to reaching the sell zone,
+    across only the instances where that round trip actually completed historically.
+  </p>
 </div>
 
 <script>
-// This dashboard reads buy_zone_candidates.csv from THIS SAME repo
-// (v20-dashboard). The private ai-build-2026 repo's daily workflow
-// pushes a fresh copy here every morning - see the "Sync to dashboard"
-// step in that repo's .github/workflows/v20-daily.yml
 const CSV_URL = "buy_zone_candidates.csv";
+const SUMMARY_URL = "ticker_summary.csv";
+const JOURNAL_KEY = "v20_trade_journal_v1";
 
 function parseCSV(text){
   const lines = text.trim().split("\n");
@@ -62,12 +163,30 @@ function statusClass(status){
   return "between";
 }
 
-async function load(){
+document.querySelectorAll(".tab").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("panel-" + btn.dataset.tab).classList.add("active");
+  });
+});
+
+async function loadBuyZone(){
   try{
-    const res = await fetch(CSV_URL + "?t=" + Date.now());
-    if(!res.ok) throw new Error("CSV not found yet - first sync may not have run");
-    const text = await res.text();
-    const rows = parseCSV(text);
+    const [csvRes, summaryRes] = await Promise.all([
+      fetch(CSV_URL + "?t=" + Date.now()),
+      fetch(SUMMARY_URL + "?t=" + Date.now()).catch(() => null),
+    ]);
+    if(!csvRes.ok) throw new Error("Data not synced yet");
+    const rows = parseCSV(await csvRes.text());
+
+    let summaryByTicker = {};
+    if(summaryRes && summaryRes.ok){
+      const summaryRows = parseCSV(await summaryRes.text());
+      summaryRows.forEach(s => summaryByTicker[s.ticker] = s);
+    }
+
     document.getElementById("updated").textContent = "Last updated: " + new Date().toLocaleString();
 
     if(rows.length === 0){
@@ -79,8 +198,15 @@ async function load(){
     const rest = rows.filter(r => r.status !== "IN_BUY_ZONE");
     const ordered = [...inZone, ...rest];
 
-    let html = '<table><tr><th>Ticker</th><th>Run</th><th>Move</th><th>Current</th><th>Range</th><th>Status</th></tr>';
+    let html = '<div class="table-scroll"><table><tr><th>Ticker</th><th>Run</th><th>Move</th><th>Current</th><th>Range</th><th>Status</th><th>Fund. Qualified</th><th>Hist. Matches</th><th>Avg Days to Sell</th></tr>';
     ordered.forEach(r => {
+      const s = summaryByTicker[r.ticker];
+      const matches = s ? s.total_v20_matches : "—";
+      const avgDays = (s && s.avg_days_to_sell_zone && s.avg_days_to_sell_zone !== "None") ? s.avg_days_to_sell_zone : "—";
+      const fq = r.fundamentally_qualified;
+      const fqBadge = fq === "True" ? '<span class="status zone">YES</span>'
+                    : fq === "False" ? '<span class="status past">NO</span>'
+                    : '<span class="status between">UNKNOWN</span>';
       html += `<tr>
         <td class="ticker">${r.ticker}</td>
         <td>${r.start_date} → ${r.end_date}</td>
@@ -88,15 +214,138 @@ async function load(){
         <td>$${r.current_price}</td>
         <td>$${r.range_low} - $${r.range_high}</td>
         <td><span class="status ${statusClass(r.status)}">${r.status.replace(/_/g," ")}</span></td>
+        <td>${fqBadge}</td>
+        <td>${matches}</td>
+        <td>${avgDays}</td>
       </tr>`;
     });
-    html += "</table>";
+    html += "</table></div>";
     document.getElementById("content").innerHTML = html;
   }catch(e){
     document.getElementById("content").innerHTML = '<div class="empty">Could not load data: ' + e.message + '</div>';
   }
 }
-load();
+
+function loadJournal(){
+  try{
+    const raw = localStorage.getItem(JOURNAL_KEY);
+    return raw ? JSON.parse(raw) : [];
+  }catch(e){ return []; }
+}
+
+function saveJournal(entries){
+  localStorage.setItem(JOURNAL_KEY, JSON.stringify(entries));
+}
+
+function renderJournal(){
+  const entries = loadJournal().sort((a,b) => b.date.localeCompare(a.date));
+  const body = document.getElementById("journalBody");
+  if(entries.length === 0){
+    body.innerHTML = '<tr><td colspan="6"><div class="empty">No entries yet — log a buy or sell above.</div></td></tr>';
+    return;
+  }
+  body.innerHTML = entries.map(e => `
+    <tr>
+      <td>${e.date}</td>
+      <td class="ticker">${e.ticker}</td>
+      <td class="${e.action === 'BUY' ? 'action-buy' : 'action-sell'}">${e.action}</td>
+      <td>${e.price || "—"}</td>
+      <td style="white-space:normal;max-width:300px;">${e.notes ? escapeHtml(e.notes) : "—"}</td>
+      <td><button class="del-btn" onclick="window.deleteJournalEntry('${e.id}')">delete</button></td>
+    </tr>
+  `).join("");
+}
+
+function escapeHtml(str){
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+window.deleteJournalEntry = function(id){
+  if(!confirm("Delete this journal entry?")) return;
+  const entries = loadJournal().filter(e => e.id !== id);
+  saveJournal(entries);
+  renderJournal();
+};
+
+document.getElementById("j-add").addEventListener("click", () => {
+  const ticker = document.getElementById("j-ticker").value.trim().toUpperCase();
+  const action = document.getElementById("j-action").value;
+  const date = document.getElementById("j-date").value || new Date().toISOString().slice(0,10);
+  const price = document.getElementById("j-price").value;
+  const notes = document.getElementById("j-notes").value.trim();
+
+  if(!ticker){ alert("Ticker is required."); return; }
+
+  const entries = loadJournal();
+  entries.push({
+    id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7),
+    ticker, action, date, price, notes,
+  });
+  saveJournal(entries);
+  renderJournal();
+
+  document.getElementById("j-ticker").value = "";
+  document.getElementById("j-price").value = "";
+  document.getElementById("j-notes").value = "";
+});
+
+document.getElementById("j-export").addEventListener("click", () => {
+  const entries = loadJournal();
+  if(entries.length === 0){ alert("No entries to export yet."); return; }
+  const headers = ["id","date","ticker","action","price","notes"];
+  const csvLines = [headers.join(",")];
+  entries.forEach(e => {
+    const row = headers.map(h => {
+      let v = (e[h] ?? "").toString().replace(/"/g, '""');
+      if(v.includes(",") || v.includes("\n")) v = `"${v}"`;
+      return v;
+    });
+    csvLines.push(row.join(","));
+  });
+  const blob = new Blob([csvLines.join("\n")], {type: "text/csv"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `trade_journal_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("j-import-btn").addEventListener("click", () => {
+  document.getElementById("importFile").click();
+});
+
+document.getElementById("importFile").addEventListener("change", (evt) => {
+  const file = evt.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const rows = parseCSV(reader.result);
+      const existing = loadJournal();
+      const existingIds = new Set(existing.map(e => e.id));
+      let added = 0;
+      rows.forEach(r => {
+        if(r.id && !existingIds.has(r.id)){
+          existing.push({id: r.id, date: r.date, ticker: r.ticker, action: r.action, price: r.price, notes: r.notes});
+          added++;
+        }
+      });
+      saveJournal(existing);
+      renderJournal();
+      alert(`Imported ${added} new entr${added === 1 ? 'y' : 'ies'} (duplicates skipped).`);
+    }catch(e){
+      alert("Could not parse that file: " + e.message);
+    }
+  };
+  reader.readAsText(file);
+  evt.target.value = "";
+});
+
+loadBuyZone();
+renderJournal();
 </script>
 </body>
 </html>
