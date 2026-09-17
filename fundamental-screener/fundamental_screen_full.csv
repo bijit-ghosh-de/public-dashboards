@@ -263,7 +263,7 @@ IRM,33938120704.0,80.85107,-26.493145,5.72,,,,19.06,0.88,NOT AVAILABLE - manual 
 JBHT,22239057920.0,33.68421,6.080994,14.51,18.45,1.7041,38.373,7.42,20.44,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,False
 JBL,31010691072.0,36.9925,23.448221,21.52,65.88,,297.136,5.21,1.19,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,False,False,1,False
 JKHY,10952291328.0,22.379658,5.3343124,25.42,24.04,1.9368,3.793,22.5,0.61,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-J,16872286208.0,48.37584,5.172587,8.72,8.0,0.435,124.734,7.39,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
+J,16872286208.0,47.89369,5.172587,8.72,8.0,0.435,124.734,7.39,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
 JNJ,651202789376.0,31.311703,7.6584287,23.13,25.74,2.8029,57.709,29.19,0.05,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
 JCI,85445885952.0,39.73521,6.3377814,8.13,14.33,1.6055,70.107,15.88,0.17,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
 JPM,928531021824.0,14.966152,2.6262527,,17.79,1.6226,,50.39,0.39,NOT AVAILABLE - manual check only,True,True,False,,True,True,,True,False,2,False
