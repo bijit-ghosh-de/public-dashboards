@@ -84,6 +84,12 @@
   </div>
 
   <div class="tab-panel active" id="panel-buyzone">
+    <div class="notice">
+      Check any box to narrow the V20 list by that fundamental criterion. Leave all unchecked to see the full technical list.
+      <b>PEG</b> is coded as ≤2 (lower = more attractive), the opposite of "≥2" — kept consistent with the fundamental screen already running.
+      <b>Debt/Equity</b> threshold is a placeholder (≤100) until you confirm the actual number.
+    </div>
+    <div class="journal-form" id="checkboxFilters" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));"></div>
     <div id="content"><div class="empty">Loading data...</div></div>
   </div>
 
@@ -182,55 +188,132 @@ document.querySelectorAll(".tab").forEach(btn => {
   });
 });
 
+const FUNDAMENTAL_URL = "../fundamental-screener/fundamental_screen_full.csv";
+
+// Checkbox filter definitions - each checks a raw metric against a fixed
+// threshold when checked; unchecked means that criterion is ignored.
+// NOTE on PEG: coded here as <=2 (lower PEG = more attractive), matching
+// fundamental_screen.py's logic - this is the OPPOSITE of ">=2" as
+// literally requested, kept consistent with the existing pipeline.
+// NOTE on Debt/Equity: no confirmed threshold given yet - placeholder
+// shown below, correct it once you have the actual number.
+const CHECKBOX_FILTERS = [
+  { key: "market_cap", label: "Market Cap > $1B", check: v => v !== null && v > 1_000_000_000 },
+  { key: "pe", label: "PE Ratio 10-25", check: v => v !== null && v > 10 && v < 25 },
+  { key: "pb", label: "Price/Book ≤ 2.5", check: v => v !== null && v <= 2.5 },
+  { key: "roce_pct", label: "ROCE > 15%", check: v => v !== null && v > 15 },
+  { key: "roe_pct", label: "ROE > 15%", check: v => v !== null && v > 15 },
+  { key: "peg", label: "PEG ≤ 2 (see note)", check: v => v !== null && v <= 2 },
+  { key: "debt_to_equity", label: "Debt/Equity ≤ 100 (PLACEHOLDER - confirm)", check: v => v !== null && v <= 100 },
+  { key: "opm_pct", label: "OPM > 15%", check: v => v !== null && v > 15 },
+  { key: "insider_holding_pct", label: "Insider Holding > 50%", check: v => v !== null && v > 50 },
+];
+
+let fundamentalsByTicker = {};
+let allBuyZoneRows = [];
+let summaryByTickerGlobal = {};
+
+function toNumOrNull(v){
+  if(v === null || v === undefined || v === "" || v === "None") return null;
+  const n = parseFloat(v);
+  return isNaN(n) ? null : n;
+}
+
+function buildCheckboxPanel(){
+  const container = document.getElementById("checkboxFilters");
+  container.innerHTML = CHECKBOX_FILTERS.map(f => `
+    <label style="display:flex;align-items:center;gap:6px;font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);cursor:pointer;">
+      <input type="checkbox" id="cb-${f.key}" style="accent-color:var(--neon);">
+      ${f.label}
+    </label>
+  `).join("");
+  container.querySelectorAll("input[type=checkbox]").forEach(cb => cb.addEventListener("change", renderBuyZoneTable));
+}
+
+function passesCheckedFilters(row){
+  const fund = fundamentalsByTicker[row.ticker];
+  for(const f of CHECKBOX_FILTERS){
+    const checkbox = document.getElementById(`cb-${f.key}`);
+    if(!checkbox || !checkbox.checked) continue; // not applied
+    const val = fund ? toNumOrNull(fund[f.key]) : null;
+    if(!f.check(val)) return false; // fails this active filter (includes "no data" case)
+  }
+  return true;
+}
+
+function renderBuyZoneTable(){
+  if(allBuyZoneRows.length === 0){
+    document.getElementById("content").innerHTML = '<div class="empty">No candidates today.</div>';
+    return;
+  }
+
+  const filtered = allBuyZoneRows.filter(passesCheckedFilters);
+  const inZone = filtered.filter(r => r.status === "IN_BUY_ZONE");
+  const rest = filtered.filter(r => r.status !== "IN_BUY_ZONE");
+  const ordered = [...inZone, ...rest];
+
+  const anyChecked = CHECKBOX_FILTERS.some(f => document.getElementById(`cb-${f.key}`)?.checked);
+  const countLine = `<div style="font-family:'Courier New',monospace;font-size:12px;color:var(--neon);margin-bottom:10px;">
+    Showing ${ordered.length} of ${allBuyZoneRows.length} V20 matches${anyChecked ? " (filters applied)" : " (no filters applied - full V20 list)"}
+  </div>`;
+
+  if(ordered.length === 0){
+    document.getElementById("content").innerHTML = countLine + '<div class="empty">No matches with these filters — uncheck one to widen the list.</div>';
+    return;
+  }
+
+  let html = countLine + '<div class="table-scroll"><table><tr><th>Ticker</th><th>Run</th><th>Move</th><th>Current</th><th>Range</th><th>Status</th><th>Fund. Qualified</th><th>Hist. Matches</th><th>Avg Days to Sell</th></tr>';
+  ordered.forEach(r => {
+    const s = summaryByTickerGlobal[r.ticker];
+    const matches = s ? s.total_v20_matches : "—";
+    const avgDays = (s && s.avg_days_to_sell_zone && s.avg_days_to_sell_zone !== "None") ? s.avg_days_to_sell_zone : "—";
+    const fq = r.fundamentally_qualified;
+    const fqBadge = fq === "True" ? '<span class="status zone">YES</span>'
+                  : fq === "False" ? '<span class="status past">NO</span>'
+                  : '<span class="status between">UNKNOWN</span>';
+    html += `<tr>
+      <td class="ticker">${r.ticker}</td>
+      <td>${r.start_date} → ${r.end_date}</td>
+      <td>${r.pct_move}%</td>
+      <td>$${r.current_price}</td>
+      <td>$${r.range_low} - $${r.range_high}</td>
+      <td><span class="status ${statusClass(r.status)}">${r.status.replace(/_/g," ")}</span></td>
+      <td>${fqBadge}</td>
+      <td>${matches}</td>
+      <td>${avgDays}</td>
+    </tr>`;
+  });
+  html += "</table></div>";
+  document.getElementById("content").innerHTML = html;
+}
+
 async function loadBuyZone(){
   try{
-    const [csvRes, summaryRes] = await Promise.all([
+    const [csvRes, summaryRes, fundRes] = await Promise.all([
       fetch(CSV_URL + "?t=" + Date.now()),
       fetch(SUMMARY_URL + "?t=" + Date.now()).catch(() => null),
+      fetch(FUNDAMENTAL_URL + "?t=" + Date.now()).catch(() => null),
     ]);
     if(!csvRes.ok) throw new Error("Data not synced yet");
-    const rows = parseCSV(await csvRes.text());
+    allBuyZoneRows = parseCSV(await csvRes.text());
 
-    let summaryByTicker = {};
+    summaryByTickerGlobal = {};
     if(summaryRes && summaryRes.ok){
       const summaryRows = parseCSV(await summaryRes.text());
-      summaryRows.forEach(s => summaryByTicker[s.ticker] = s);
+      summaryRows.forEach(s => summaryByTickerGlobal[s.ticker] = s);
+    }
+
+    fundamentalsByTicker = {};
+    if(fundRes && fundRes.ok){
+      const fundRows = parseCSV(await fundRes.text());
+      fundRows.forEach(f => fundamentalsByTicker[f.ticker] = f);
+    } else {
+      console.warn("Could not load fundamental data - checkbox filters will show 'no data' for every row until this loads.");
     }
 
     document.getElementById("updated").textContent = "Last updated: " + new Date().toLocaleString();
-
-    if(rows.length === 0){
-      document.getElementById("content").innerHTML = '<div class="empty">No candidates today.</div>';
-      return;
-    }
-
-    const inZone = rows.filter(r => r.status === "IN_BUY_ZONE");
-    const rest = rows.filter(r => r.status !== "IN_BUY_ZONE");
-    const ordered = [...inZone, ...rest];
-
-    let html = '<div class="table-scroll"><table><tr><th>Ticker</th><th>Run</th><th>Move</th><th>Current</th><th>Range</th><th>Status</th><th>Fund. Qualified</th><th>Hist. Matches</th><th>Avg Days to Sell</th></tr>';
-    ordered.forEach(r => {
-      const s = summaryByTicker[r.ticker];
-      const matches = s ? s.total_v20_matches : "—";
-      const avgDays = (s && s.avg_days_to_sell_zone && s.avg_days_to_sell_zone !== "None") ? s.avg_days_to_sell_zone : "—";
-      const fq = r.fundamentally_qualified;
-      const fqBadge = fq === "True" ? '<span class="status zone">YES</span>'
-                    : fq === "False" ? '<span class="status past">NO</span>'
-                    : '<span class="status between">UNKNOWN</span>';
-      html += `<tr>
-        <td class="ticker">${r.ticker}</td>
-        <td>${r.start_date} → ${r.end_date}</td>
-        <td>${r.pct_move}%</td>
-        <td>$${r.current_price}</td>
-        <td>$${r.range_low} - $${r.range_high}</td>
-        <td><span class="status ${statusClass(r.status)}">${r.status.replace(/_/g," ")}</span></td>
-        <td>${fqBadge}</td>
-        <td>${matches}</td>
-        <td>${avgDays}</td>
-      </tr>`;
-    });
-    html += "</table></div>";
-    document.getElementById("content").innerHTML = html;
+    buildCheckboxPanel();
+    renderBuyZoneTable();
   }catch(e){
     document.getElementById("content").innerHTML = '<div class="empty">Could not load data: ' + e.message + '</div>';
   }
