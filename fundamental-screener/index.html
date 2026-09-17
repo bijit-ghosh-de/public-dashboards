@@ -1,1 +1,309 @@
-sample
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>V20 Fundamental Screen — S&P 500</title>
+<style>
+  :root{
+    --bg:#000000; --card:#0a0f0a; --line:#1a3d1a;
+    --neon:#39FF14; --text:#c9f7c9; --text-dim:#5a8a5a;
+    --fail:#ff4444; --unknown:#8a8a8a;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  .wrap{max-width:1100px;margin:0 auto;padding:32px 20px 80px;}
+  h1{font-family:'Courier New',monospace;font-weight:700;font-size:22px;margin-bottom:2px;letter-spacing:1px;color:var(--neon);}
+  .subtitle{color:var(--text-dim);font-size:12px;margin-top:0;margin-bottom:24px;font-family:'Courier New',monospace;}
+
+  .filters{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:14px;
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:20px;
+    margin-bottom:22px;
+  }
+  .filter-item label{
+    display:block;font-family:'Courier New',monospace;font-size:11px;
+    color:var(--text-dim);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px;
+  }
+  .filter-item .row{display:flex;gap:6px;align-items:center;}
+  .filter-item input[type=number]{
+    width:100%;background:#000;border:1px solid var(--line);color:var(--neon);
+    font-family:'Courier New',monospace;font-size:13px;padding:6px 8px;
+  }
+  .filter-item .dash{color:var(--text-dim);font-size:11px;}
+  .filter-item.toggle{display:flex;align-items:center;gap:8px;}
+  .filter-item.toggle input[type=checkbox]{width:16px;height:16px;accent-color:var(--neon);}
+  .filter-item.toggle label{margin:0;}
+
+  .summary{
+    font-family:'Courier New',monospace;font-size:13px;color:var(--neon);
+    margin-bottom:14px;
+  }
+  .summary span{color:var(--text-dim);}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{
+    text-align:left;color:var(--neon);border-bottom:1px solid var(--line);
+    padding:8px 8px;font-weight:600;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:0.4px;font-family:'Courier New',monospace;cursor:pointer;
+    white-space:nowrap;
+  }
+  th:hover{color:#fff;}
+  td{padding:8px 8px;border-bottom:1px solid var(--line);font-family:'Courier New',monospace;white-space:nowrap;}
+  tr:hover td{background:var(--card);}
+  .ticker{color:var(--neon);font-weight:700;}
+  .fail-cell{color:var(--fail);}
+  .unknown-cell{color:var(--unknown);font-style:italic;}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);}
+
+  .reset-btn{
+    font-family:'Courier New',monospace;font-size:12px;background:transparent;
+    border:1px solid var(--line);color:var(--text-dim);padding:8px 16px;
+    cursor:pointer;margin-bottom:16px;
+  }
+  .reset-btn:hover{border-color:var(--neon);color:var(--neon);}
+
+  .footer{color:#3a5a3a;font-size:11px;margin-top:24px;line-height:1.6;}
+  .empty{color:var(--text-dim);font-style:italic;padding:30px 0;font-family:'Courier New',monospace;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>V20 FUNDAMENTAL SCREEN · S&P 500</h1>
+  <p class="subtitle">Layer 1 of the strategy — mix and match thresholds to build your own qualified universe. The V20 candle pattern (Layer 2) is only meaningful within whatever set you build here.</p>
+
+  <div id="filterBreakdown" style="background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:22px;"></div>
+
+  <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:8px;text-transform:uppercase;">Or adjust thresholds and combine (mix-and-match)</div>
+  <div class="filters" id="filters"></div>
+  <button class="reset-btn" id="resetBtn">Reset to defaults</button>
+
+  <div class="summary" id="summary">Loading...</div>
+
+  <div class="table-scroll">
+    <table id="dataTable">
+      <thead><tr id="tableHead"></tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <p class="footer">
+    "Unknown" means the data source didn't have that metric for this stock (common for ROCE and PEG on smaller caps) — it's excluded from pass/fail rather than counted as a failure.<br>
+    Pledging status has no free, structured US data source at scale and is never auto-checked — review manually for any stock you're seriously considering.<br>
+    Not a buy/sell recommendation — a fundamental pre-filter only, per the original strategy's two-layer design.
+  </p>
+</div>
+
+<script>
+// Data source: the fundamental_screen.py output, synced here the same
+// way buy_zone_candidates.csv is synced for the other dashboard.
+const CSV_URL = "fundamental_screen_full.csv";
+
+const FILTER_DEFS = [
+  { key: "market_cap", label: "Market Cap ($)", type: "min", default: 1000000000, step: 100000000 },
+  { key: "pe", label: "PE Ratio", type: "range", defaultMin: 10, defaultMax: 25, step: 1 },
+  { key: "pb", label: "Price/Book (max)", type: "max", default: 2.5, step: 0.1 },
+  { key: "roce_pct", label: "ROCE % (min)", type: "min", default: 15, step: 1 },
+  { key: "roe_pct", label: "ROE % (min)", type: "min", default: 15, step: 1 },
+  { key: "peg", label: "PEG Ratio (max)", type: "max", default: 2, step: 0.1 },
+  { key: "debt_to_equity", label: "Debt/Equity (max)", type: "max", default: 100, step: 5 },
+  { key: "opm_pct", label: "OPM % (min)", type: "min", default: 15, step: 1 },
+  { key: "insider_holding_pct", label: "Insider Holding % (min)", type: "min", default: 50, step: 1 },
+];
+
+// Maps each filter to the exact boolean column fundamental_screen.py
+// already computed - so "isolate one filter" always matches the
+// server-side logic exactly, no re-implementing thresholds in JS.
+const ISOLATION_FILTERS = [
+  { key: "market_cap_ok", label: "Market Cap > $1B" },
+  { key: "pe_ok", label: "PE Ratio 10-25" },
+  { key: "pb_ok", label: "Price/Book ≤ 2.5" },
+  { key: "roce_ok", label: "ROCE > 15%" },
+  { key: "roe_ok", label: "ROE > 15%" },
+  { key: "peg_ok", label: "PEG ≤ 2" },
+  { key: "de_ok", label: "Debt/Equity (placeholder threshold)" },
+  { key: "opm_ok", label: "OPM > 15%" },
+  { key: "insider_holding_ok", label: "Insider Holding > 50%" },
+];
+
+function renderFilterBreakdown(){
+  const container = document.getElementById("filterBreakdown");
+  const total = allRows.length;
+
+  const rows = ISOLATION_FILTERS.map(f => {
+    const passCount = allRows.filter(r => r[f.key] === "True").length;
+    const pct = total > 0 ? Math.round((passCount / total) * 100) : 0;
+    return { ...f, passCount, pct };
+  });
+
+  container.innerHTML = `
+    <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--gold);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px;">
+      Which filter is the bottleneck? (pass count out of ${total})
+    </div>
+    ${rows.map(r => `
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;font-family:'Courier New',monospace;font-size:12.5px;">
+        <label style="display:flex;align-items:center;gap:6px;width:280px;cursor:pointer;color:var(--text);">
+          <input type="radio" name="isolate" value="${r.key}" onchange="window.isolateFilter('${r.key}')">
+          ${r.label}
+        </label>
+        <div style="flex:1;background:var(--bg-raised);height:16px;position:relative;">
+          <div style="width:${r.pct}%;background:${r.passCount === 0 ? 'var(--fail)' : 'var(--gold)'};height:100%;"></div>
+        </div>
+        <span style="width:70px;text-align:right;color:${r.passCount === 0 ? 'var(--fail)' : 'var(--text-dim)'};">${r.passCount} (${r.pct}%)</span>
+      </div>
+    `).join("")}
+    <label style="display:flex;align-items:center;gap:6px;margin-top:10px;font-family:'Courier New',monospace;font-size:12.5px;cursor:pointer;color:var(--text);">
+      <input type="radio" name="isolate" value="__all__" onchange="window.isolateFilter('__all__')" checked>
+      All 9 combined (the real qualified_universe.csv result)
+    </label>
+  `;
+}
+
+window.isolateFilter = function(key){
+  let filtered;
+  let label;
+  if(key === "__all__"){
+    filtered = allRows.filter(r => r.qualified === "True");
+    label = "passing ALL 9 filters combined";
+  } else {
+    filtered = allRows.filter(r => r[key] === "True");
+    const f = ISOLATION_FILTERS.find(f => f.key === key);
+    label = `passing ONLY "${f.label}" (other 8 filters ignored)`;
+  }
+  document.getElementById("summary").innerHTML = `<span>Showing:</span> ${filtered.length} stocks <span>${label}</span>`;
+  renderTable(filtered);
+};
+
+
+function buildFilterControls(){
+  const container = document.getElementById("filters");
+  container.innerHTML = "";
+  FILTER_DEFS.forEach(f => {
+    const div = document.createElement("div");
+    div.className = "filter-item";
+    if(f.type === "range"){
+      div.innerHTML = `
+        <label>${f.label}</label>
+        <div class="row">
+          <input type="number" id="min-${f.key}" value="${f.defaultMin}" step="${f.step}">
+          <span class="dash">to</span>
+          <input type="number" id="max-${f.key}" value="${f.defaultMax}" step="${f.step}">
+        </div>`;
+    } else if(f.type === "min"){
+      div.innerHTML = `<label>${f.label} min</label><input type="number" id="min-${f.key}" value="${f.default}" step="${f.step}">`;
+    } else {
+      div.innerHTML = `<label>${f.label}</label><input type="number" id="max-${f.key}" value="${f.default}" step="${f.step}">`;
+    }
+    container.appendChild(div);
+  });
+  container.querySelectorAll("input").forEach(inp => inp.addEventListener("input", applyFilters));
+}
+
+function parseCSV(text){
+  const lines = text.trim().split("\n");
+  const headers = lines[0].split(",");
+  return lines.slice(1).map(line => {
+    const vals = line.split(",");
+    const row = {};
+    headers.forEach((h, i) => {
+      const raw = (vals[i] || "").trim();
+      row[h.trim()] = raw === "" || raw === "None" ? null : raw;
+    });
+    return row;
+  });
+}
+
+function toNum(v){
+  if(v === null || v === undefined || v === "") return null;
+  const n = parseFloat(v);
+  return isNaN(n) ? null : n;
+}
+
+function passesFilter(row){
+  for(const f of FILTER_DEFS){
+    const val = toNum(row[f.key]);
+    if(val === null) continue; // unknown data - don't exclude
+    if(f.type === "range"){
+      const min = toNum(document.getElementById(`min-${f.key}`).value);
+      const max = toNum(document.getElementById(`max-${f.key}`).value);
+      if(min !== null && val < min) return false;
+      if(max !== null && val > max) return false;
+    } else if(f.type === "min"){
+      const min = toNum(document.getElementById(`min-${f.key}`).value);
+      if(min !== null && val < min) return false;
+    } else {
+      const max = toNum(document.getElementById(`max-${f.key}`).value);
+      if(max !== null && val > max) return false;
+    }
+  }
+  return true;
+}
+
+function renderTable(rows){
+  const cols = ["ticker","market_cap","pe","pb","roce_pct","roe_pct","peg","debt_to_equity","opm_pct","insider_holding_pct"];
+  const labels = {ticker:"Ticker",market_cap:"Mkt Cap",pe:"PE",pb:"P/B",roce_pct:"ROCE%",roe_pct:"ROE%",peg:"PEG",debt_to_equity:"D/E",opm_pct:"OPM%",insider_holding_pct:"Insider%"};
+
+  const headRow = document.getElementById("tableHead");
+  headRow.innerHTML = cols.map(c => `<th onclick="window.sortBy('${c}')">${labels[c]}${sortKey===c ? (sortAsc?' ▲':' ▼') : ''}</th>`).join("");
+
+  const body = document.getElementById("tableBody");
+  if(rows.length === 0){
+    body.innerHTML = `<tr><td colspan="${cols.length}"><div class="empty">No stocks match this combination — widen a threshold.</div></td></tr>`;
+    return;
+  }
+  body.innerHTML = rows.map(r => {
+    return "<tr>" + cols.map(c => {
+      const v = r[c];
+      const display = c === "market_cap" && v ? "$" + (toNum(v)/1e9).toFixed(1) + "B" : (v === null ? "—" : v);
+      const cls = c === "ticker" ? "ticker" : (v === null ? "unknown-cell" : "");
+      return `<td class="${cls}">${display}</td>`;
+    }).join("") + "</tr>";
+  }).join("");
+}
+
+window.sortBy = function(key){
+  if(sortKey === key) sortAsc = !sortAsc; else { sortKey = key; sortAsc = true; }
+  applyFilters();
+};
+
+function applyFilters(){
+  let filtered = allRows.filter(passesFilter);
+  filtered.sort((a,b) => {
+    const av = toNum(a[sortKey]) ?? (typeof a[sortKey] === "string" ? a[sortKey] : -Infinity);
+    const bv = toNum(b[sortKey]) ?? (typeof b[sortKey] === "string" ? b[sortKey] : -Infinity);
+    if(av < bv) return sortAsc ? -1 : 1;
+    if(av > bv) return sortAsc ? 1 : -1;
+    return 0;
+  });
+  document.getElementById("summary").innerHTML = `<span>Matching:</span> ${filtered.length} <span>of</span> ${allRows.length} <span>S&P 500 stocks</span>`;
+  renderTable(filtered);
+}
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  buildFilterControls();
+  applyFilters();
+});
+
+async function load(){
+  try{
+    const res = await fetch(CSV_URL + "?t=" + Date.now());
+    if(!res.ok) throw new Error("Data not synced yet");
+    const text = await res.text();
+    allRows = parseCSV(text);
+    renderFilterBreakdown();
+    isolateFilter("__all__"); // default view matches the pre-checked radio
+    buildFilterControls();
+  }catch(e){
+    document.getElementById("summary").innerHTML = "";
+    document.getElementById("tableBody").innerHTML = `<tr><td><div class="empty">Could not load data: ${e.message}</div></td></tr>`;
+  }
+}
+load();
+</script>
+</body>
+</html>
+
