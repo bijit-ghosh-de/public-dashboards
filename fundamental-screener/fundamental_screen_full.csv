@@ -1,504 +1,504 @@
-ticker,market_cap,pe,pb,roce_pct,roe_pct,peg,debt_to_equity,opm_pct,insider_holding_pct,pledging_status,market_cap_ok,pe_ok,pb_ok,roce_ok,roe_ok,peg_ok,de_ok,opm_ok,insider_holding_ok,unknown_metric_count,qualified
-MMM,87440736256,30.115454,29.620895,18.33,81.89,1.6065,437.937,20.35,0.1,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-AOS,7971038208,16.337048,4.3277745,31.95,27.13,1.3656,36.766,18.93,0.46,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-ABT,176428253184,32.779938,3.429258,12.76,10.58,1.8991,63.212,14.71,0.5,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-ABBV,467119767552,74.461975,-78.69604,10.47,,0.5421,,40.03,0.11,NOT AVAILABLE - manual check only,True,False,True,False,,True,,True,False,2,False
-ACN,107769118720,14.066294,3.3788686,24.07,24.41,1.3333,25.035,16.96,0.04,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-ADBE,93599326208,13.140067,7.826304,46.63,61.9,0.5816,57.693,34.82,0.23,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-AMD,1029487722496,161.28644,15.309897,6.33,10.2,0.626,6.361,17.25,0.42,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-AES,10604654592,5.5692883,2.1457431,3.42,9.57,,256.886,18.67,0.58,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,False
-AFL,57012760576,12.2675295,1.8842789,,16.91,,53.365,25.72,10.9,NOT AVAILABLE - manual check only,True,True,True,,True,,True,True,False,2,False
-A,48714485760,34.14822,6.61701,14.9,20.97,1.3652,56.336,25.56,0.19,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-APD,62743879680,,4.519223,-0.62,0.02,2.0651,110.091,25.54,1.89,NOT AVAILABLE - manual check only,True,,False,False,False,False,False,True,False,1,False
-ABNB,94290780160,35.952053,11.912399,29.72,34.54,1.4191,32.004,21.01,1.94,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-AKAM,16375070720,41.282608,3.4454188,6.02,8.92,1.4374,196.672,7.63,2.13,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
-ALB,12948695040,406.4074,1.6103611,-2.36,2.65,0.7941,18.976,27.71,0.22,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-ARE,8592717824,,0.548061,-3.1,-4.08,,68.67,17.28,1.38,NOT AVAILABLE - manual check only,True,,True,False,False,,True,True,False,2,False
-ALGN,10427230208,25.526957,2.4707525,13.57,10.15,0.6239,2.855,18.25,6.13,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-ALLE,13135632384,20.245085,6.201871,19.46,33.73,2.0408,104.895,22.1,0.23,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-LNT,16490507264,20.126581,2.1902335,5.02,11.13,1.96,160.951,19.05,0.15,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-ALL,57550471168,4.5574694,1.8238496,,46.11,1.6878,22.261,22.83,0.5,NOT AVAILABLE - manual check only,True,False,True,,True,True,True,True,False,1,False
-GOOGL,4206119354368,17.273733,6.7573094,32.4,48.68,1.2549,18.859,34.03,1.6,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-GOOG,4171386060800,17.12249,6.7015085,32.4,48.68,1.1971,18.859,34.03,0.52,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-MO,114911772672,14.488421,-43.06633,40.85,,2.6418,,76.36,0.12,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,False
-AMZN,2693018681344,20.08608,4.8805614,16.6,30.56,1.4781,45.617,13.69,8.87,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,False
-AMCR,19654313984,17.861343,1.6656218,6.6,9.4,0.9797,128.294,9.69,0.27,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,False
-AEE,27515451392,17.49824,2.010031,5.32,11.94,2.5039,157.846,25.24,0.32,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-AEP,64429428736,20.475777,2.008349,5.68,10.13,2.004,160.789,23.25,0.03,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-AXP,208596467712,18.73196,6.0823083,,34.38,1.2238,172.38,20.32,22.56,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,False
-AIG,38782988288,13.534671,0.95844203,,7.22,0.6373,22.466,19.41,0.55,NOT AVAILABLE - manual check only,True,True,True,,False,True,True,True,False,1,False
-AMT,78761230336,23.250343,21.173744,7.82,33.91,1.6139,438.721,45.41,0.08,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,False
-AWK,26015612928,22.688042,2.2302294,6.64,10.1,2.3575,137.745,40.66,0.12,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-AMP,43581198336,11.905337,6.8496957,,63.43,1.4133,67.578,30.72,0.18,NOT AVAILABLE - manual check only,True,True,False,,True,True,True,True,False,1,False
-AME,57470361600,36.60438,5.10485,14.21,14.56,2.7999,20.522,26.18,0.39,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,False
-AMGN,224151420928,25.768177,19.177149,18.02,91.47,2.4515,490.281,35.55,0.23,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-APH,207363145728,42.045,13.381603,20.28,38.12,0.9304,120.415,29.78,0.53,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-ADI,190724980736,46.745842,5.6846576,6.77,12.23,0.5757,27.314,39.5,0.24,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-AON,58968748032,15.316254,6.1401687,20.23,44.7,2.2083,163.481,23.46,1.01,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-APA,14974024704,9.016878,2.1346521,20.2,26.66,1.1785,48.854,56.33,0.44,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,True,False,0,False
-APO,71863197696,43.306053,3.574597,5.46,11.41,0.4661,100.969,21.95,26.33,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,True,False,0,False
-AAPL,4977636933632,39.068733,46.341034,68.72,148.75,2.706,78.445,32.62,1.65,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-AMAT,384894763008,41.84642,15.019665,33.71,41.07,0.8297,28.666,33.74,0.33,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-APP,103992647680,23.867126,32.93937,70.2,203.69,0.6831,111.13,77.68,14.31,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-APTV,9478483968,20.266968,1.0662255,6.97,5.16,0.9507,64.938,12.68,0.84,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-ACGL,32279060480,7.406886,1.3855792,,19.94,,17.836,26.58,2.79,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,False
-ADM,39096311808,22.163935,1.6586583,5.68,7.64,1.0151,39.134,4.01,0.71,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-ARES,40479981568,55.967888,11.060647,9.72,14.92,0.9025,172.378,9.47,11.16,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
-ANET,260505960448,65.57143,17.604195,27.4,31.48,1.5225,,45.39,17.25,NOT AVAILABLE - manual check only,True,False,False,True,True,True,,True,False,1,False
-AJG,59240402944,38.26159,2.4974065,6.58,6.72,0.7149,59.401,19.16,0.87,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-AIZ,13070798848,12.691571,2.146027,,18.34,,36.211,11.73,0.7,NOT AVAILABLE - manual check only,True,True,True,,True,,True,False,False,2,False
-T,173913538560,8.376238,1.5807174,9.23,18.34,1.5352,129.054,24.79,0.09,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,False
-ATO,26566692864,18.715477,1.7411288,6.14,9.79,1.8975,67.662,37.22,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-ADSK,43764596736,27.089262,12.936306,26.94,53.85,0.845,109.518,29.23,0.23,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-ADP,104479653888,24.101465,17.391335,47.0,72.24,2.5013,91.436,23.46,0.14,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-AZO,46451441664,19.768463,-16.884035,36.82,,1.3095,,19.97,0.26,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,False
-AVY,13029371904,18.616394,5.566303,17.25,31.16,,158.653,13.59,0.64,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,False
-AXON,34941022208,178.46887,9.508765,2.05,6.22,2.1074,50.363,5.17,4.51,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-BKR,57406341120,18.594856,2.882564,11.48,16.46,1.6186,80.925,12.83,0.15,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-BALL,15130789888,16.283669,2.617085,10.27,17.15,1.0106,131.495,9.23,0.26,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-BAC,396488835072,13.094688,1.4412079,,11.2,0.8463,,38.3,7.03,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-BAX,12082196480,,1.9468511,-1.26,-14.37,,156.449,14.43,0.34,NOT AVAILABLE - manual check only,True,,True,False,False,,False,False,False,2,False
-BDX,50070147072,31.857887,2.0507157,5.31,6.61,1.1074,68.84,15.73,0.43,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-BRK-B,1082085998592,12.706888,0.0009679336,,12.12,,17.142,32.56,0.27,NOT AVAILABLE - manual check only,True,True,True,,False,,True,True,False,2,False
-BBY,18982453248,15.0599,5.9829454,20.76,43.13,1.6991,130.097,3.9,6.52,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-TECH,11386572800,62.59483,5.376129,10.33,9.03,2.1116,13.712,27.87,0.33,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,False
-BIIB,33628811264,40.498222,1.7835593,6.99,4.58,2.3453,44.329,25.06,0.19,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-BLK,176499523584,26.044355,2.9225137,4.89,12.28,0.8893,23.192,35.08,1.92,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-BX,141547159552,26.49217,10.508474,,31.37,1.0877,68.185,54.36,1.04,NOT AVAILABLE - manual check only,True,False,False,,True,True,True,True,False,1,False
-XYZ,45912752128,136.46428,2.0824022,10.44,1.61,0.5721,32.58,7.0,1.2,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,False
-BE,85030051840,374.9351,52.538673,-0.81,22.21,0.6219,171.578,17.11,5.54,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,False
-BNY,101877391360,17.52042,2.5526597,,14.12,1.1354,,40.05,0.24,NOT AVAILABLE - manual check only,True,True,False,,False,True,,True,False,2,False
-BA,156434202624,71.50542,25.670036,8.99,173.54,1.4887,790.875,0.0,0.06,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-BKNG,127041323008,18.216667,-11.524673,67.24,,0.6067,,34.41,0.18,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,False
-BSX,63650160640,17.781376,2.5487463,9.77,15.34,0.6251,50.151,22.9,0.25,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,False
-BMY,128405045248,13.845816,5.7537756,16.84,46.6,17.0263,201.859,34.42,0.1,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-AVGO,1684184367104,44.94395,16.895412,17.0,44.25,0.361,59.604,54.31,1.94,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-BR,18941360128,17.059374,6.5726213,20.68,40.92,1.7766,123.939,24.61,0.53,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-BRO,20351002624,19.431309,1.5950694,7.73,10.02,,63.975,41.84,13.28,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,False
-BF-B,12003889152,16.87742,3.023229,14.83,18.12,2.0047,61.502,27.55,2.8,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,True,False,0,False
-BG,20940984320,23.49138,1.3125888,5.99,7.18,,97.995,4.62,18.37,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,False,False,1,False
-BXP,11467628544,34.08602,1.9618764,4.2,5.31,2.3159,211.631,28.75,0.38,NOT AVAILABLE - manual check only,True,False,True,False,False,False,False,True,False,0,False
-CHRW,17188820992,28.072521,10.584257,24.64,37.12,1.8224,121.188,5.34,0.35,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,False,False,0,False
-CDNS,89951870976,64.96613,13.096539,19.24,23.23,2.3143,38.661,28.57,0.33,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-CPT,9864921088,32.38284,2.6463847,6.26,7.89,,125.648,16.1,1.47,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,True,False,1,False
-COF,122822705152,11.266178,1.1926677,,9.03,0.1803,,33.63,1.23,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-CAH,50993999872,30.501387,-17.798431,18.83,,1.1136,,1.33,0.28,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,False
-CCL,30474694656,10.022522,2.3539991,10.68,26.69,0.757,201.556,12.79,7.11,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,False,False,0,False
-CARR,46819815424,40.264286,3.5374959,7.5,8.97,1.0741,91.998,13.07,4.76,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-CVNA,72116649984,34.42328,11.6137085,-3.3,58.77,,110.88,9.22,2.1,NOT AVAILABLE - manual check only,True,False,False,False,True,,False,False,False,1,False
-CASY,22119182336,28.813675,5.405752,13.63,19.98,2.7014,70.547,6.5,0.58,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,False,False,0,False
-CAT,377659686912,35.336777,19.47195,19.42,56.97,1.421,232.783,22.18,0.22,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-CBOE,26946334720,20.127146,4.7954726,23.32,26.3,2.3792,28.09,34.63,0.25,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-CBRE,38962356224,30.789474,4.6438184,6.97,15.8,0.7429,117.789,3.61,0.51,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-CDW,16931108864,16.277643,6.9486914,18.8,44.01,,263.278,7.34,0.46,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,False
-COR,58568675328,22.78545,19.1969,14.27,96.87,0.6539,446.516,1.41,4.3,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-CNC,30538770432,,1.3535349,-15.11,-20.36,0.7484,71.082,3.76,0.39,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,False
-CNP,24267253760,21.928572,2.0704772,5.34,9.83,1.6234,210.256,24.49,0.23,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-CF,17353943040,8.500371,3.0242372,18.06,29.87,0.603,40.504,49.33,0.45,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-CRL,13979850752,,4.922012,0.13,-7.52,0.1222,105.047,15.11,0.47,NOT AVAILABLE - manual check only,True,,False,False,False,True,False,True,False,1,False
-SCHW,171256102912,18.038252,3.8952916,,20.27,0.8418,151.106,52.28,6.21,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,False
-CHTR,14673513472,2.9380693,0.7944583,8.87,27.2,0.6601,441.578,23.5,3.1,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,False
-CVX,401049780224,19.658655,2.1120868,7.21,12.23,0.8994,18.959,21.87,4.77,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-CMG,39645544448,29.009258,18.057636,25.78,49.56,1.7429,246.35,16.11,0.72,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-CB,128614105088,11.804887,1.7056537,,14.82,2.5224,30.941,23.53,9.45,NOT AVAILABLE - manual check only,True,True,True,,False,False,True,True,False,1,False
-CHD,22861711360,30.891026,5.2566133,14.19,17.04,2.6723,55.851,18.07,0.2,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,True,False,0,False
-CIEN,50612883456,78.96239,16.5681,5.44,22.4,0.5679,107.496,18.08,0.58,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,False
-CI,71876059136,11.24938,1.6829907,9.05,16.76,0.7509,74.29,3.98,1.44,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,False,False,0,False
-CINF,24946321408,7.6742206,1.4956245,,21.48,,5.255,37.2,1.73,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,False
-CTAS,79867445248,39.352364,15.563254,33.3,41.38,3.1404,52.096,24.1,14.46,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-CSCO,420674011136,32.04204,8.373224,19.84,27.32,0.9812,62.017,27.72,0.06,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-C,225246216192,14.469828,1.1703185,,8.53,0.6001,,36.23,0.27,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-CFG,27599714304,14.276688,1.1506382,,8.27,,,35.13,0.71,NOT AVAILABLE - manual check only,True,True,True,,False,,,True,False,3,False
-CLX,10134019072,17.422039,112.63441,18.34,163.76,1.0911,2221.429,12.88,0.72,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-CME,95101526016,22.413559,3.582963,14.44,15.8,4.7092,14.587,65.04,0.44,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,True,False,0,False
-CMS,19446489088,18.960844,2.0671198,5.62,9.16,2.2767,185.604,17.17,0.55,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-KO,377806815232,26.36937,10.452327,21.13,42.05,4.025,115.519,34.87,9.9,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-CTSH,27117090816,12.302576,1.7917866,20.64,14.92,0.8549,14.479,17.48,0.13,NOT AVAILABLE - manual check only,True,True,True,True,False,True,True,True,False,0,False
-COHR,57933049856,71.978096,5.3111305,6.72,7.98,,31.612,11.83,4.45,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,False,False,1,False
-COIN,51477221376,,3.9348595,7.67,-7.85,2.3685,50.982,-13.92,1.32,NOT AVAILABLE - manual check only,True,,False,False,False,False,True,False,False,1,False
-CL,68604690432,33.88189,290.74323,35.1,267.37,1.566,1388.163,20.97,0.15,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-CMCSA,77750632448,7.022436,0.8656315,12.62,11.49,,100.474,17.23,0.74,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,False
-FIX,58384224256,40.819637,18.120262,42.67,55.29,0.5431,11.498,17.06,1.08,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-COP,152930271232,16.838625,2.3402026,12.63,14.18,1.0836,35.639,31.51,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-ED,38129332224,16.929392,1.4832184,5.63,8.96,2.0608,110.113,16.54,0.2,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-STZ,19408498688,10.821904,2.360064,14.26,23.69,1.495,123.205,35.93,12.56,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,False
-CEG,93278502912,25.735092,2.9252546,8.16,15.06,,76.419,8.66,0.34,NOT AVAILABLE - manual check only,True,False,False,False,True,,True,False,False,1,False
-COO,10530800640,19.030928,1.264095,5.91,6.84,0.5198,33.634,20.82,0.63,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-CPRT,26577678336,17.800001,2.8115766,18.04,16.16,2.833,0.97,32.01,9.01,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-GLW,134739640320,72.56481,11.306355,9.42,16.81,0.9548,71.448,15.65,8.07,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-CPAY,26139742208,24.215935,7.37965,16.06,29.22,0.7512,275.291,46.92,3.78,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-CTVA,52388229120,47.58788,2.0817094,6.08,4.26,1.0455,19.191,30.13,0.11,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-CSGP,11382000640,156.05556,1.433529,-0.74,0.89,0.1054,14.537,8.22,1.26,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,False
-COST,409030328320,44.44918,11.4244585,27.44,28.4,4.4343,23.953,3.97,0.16,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,False
-CRH,56575791104,15.024735,2.3560703,11.33,15.81,1.5259,77.592,19.02,0.14,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,False
-CRWD,258164703232,8404.334,50.598038,-1.43,1.46,8.3997,15.958,-2.26,1.45,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-CCI,28862894080,27.689795,-8.837935,7.62,,0.5527,,46.83,0.1,NOT AVAILABLE - manual check only,True,False,True,False,,True,,True,False,2,False
-CSX,86658768896,27.197674,6.1536436,11.38,24.36,1.7231,138.068,38.42,0.22,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,False
-CMI,72452538368,26.81614,5.626386,17.6,21.11,1.0562,59.586,11.9,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,False,False,0,False
-CVS,113994629120,23.517149,1.4291669,3.19,6.21,0.2113,95.503,3.86,0.06,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-DHR,157813342208,40.016045,3.0009625,5.87,7.61,1.3236,52.97,19.78,10.96,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-DRI,22679965696,19.114834,10.322464,16.08,55.43,1.9045,414.393,9.85,0.3,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-DDOG,96278781952,525.7451,22.03929,2.73,4.7,1.2748,29.259,0.67,0.58,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-DVA,11455096832,15.124577,-14.918498,13.44,88.48,0.4481,1241.986,16.06,46.91,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,False
-DECK,10713425920,11.190611,4.6732802,46.08,42.56,0.9765,20.521,15.23,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-DE,186165559296,38.316315,6.651126,12.82,18.24,1.5909,230.298,13.37,0.17,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-DELL,357892653056,32.783344,-252.41704,23.21,,0.6458,,12.02,7.7,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,False
-DAL,55858503680,14.086235,2.5466974,12.78,20.12,,96.649,7.92,9.18,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,False
-DVN,51754999808,10.228261,1.2959647,14.4,11.52,2.9248,28.488,41.08,0.8,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,False
-DXCM,32686991360,34.237156,12.470487,26.37,38.49,1.3487,53.346,24.33,0.26,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-FANG,52512755712,35.55619,1.3818913,3.22,3.49,22.2883,28.678,48.47,23.88,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-DLR,67454517248,87.12683,2.4749196,3.99,2.91,11.7208,67.944,25.88,0.01,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-DG,27541798912,16.23407,2.9651093,9.15,19.69,1.6026,169.811,6.81,0.28,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-DLTR,21402988544,13.979167,6.2500687,16.75,46.03,1.4117,223.945,6.21,0.16,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-D,53369634816,20.99654,1.9117832,5.34,8.28,2.3776,160.459,29.22,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-DPZ,9664498688,16.551842,-2.425848,82.25,,1.354,,19.08,0.48,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,False
-DASH,83782492160,101.2356,8.4440365,5.37,8.89,1.0488,33.276,3.86,0.59,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-DOV,25842442240,23.201935,3.3544283,13.61,14.91,1.4696,42.316,18.69,1.26,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,False
-DOW,20239988736,,1.2761889,-3.34,-5.54,38.8911,111.913,11.59,0.21,NOT AVAILABLE - manual check only,True,,True,False,False,False,False,False,False,1,False
-DHI,39580528640,13.48999,1.6678059,13.2,12.63,1.1788,29.451,12.99,10.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-DTE,25270214656,19.245642,2.080022,5.36,11.03,1.6757,229.06,13.62,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,False
-DUK,88379244544,17.070784,1.6440402,5.35,9.86,2.1261,162.155,27.5,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-DD,17783406592,56.5279,1.2917432,2.66,1.79,,22.902,14.24,0.16,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,False
-ETN,170844241920,44.85015,8.437303,16.23,19.68,2.6662,105.059,16.56,0.07,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-EBAY,48015499264,22.668066,10.292855,19.68,46.61,1.5617,153.012,21.57,10.03,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-ECHO,26205415424,,1.8489791,-56.67,-33.43,,123.757,14.28,13.5,NOT AVAILABLE - manual check only,True,,True,False,False,,False,False,False,2,False
-ECL,78349041664,37.565857,7.791748,14.89,21.96,2.4937,138.023,18.52,0.15,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-EIX,20260456448,5.433437,1.1612519,9.02,19.73,2.3775,228.042,26.9,0.26,NOT AVAILABLE - manual check only,True,False,True,False,True,False,False,True,False,0,False
-EW,49685782528,51.3631,4.685854,10.88,9.18,1.8519,6.568,29.84,0.19,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-ELV,85899755520,17.510609,1.9136077,,11.13,1.3035,68.953,4.56,0.19,NOT AVAILABLE - manual check only,True,True,True,,False,True,True,False,False,1,False
-EME,33621008384,23.75226,8.26701,39.17,40.35,0.3108,13.432,10.62,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,False
-EMR,88624619520,34.248917,4.3309155,10.32,12.8,1.7818,67.677,26.92,0.25,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-ETR,47094525952,25.209719,2.5232306,5.63,10.25,1.524,186.77,24.46,0.22,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,True,False,0,False
-EOG,74754416640,10.913687,2.3146317,14.0,22.51,1.3513,25.891,40.72,0.27,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,False
-EQT,31782469632,11.788863,1.258265,8.69,11.08,1.4894,19.595,23.37,0.9,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-EFX,17400688640,26.029877,3.9764276,11.62,14.27,1.3382,120.956,17.3,0.64,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,True,False,0,False
-EQIX,99468959744,64.953606,6.9161687,5.61,10.73,2.9822,162.217,27.02,0.27,NOT AVAILABLE - manual check only,True,False,False,False,False,False,False,True,False,0,False
-ERIE,11653319680,20.241598,4.7235117,,24.81,,2.56,19.1,45.46,NOT AVAILABLE - manual check only,True,True,False,,True,,True,True,False,2,False
-ESS,18721042432,42.372852,3.2792842,7.55,7.71,,122.409,33.98,0.73,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,True,False,1,False
-EL,34178764800,188.94,8.980038,6.29,4.75,2.1211,242.932,7.0,0.43,NOT AVAILABLE - manual check only,True,False,False,False,False,False,False,False,False,0,False
-EG,14203299840,7.831501,0.9290759,,12.57,,23.26,19.13,0.83,NOT AVAILABLE - manual check only,True,False,True,,False,,True,True,False,2,False
-EVRG,17993461760,19.857506,1.7600361,4.98,9.25,2.3016,160.554,25.24,0.19,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-P,41986633728,172.60274,28.793419,8.24,17.71,2.2378,14.622,5.33,4.73,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,False,False,0,False
-ES,23982880768,16.537663,1.4674226,5.51,9.02,2.2694,180.7,23.92,0.17,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-EXC,41560444928,14.830882,1.402155,5.1,9.71,2.2467,177.362,16.59,0.07,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-EXE,20774631424,7.4862065,1.0484757,9.91,14.89,0.8198,19.207,26.32,0.36,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-EXPE,31705511936,16.614466,26.220348,24.25,89.49,0.6802,230.271,18.98,0.62,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-EXPD,24368044032,27.32653,11.504143,37.31,42.67,2.9782,26.745,10.71,0.63,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,False
-EXR,29430685696,29.437086,2.125032,6.15,6.95,5.3155,101.674,45.88,0.94,NOT AVAILABLE - manual check only,True,False,True,False,False,False,False,True,False,0,False
-XOM,660331954176,20.667953,2.5458148,11.12,12.58,1.3811,15.921,15.86,0.08,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,False
-FFIV,25089239040,35.331738,6.5298967,16.81,19.83,1.6292,6.546,24.65,0.5,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-FDS,9712238592,17.989458,4.807408,20.55,27.03,1.2237,77.284,30.54,0.43,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-FICO,18640703488,25.002607,-4.549547,91.89,,0.7021,,53.79,3.02,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-FAST,57868304384,43.102566,14.221659,38.3,34.33,3.3899,10.851,21.02,0.09,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-FRT,9606220800,22.327272,2.99634,6.92,12.55,,134.114,35.03,1.03,NOT AVAILABLE - manual check only,True,True,False,False,False,,False,True,False,1,False
-FDX,67652243456,15.409704,2.1677802,8.45,14.85,1.2323,135.697,11.13,6.25,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,False
-FDXF,16922462208,25.840181,-34.04934,15.97,69.09,,,-5.77,20.08,NOT AVAILABLE - manual check only,True,False,True,True,True,,,False,False,2,False
-FERG,43089661952,21.92323,6.948899,,,1.3805,111.063,10.16,1.79,NOT AVAILABLE - manual check only,True,True,False,False,,True,False,False,False,1,False
-FIS,18302689280,5.439324,1.1392813,6.06,22.35,0.1819,132.51,20.67,0.13,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,False
-FITB,47232450560,17.542088,1.4622918,,8.44,1.6918,,39.08,0.35,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-FSLR,19098458112,10.956227,1.8505484,14.68,18.51,0.3571,1.88,42.64,5.36,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,False
-FE,25046069248,23.155079,1.9370135,5.12,9.49,1.4457,200.908,19.3,0.14,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-FISV,24716517376,8.904215,0.9173624,10.3,,1.3563,,,,NOT AVAILABLE - manual check only,True,False,True,False,,True,,,,4,False
-FLEX,42363133952,44.449615,7.701813,13.52,18.38,,107.818,4.97,0.61,NOT AVAILABLE - manual check only,True,False,False,False,True,,False,False,False,1,False
-F,50682343424,,1.4188435,-6.02,-18.25,8.4768,456.708,1.88,0.4,NOT AVAILABLE - manual check only,True,,True,False,False,False,False,False,False,1,False
-FTNT,127269978112,61.510643,82.05298,42.99,117.44,1.9161,36.194,33.6,17.36,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-FTV,17099655168,29.67725,2.8005793,7.61,7.32,,59.283,19.14,0.41,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,False
-FOXA,26594955264,16.424479,2.2758272,13.52,14.29,1.1458,64.06,25.21,1.39,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-FOX,23841427456,14.723959,2.0401978,13.52,14.29,1.0209,64.06,25.21,39.87,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-BEN,16776698880,22.462585,1.427645,2.89,7.89,0.4069,24.805,12.98,48.5,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-FCX,103838425088,35.44608,5.163893,12.93,14.75,4.5363,32.149,33.4,0.72,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,False
-GRMN,56726728704,30.386364,6.284506,20.23,21.89,3.0267,2.513,30.44,14.69,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-IT,11865692160,16.897482,-72.32486,27.24,113.58,0.7091,,22.62,3.75,NOT AVAILABLE - manual check only,True,True,True,True,True,True,,True,False,1,False
-GE,339376308224,38.617474,19.239456,11.89,48.23,4.0588,113.225,20.57,0.3,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-GEHC,30309437440,15.352533,2.7422009,11.54,19.38,1.6484,93.965,14.98,0.37,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-GEV,255049023488,27.47074,21.330437,6.3,82.58,1.8622,28.364,7.47,0.13,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,False
-GEN,12941451264,12.643275,4.8759584,16.15,41.94,1.3749,307.831,35.55,9.73,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-GNRC,12293567488,47.848278,4.267875,6.19,9.49,0.5635,49.003,17.93,1.69,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-GD,91102011392,20.531708,3.3909364,13.61,17.8,2.122,35.335,10.38,0.56,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,False,False,0,False
-GIS,17986875392,,2.4366217,4.2,-10.49,,182.422,15.24,0.28,NOT AVAILABLE - manual check only,True,,True,False,False,,False,True,False,2,False
-GM,74734829568,36.88839,1.1688073,2.05,3.16,0.2941,202.341,3.2,0.17,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,False,False,0,False
-GPC,17868003328,518.44,3.947793,1.96,0.71,,146.415,6.56,0.51,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,False,False,1,False
-GILD,187146436608,,15.834033,22.92,-20.68,2.2696,223.465,33.68,0.11,NOT AVAILABLE - manual check only,True,,False,True,False,False,False,True,False,1,False
-GPN,22886844416,40.99052,0.9947782,4.16,2.43,0.2075,98.273,16.11,0.93,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-GL,12836931584,11.203219,2.090875,,20.94,,55.675,24.64,0.7,NOT AVAILABLE - manual check only,True,True,True,,True,,True,True,False,2,False
-GDDY,12302558208,14.433878,1832.8302,23.24,442.86,0.5258,57334.33,27.06,0.97,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-GS,272376283136,14.451568,2.5837662,,16.9,1.1741,725.381,42.18,0.55,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,False
-HAL,27367628800,17.151833,2.48163,10.93,14.92,0.684,74.186,12.79,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-HIG,33650429952,8.57942,1.7484623,,22.06,,22.33,17.61,0.34,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,False
-HAS,12424606720,15.6743765,17.646233,1.67,159.56,1.5757,531.042,22.16,0.58,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,False
-HCA,96635633664,14.598189,-14.29495,27.23,,1.34,,15.16,16.61,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,False
-DOC,14398718976,58.028572,1.7850237,3.18,3.04,,108.653,15.99,0.3,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,False
-HSIC,9838991360,25.180758,3.061789,8.55,8.85,1.7438,80.733,5.76,0.83,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-HSY,33428000768,22.728142,7.32617,13.41,32.81,0.8461,129.821,23.12,0.32,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,False
-HPE,83550633984,32.4433,3.1526747,3.21,10.94,0.498,76.464,12.56,0.38,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-HLT,70661373952,46.10279,-11.2421665,21.95,,1.2704,,62.99,2.19,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-HD,292522590208,20.503496,17.609612,28.92,104.3,2.504,380.261,12.86,0.07,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,False
-HONA,50325753856,48.556576,-8.833871,28.57,,1.0445,,14.68,0.05,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,False
-HON,67365597184,8.168716,3.634141,13.57,46.58,3.4743,185.369,20.25,0.08,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-HRL,10847413248,31.790321,1.3829638,6.17,4.29,1.4015,36.326,8.62,0.47,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,False
-HST,15575767040,15.04698,2.4040318,9.06,15.56,3.3561,85.298,18.21,1.47,NOT AVAILABLE - manual check only,True,True,True,False,True,False,True,True,False,0,False
-HWM,92713353216,49.995697,16.223307,21.16,34.73,,81.368,28.5,0.87,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,False
-HPQ,28226056192,11.946565,-306.86273,25.76,,3.4205,,5.4,0.31,NOT AVAILABLE - manual check only,True,True,True,True,,False,,False,False,2,False
-HUBB,24657029120,27.626999,6.302014,17.61,24.44,1.9473,141.642,21.67,0.35,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-HUM,47783555072,37.647114,2.4870467,,6.89,1.2545,76.485,3.46,0.21,NOT AVAILABLE - manual check only,True,False,True,,False,True,True,False,False,1,False
-HBAN,31599288320,12.03077,1.0624279,,9.0,1.6313,,41.93,0.81,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-HII,10403602432,15.724834,1.9584891,9.09,12.97,0.831,55.252,7.08,0.48,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-IBM,212460716032,20.045332,6.166867,10.83,34.46,2.1883,188.97,16.55,0.1,NOT AVAILABLE - manual check only,True,True,False,False,True,False,False,True,False,0,False
-IEX,16961473536,33.057472,4.247997,10.97,12.96,1.715,47.06,22.17,0.22,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-IDXX,40960786432,36.4393,25.397898,61.9,74.21,2.8525,67.971,34.98,0.22,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-ITW,78126342144,24.870356,26.994688,38.63,104.62,2.5119,334.853,26.9,0.37,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-ILMN,40769998848,50.373135,14.365522,23.46,32.34,3.0533,89.042,21.14,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-INCY,25112223744,15.782166,3.9245436,30.63,30.67,10.8221,0.603,41.9,1.85,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-IR,29518997504,31.438017,2.900385,7.33,9.47,0.6181,47.903,16.88,0.21,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-PODD,9441187840,25.49251,6.6382213,15.89,26.02,,66.685,16.18,0.33,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,False
-INTC,650190913536,,7.085662,1.47,-10.71,,48.997,12.19,13.99,NOT AVAILABLE - manual check only,True,,False,False,False,,True,False,False,2,False
-IBKR,152048500736,35.412697,6.810654,19.56,24.02,1.4786,205.748,76.53,2.67,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-ICE,86628786176,21.795198,2.9294176,9.76,14.09,2.1595,69.226,52.63,0.81,NOT AVAILABLE - manual check only,True,True,False,False,False,False,True,True,False,0,False
-IFF,21876955136,,1.5653143,-0.85,-5.55,1.7672,44.821,8.49,0.11,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,False
-IP,18545537024,,1.282831,-9.37,-16.48,,68.509,2.3,0.24,NOT AVAILABLE - manual check only,True,,True,False,False,,True,False,False,2,False
-INTU,73701015552,16.755165,3.8973207,23.56,23.6,0.9278,44.34,17.64,2.41,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-ISRG,145167089664,46.465595,7.892399,15.96,17.42,1.8715,,33.6,0.51,NOT AVAILABLE - manual check only,True,False,False,True,True,True,,True,False,1,False
-IVZ,13651173376,,1.3703852,-1.13,-0.57,0.9008,12.056,19.95,0.6,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,True,False,1,False
-INVH,15722390528,24.422018,1.7363513,5.15,7.05,,94.425,25.11,0.34,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,False
-IQV,44502900736,33.669987,7.211597,10.74,22.82,0.9741,257.975,13.03,1.09,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-IRM,33158137856,78.43662,-25.884266,5.72,,,,19.06,0.88,NOT AVAILABLE - manual check only,True,False,True,False,,,,True,False,3,False
-JBHT,21170694144,32.071125,5.7897844,14.51,18.45,1.6899,38.373,7.42,20.44,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,False
-JBL,33190260736,39.691727,25.096268,21.52,65.88,,297.136,5.21,1.19,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,False,False,1,False
-JKHY,10361942016,21.20373,5.046783,25.42,24.04,1.8075,3.793,22.5,0.61,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-J,16338850816,45.81788,4.9648366,8.72,8.0,0.4278,124.734,7.39,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
-JNJ,653612679168,31.464037,7.68677,23.13,25.74,2.8229,57.709,29.19,0.05,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-JCI,90982359040,42.42938,6.7484384,8.13,14.33,1.6737,70.107,15.88,0.17,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-JPM,911917383680,14.704672,2.5792627,,17.79,1.5696,,50.39,0.39,NOT AVAILABLE - manual check only,True,True,False,,True,True,,True,False,2,False
-KVUE,34189766656,20.941175,3.238719,11.49,15.58,1.4024,81.617,19.42,0.07,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,False
-KDP,43478392832,32.272728,1.7368851,7.3,5.1,0.9807,99.649,12.89,4.99,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,False
-KEY,21993521152,12.052631,1.2772683,,10.33,1.337,,34.71,0.3,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-KEYS,61654134784,49.005413,9.385772,12.46,20.9,0.7007,42.094,25.68,0.58,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-KMB,32672888832,19.45257,18.705814,23.14,104.91,2.0208,348.933,19.0,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-KIM,15052514304,26.093023,1.4651345,4.25,5.81,,84.993,36.56,2.21,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,True,False,1,False
-KMI,68413394944,19.83871,2.1629035,6.9,10.99,3.1918,98.619,30.06,12.7,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,False
-KKR,89283493888,30.884983,3.0447245,2.89,7.28,0.4147,69.812,20.65,23.05,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-KLAC,245236809728,51.34426,38.682587,43.16,87.5,1.8006,96.88,42.49,0.12,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-KHC,28021014528,,0.7783524,-6.16,-8.76,,52.591,15.49,27.78,NOT AVAILABLE - manual check only,True,,True,False,False,,True,True,False,2,False
-KR,34691178496,31.751352,5.9944897,5.77,14.44,0.5735,413.24,2.98,6.93,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,False
-LHX,44261355520,23.984865,2.2254994,7.45,9.34,1.1901,52.753,12.57,0.45,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-LH,25111805952,25.590082,2.9104788,8.55,11.73,1.214,79.124,12.24,0.35,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-LRCX,394461478912,54.81913,31.625362,47.86,65.07,1.4467,33.049,37.39,0.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-LVS,25253869568,15.112404,43.467113,16.72,122.87,0.8432,1703.902,19.66,61.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,True,0,False
-LDOS,15548341248,11.552337,2.935686,19.8,27.78,,123.276,11.72,0.55,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,False
-LEN,19789535232,15.558712,0.90596294,8.43,5.96,11.3018,27.736,5.77,9.5,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,False,False,0,False
-LII,12917743616,16.612,9.957641,36.1,71.76,0.9442,156.082,22.86,9.6,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-LLY,1054885412864,39.686787,31.142046,38.44,102.29,1.1368,162.071,54.22,0.16,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-LIN,216609980416,30.295938,5.542594,13.07,18.4,1.7997,68.947,28.12,0.25,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-LYV,39805788160,,478.62744,11.33,17.68,4.4087,620.214,6.7,32.41,NOT AVAILABLE - manual check only,True,,False,False,True,False,False,False,False,1,False
-LMT,119909646336,19.157816,13.628875,19.29,89.17,1.0155,234.238,11.96,0.11,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-L,21428113408,12.86135,1.1208538,,9.31,,44.609,14.53,20.07,NOT AVAILABLE - manual check only,True,True,True,,False,,True,False,False,2,False
-LOW,106196303872,16.0,-14.2777405,29.62,,1.3123,,13.36,0.11,NOT AVAILABLE - manual check only,True,True,True,True,,True,,False,False,2,False
-LULU,11214925824,8.337449,2.3613052,33.65,30.9,1.1303,44.689,13.21,4.54,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,False,False,0,False
-LITE,84466008064,,17.96562,-148.15,-240.03,,35.987,27.95,0.6,NOT AVAILABLE - manual check only,True,,False,False,False,,True,True,False,2,False
-LYB,18781425664,,1.759845,-0.82,-2.27,1.5257,132.759,17.92,20.12,NOT AVAILABLE - manual check only,True,,True,False,False,True,False,True,False,1,False
-MTB,32057729024,11.709371,1.2565472,,10.74,1.3627,,45.11,0.32,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-MPC,114882904064,13.640207,5.837709,13.11,42.1,0.8956,133.328,13.56,0.33,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-MAR,91797553152,36.479794,-20.367392,21.96,,1.759,,65.28,18.08,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-MRSH,81660387328,20.868292,5.386383,17.26,25.9,1.4978,145.027,26.32,0.08,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-MLM,34394685440,31.448051,2.5188537,8.17,8.89,1.8321,54.945,20.18,16.15,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-MRVL,235402199040,87.02159,12.393423,17.04,16.52,1.3866,28.525,16.68,0.49,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-MAS,13576353792,15.864055,-37.19611,34.07,5862.5,1.5627,,23.64,0.23,NOT AVAILABLE - manual check only,True,True,True,True,True,True,,True,False,1,False
-MA,497267048448,31.18956,88.750786,61.47,241.2,1.462,439.583,61.11,0.11,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-MKC,12888742912,7.976705,1.8424288,10.94,24.73,1.9027,65.143,17.42,0.01,NOT AVAILABLE - manual check only,True,False,True,False,True,True,True,True,False,0,False
-MCD,167357218816,19.196428,-163.55464,22.63,,2.0568,,46.48,0.26,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,False
-MCK,101041872896,23.234318,-23.709785,42.13,,1.6613,,1.35,0.06,NOT AVAILABLE - manual check only,True,True,True,True,,True,,False,False,2,False
-MDT,113382785024,21.832512,2.2588043,8.42,10.65,1.6044,55.365,19.33,0.39,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-MRK,367065792512,119.024,8.758978,20.66,6.96,2.7047,128.408,-0.24,0.06,NOT AVAILABLE - manual check only,True,False,False,True,False,False,False,False,False,0,False
-META,1914858373120,28.332453,7.3318377,26.87,29.85,0.9846,42.997,34.83,0.15,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-MET,62086094848,18.716475,2.2706144,,13.09,0.5068,179.933,5.52,16.35,NOT AVAILABLE - manual check only,True,True,True,,False,True,False,False,False,1,False
-MTD,30288066560,34.107403,2361.9375,44.44,,2.7682,16668.447,31.2,0.44,NOT AVAILABLE - manual check only,True,False,False,True,,False,False,True,False,1,False
-MGM,8196892160,19.745457,3.2606087,1.85,18.92,0.4837,893.311,6.79,27.88,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-MCHP,42729357312,114.04348,6.6237373,3.69,7.19,0.226,83.688,23.96,1.79,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-MU,1222319669248,24.447256,12.131145,14.2,66.64,0.1598,6.33,80.37,0.24,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,False
-MSFT,3832843862016,28.739979,8.665659,28.66,34.04,1.6173,29.118,45.11,0.09,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-MAA,14122307584,34.605263,2.5267406,6.06,7.05,,102.377,25.36,0.46,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,True,False,1,False
-MRNA,79400042496,,11.736796,-26.64,-39.0,,19.036,-557.93,7.32,NOT AVAILABLE - manual check only,True,,False,False,False,,True,False,False,2,False
-MDLZ,77339901952,22.069597,2.8962169,7.28,13.34,0.9044,82.643,21.98,0.24,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,False
-MPWR,67199614976,83.32907,17.250504,19.05,21.98,1.0364,0.486,30.99,3.59,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-MNST,84454719488,39.916664,9.018828,28.33,25.7,2.2582,0.992,29.18,28.3,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-MCO,81169932288,29.702156,26.83346,26.55,76.93,1.6411,240.682,49.47,14.38,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-MS,308317847552,15.844229,2.8953848,,17.97,1.7595,517.282,41.57,24.41,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,False
-MOS,7314779136,,0.6380678,7.1,-5.07,2.0198,52.249,-0.12,0.34,NOT AVAILABLE - manual check only,True,,True,False,False,False,True,False,False,1,False
-MSI,75610808320,35.974804,28.298544,23.83,91.57,2.0244,357.85,27.35,0.4,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-MSCI,40083869696,30.112507,-14.904038,44.0,,1.866,,56.3,3.6,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-NDAQ,52292333568,27.274054,4.3856363,10.82,16.52,1.7643,77.687,49.33,11.0,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-NTAP,39508701184,28.41031,26.369299,26.13,114.82,2.1387,169.498,26.67,0.39,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-NFLX,296243462144,22.37264,9.825299,30.26,49.54,1.2194,55.236,33.38,0.57,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-NEM,127949856768,15.3127365,3.6487381,22.51,25.91,,15.807,51.57,0.31,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,True,False,1,False
-NWSA,15373745152,27.660194,1.8159219,8.93,7.98,2.5251,31.561,12.54,0.04,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,False
-NWS,17132903424,30.825243,2.023711,8.93,7.98,2.8049,31.561,12.54,35.35,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,False
-NEE,158672863232,17.09663,2.777859,4.79,11.68,1.5549,161.676,31.52,0.12,NOT AVAILABLE - manual check only,True,True,False,False,False,True,False,True,False,0,False
-NKE,53035081728,17.02381,3.5664406,14.68,22.14,1.3992,74.289,12.69,1.96,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-NI,18904258560,20.968084,1.9741585,5.8,8.55,2.0194,146.649,17.16,0.35,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-NDSN,18151235584,33.006077,5.5505953,13.6,17.76,1.8315,55.619,27.4,5.59,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-NSC,70302416896,26.729292,4.3254747,10.75,16.98,3.7182,105.519,35.3,0.05,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-NTRS,32150794240,15.11006,2.5686262,,17.07,0.9845,,42.5,0.86,NOT AVAILABLE - manual check only,True,True,False,,True,True,,True,False,2,False
-NOC,72526012416,16.23275,4.055351,15.29,26.96,3.4068,95.348,11.6,0.27,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,False,False,0,False
-NCLH,6708733952,8.854546,2.6075315,8.09,36.73,1.1845,621.051,14.04,0.87,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-NRG,21098825728,26.138021,5.020006,8.88,23.77,0.3865,483.357,12.77,4.46,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,False
-NUE,56095010816,19.748402,2.5371985,8.8,14.55,,30.512,15.67,1.18,NOT AVAILABLE - manual check only,True,True,False,False,False,,True,True,False,1,False
-NVDA,5434765213696,28.489874,23.73405,81.14,117.21,0.4791,16.971,66.24,4.01,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-NVR,16782222336,16.366755,4.973449,36.41,31.54,,32.15,13.89,5.55,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,False,False,1,False
-NXPI,60035248128,20.33134,5.268772,13.8,27.92,0.4684,93.325,30.41,0.14,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,False
-ORLY,69663653888,27.338093,-38.290348,44.77,,1.6087,,20.15,0.5,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-OXY,56839380992,16.772861,1.6988854,5.53,10.63,1.1262,34.511,45.44,26.81,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-ODFL,35934904320,33.326923,7.9067435,27.31,24.82,2.1649,0.44,28.84,8.24,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-OMC,21703223296,205.8108,2.1622467,2.18,6.05,,107.744,15.38,0.93,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,False
-ON,30055397376,50.457516,4.163296,1.8,8.31,0.1645,65.055,19.53,0.33,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-OKE,55873167360,15.307426,2.4357598,10.41,16.28,1.7103,143.07,13.25,0.15,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,False,False,0,False
-ORCL,414554226688,21.489029,10.513804,10.98,41.19,0.8072,251.716,35.63,38.58,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,False
-OTIS,25101336576,16.951157,-4.367177,74.04,,2.2203,,15.13,0.14,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,False
-PCAR,58589683712,23.433683,2.883156,8.93,12.76,0.8317,72.91,12.02,1.86,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,False
-PKG,21132333056,30.762646,4.505528,11.4,14.89,1.5303,94.474,13.12,1.58,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-PLTR,455788101632,162.11111,46.624878,18.3,38.1,1.8461,2.139,47.12,3.48,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-PANW,306537299968,914.0,11.109002,1.39,1.74,2.0083,9.337,5.4,0.76,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-PSKY,11146963968,332.0,0.94857144,-16.24,-0.9,0.7634,126.479,9.35,50.8,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,False,True,0,False
-PH,123379564544,34.36354,8.008792,20.03,25.08,3.2312,56.66,23.46,0.18,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-PAYX,36085743616,20.113096,9.65061,27.65,47.05,1.8455,124.704,38.5,10.33,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-PYPL,47444480000,10.404537,2.3937721,19.96,24.5,0.9268,71.751,16.97,0.71,NOT AVAILABLE - manual check only,True,True,True,True,True,True,True,True,False,0,False
-PNR,8671753216,13.829897,2.2847655,13.98,17.13,0.883,47.067,23.44,0.96,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,False
-PEP,175708585984,16.858454,7.9514127,15.23,51.51,1.376,238.949,16.84,0.18,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-PFE,163409641472,37.723686,1.9179823,5.95,5.01,12.8897,74.253,27.88,0.1,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-PCG,37049208832,8.877698,0.8408286,4.35,9.32,0.5184,189.45,24.79,0.2,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,True,False,0,False
-PM,296884666368,26.164833,-34.588703,35.35,,2.292,,40.0,0.16,NOT AVAILABLE - manual check only,True,False,True,True,,False,,True,False,2,False
-PSX,102049603584,14.597602,3.2390637,10.78,23.45,0.8205,62.884,8.53,0.21,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-PNW,11118633984,17.608444,1.5804434,4.32,9.37,3.5788,233.288,21.34,0.15,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-PNC,90017652736,12.42511,1.5506411,,12.62,1.5711,,38.69,0.3,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-PPG,23901696000,15.426112,2.8309636,13.29,19.3,1.5318,86.938,14.02,0.11,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-PPL,24104009728,18.952662,1.6017402,5.6,8.63,1.1813,135.434,23.59,0.17,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-PFG,24572788736,16.349003,2.0286703,,12.95,,35.307,12.34,1.12,NOT AVAILABLE - manual check only,True,True,True,,False,,True,False,False,2,False
-PG,339901841408,22.089123,6.3725104,24.2,30.29,3.792,64.49,22.08,0.09,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-PGR,119272202240,10.311089,3.4775693,,34.94,63.4591,24.428,18.21,0.24,NOT AVAILABLE - manual check only,True,True,False,,True,False,True,True,False,1,False
-PLD,129336762368,29.698662,2.3133097,4.94,7.75,116.6137,63.823,43.03,0.26,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-PRU,41210249216,10.8295555,1.3058783,,12.01,0.6834,163.891,7.52,0.18,NOT AVAILABLE - manual check only,True,True,True,,False,True,False,False,False,1,False
-PEG,33397499904,16.67164,1.926028,6.43,11.83,3.2665,142.409,18.87,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,False
-PTC,14986885120,13.409708,4.4072876,18.54,35.05,1.3113,46.335,28.23,0.35,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-PSA,53807853568,27.478054,10.44846,10.69,21.93,3.8787,109.632,45.7,9.56,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-PHM,22829789184,12.242084,1.7283647,17.46,14.9,1.0218,19.065,15.69,0.67,NOT AVAILABLE - manual check only,True,True,True,True,False,True,True,True,False,0,False
-PWR,97592410112,74.10159,10.121149,10.18,15.34,1.4518,67.78,7.22,0.67,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,False
-QCOM,215716184064,23.082285,7.7185006,32.51,33.75,0.8803,55.21,18.53,0.12,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-DGX,26083432448,25.11371,3.458662,11.44,14.6,1.5271,81.074,15.25,0.43,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-Q,26102505472,44.37367,3.595859,8.08,6.72,1.3166,59.992,22.32,0.07,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-RL,21276817408,21.590084,7.8201647,20.83,37.54,1.8574,110.373,18.39,2.54,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-RJF,30752866304,13.950261,2.4186814,,18.42,0.7824,47.594,19.3,10.55,NOT AVAILABLE - manual check only,True,True,True,,True,True,True,True,False,1,False
-RDDT,28828692480,34.846508,8.77078,14.89,30.71,0.7581,0.635,28.79,0.65,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-RTX,255265374208,33.34507,3.8456852,9.41,12.27,2.2145,57.02,12.7,0.09,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-O,52552949760,40.540146,1.3287717,3.27,3.23,2.8516,74.722,46.97,0.12,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,False
-REG,13690988544,24.656567,2.011979,5.98,8.19,,71.972,39.64,0.65,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,False
-REGN,81132650496,19.491467,2.4929218,14.57,14.04,1.3196,8.535,33.11,2.08,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-RF,23530295296,11.227642,1.3481061,,11.87,1.4531,,39.31,0.26,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-RSG,64947777536,30.042494,5.3942018,10.41,18.15,2.7439,118.798,20.43,0.18,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-RMD,32024010752,21.284756,4.8624496,25.21,24.27,1.2899,12.542,30.86,0.5,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-RVTY,16861820928,72.30144,2.3325565,3.33,3.21,0.7337,46.225,17.05,0.26,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,False
-HOOD,107350425600,52.83186,11.322902,22.36,23.62,2.1423,240.279,43.88,0.96,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-ROK,48211779584,40.65075,13.798308,13.8,30.63,1.9085,103.347,20.97,0.17,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,False
-ROL,14448796672,27.3,10.107708,30.98,37.01,2.6402,78.015,18.8,38.49,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-ROP,35461898240,14.946228,1.8963101,7.33,13.07,1.432,60.531,27.73,0.39,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-ROST,75429265408,28.585955,11.193705,26.86,42.63,2.4926,70.281,13.58,2.14,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,False
-RCL,64910618624,14.990734,6.341285,18.15,44.67,0.9494,224.816,27.07,6.2,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-SPGI,118892838912,24.576477,3.7742734,12.16,14.26,1.9431,42.98,44.79,0.11,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,False
-CRM,192598458368,21.410795,5.018442,11.86,19.38,0.7791,110.417,21.38,2.98,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,False
-SNDK,260303716352,24.095963,16.833475,77.34,91.64,,1.277,78.47,0.98,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,True,False,1,False
-SBAC,17626540032,17.923407,-3.8071125,19.32,,10.7669,,52.16,0.77,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,False
-SLB,76492742656,25.141464,2.933743,12.08,12.91,1.374,47.002,12.71,0.22,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-STX,208480731136,65.76973,95.9529,58.06,371.53,0.5262,179.88,43.07,0.32,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-SRE,50958454784,22.588406,1.5587248,3.04,6.68,0.6657,84.663,28.33,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-NOW,140212355072,84.7625,11.202709,14.65,14.24,1.0143,67.538,4.06,0.17,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-SHW,79891709952,30.387812,20.60352,20.04,65.12,2.1026,389.958,18.12,6.36,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,False
-SPG,77754482688,14.454482,15.081364,17.44,120.51,,503.504,46.02,1.8,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,True,False,1,False
-SWKS,13437268992,46.290154,2.34316,8.4,5.09,12.7368,11.869,8.82,0.4,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,False
-SJM,12925604864,56.542053,2.3280425,2.33,3.93,,120.682,17.9,2.26,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,False
-SW,24343107584,49.37234,1.347874,4.72,2.71,,78.427,5.47,0.52,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,False
-SNA,19097655296,18.836735,3.1607966,18.5,17.93,1.8947,21.595,25.4,2.42,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-SOLV,15235023872,10.941319,3.1719592,18.46,33.96,,110.313,9.78,15.34,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,False
-SO,95342084096,19.971083,2.4094424,5.93,11.48,1.9727,182.058,29.61,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-LUV,20879405056,26.675,2.9483283,3.73,11.1,0.1993,97.275,3.38,1.02,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-SWK,13802920960,22.347187,1.5406659,5.84,6.89,,58.172,8.44,0.32,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,False,False,1,False
-SBUX,108140404736,54.83237,-14.088817,13.98,,1.1143,,12.92,0.13,NOT AVAILABLE - manual check only,True,False,True,False,,True,,False,False,2,False
-STT,49814417408,16.005295,2.084176,,12.44,0.6722,,34.31,0.36,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-STLD,33490042880,21.184044,3.562379,10.93,17.57,,46.924,11.5,6.57,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,False
-STE,20370698240,25.51038,2.826625,11.55,11.39,1.7414,28.312,19.15,0.31,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-SYK,104469954560,28.253109,4.355112,12.79,16.51,1.2877,64.391,27.02,5.36,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-SMCI,27983726592,13.269938,2.771478,13.1,21.47,,63.951,13.38,12.7,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,False
-SYF,23732549632,7.4810257,1.5614498,,20.79,0.8772,,50.22,0.35,NOT AVAILABLE - manual check only,True,False,True,,True,True,,True,False,2,False
-SNPS,81591214080,74.04522,2.6186595,4.13,3.66,2.1917,34.804,14.52,2.99,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-SYY,37626929152,21.437159,14.083647,16.74,77.69,1.449,564.591,4.84,0.17,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,False
-TMUS,177452056576,17.304392,3.160197,9.27,17.99,0.5854,214.035,25.22,55.55,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,True,0,False
-TROW,22506956800,10.593373,2.0456,17.78,19.4,2.1611,3.702,28.69,1.7,NOT AVAILABLE - manual check only,True,True,True,True,True,False,True,True,False,0,False
-TTWO,37665341440,,10.637377,-0.54,-9.04,2.8155,81.607,0.51,1.78,NOT AVAILABLE - manual check only,True,,False,False,False,False,True,False,False,1,False
-TPR,22706724864,15.664373,32.970467,37.96,197.13,1.6114,571.608,19.82,0.42,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,False
-TRGP,59577516032,26.58756,19.021017,15.41,70.84,,515.794,27.8,1.38,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,True,False,1,False
-TGT,71528185856,16.332987,4.008707,13.62,26.41,1.9793,107.583,6.04,0.27,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-TEL,63378128896,21.409403,4.7847214,16.44,23.29,0.9194,43.441,20.77,0.12,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-TDY,28453040128,29.669083,2.6074128,8.6,9.15,,18.565,20.2,0.84,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,False
-TER,62283030528,54.647465,18.135386,21.51,36.46,0.7296,2.883,33.16,0.2,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-TSLA,1469666033664,344.54626,16.917934,5.29,4.67,4.5442,18.373,1.41,17.82,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-TXN,253946789888,42.19575,14.098768,19.9,35.18,0.9708,78.036,42.58,0.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-TPL,23525193728,43.503826,15.119692,39.43,36.57,,1.077,78.18,0.38,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,False
-TXT,13318156288,14.423728,1.6350361,9.17,12.13,0.896,52.285,8.7,0.73,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,False
-TMO,249579421696,36.368534,4.7377396,9.17,13.51,1.9816,80.575,18.75,0.13,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-TJX,143677849600,24.085184,13.815594,32.91,62.17,2.5693,134.419,10.91,0.15,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,False
-TKO,34573897728,64.09474,3.9981177,5.93,7.06,1.5863,59.216,32.39,18.21,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-TSCO,16813965312,16.807293,6.4218907,17.64,39.51,2.0348,248.71,12.07,0.35,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,False
-TT,99987333120,33.888145,11.610036,25.8,36.64,1.5456,53.404,19.25,0.27,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-TDG,62433062912,33.89614,-6.645076,20.27,,3.0456,,46.01,0.41,NOT AVAILABLE - manual check only,True,False,True,True,,False,,True,False,2,False
-TRV,75721080832,9.756517,2.286463,,26.51,,27.378,23.7,0.28,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,False
-TRMB,13489453056,,2.377723,7.48,-1.94,1.3966,28.553,15.13,0.4,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,True,False,1,False
-TFC,58222706688,10.956322,0.9921313,,9.06,1.1007,,39.81,0.18,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-TYL,13332831232,42.725723,4.3874993,10.18,9.73,1.518,47.906,14.74,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,False
-TSN,17913731072,31.432098,0.9908542,4.02,3.26,1.0438,44.025,2.71,2.62,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,False
-USB,92439199744,11.842315,1.5247617,,12.62,1.7932,,39.65,0.12,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-UBER,142203043840,15.267545,5.199403,12.61,37.16,5.919,51.872,13.32,0.21,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,False,False,0,False
-UDR,12538249216,21.41772,3.754577,6.21,13.74,,156.144,20.18,0.44,NOT AVAILABLE - manual check only,True,True,False,False,False,,False,True,False,1,False
-ULTA,23311374336,19.839884,8.827435,32.44,46.12,1.9591,95.472,12.51,0.25,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,False
-UNP,162651947008,22.169231,8.370735,16.19,39.7,2.7237,150.772,40.98,0.07,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-UAL,36997701632,10.673221,2.2159367,10.88,23.25,6.5026,201.641,5.53,0.59,NOT AVAILABLE - manual check only,True,True,True,False,True,False,False,False,False,0,False
-UPS,79939436544,17.464684,5.3069754,14.24,29.6,1.3619,189.9,9.05,0.02,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-URI,65171623936,25.187878,7.07626,15.56,28.89,1.3403,166.793,25.99,0.43,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,False
-UNH,338025218048,24.218006,3.4619098,9.6,14.15,1.0118,69.211,7.13,0.25,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,False
-UHS,10541385728,7.3004084,1.4029336,17.29,20.95,1.2093,68.74,11.14,4.98,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,False,False,0,False
-VLO,111479750656,16.15269,4.459058,8.12,27.64,1.8505,40.148,12.27,0.42,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,False
-VEEV,45444575232,46.08867,6.2612653,12.48,14.42,1.2067,2.041,29.64,8.62,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-VTR,44416024576,157.43636,3.0319688,3.28,2.01,4.9384,84.928,14.81,0.51,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,False
-VLTO,23682084864,24.468513,7.659675,22.51,34.31,2.2699,115.978,21.37,0.19,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
-VRSN,25967400960,31.188925,-11.519952,,,2.1631,,68.18,10.59,NOT AVAILABLE - manual check only,True,False,True,,,False,,True,False,3,False
-VRSK,22170206208,25.99232,-18.98463,34.46,,1.4456,,45.11,0.27,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,False
-VZ,195606822912,12.260417,1.8822967,8.59,15.84,0.8273,184.081,23.0,0.05,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,False
-VRTX,133283930112,30.610237,6.5838766,21.38,23.54,1.8976,9.767,38.05,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-VRT,97509801984,57.303165,20.493567,23.42,43.94,0.8388,70.166,20.36,0.24,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-VTRS,20479375360,,1.4164283,-10.61,-2.75,1.0487,95.535,12.55,0.32,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,False
-VICI,25886332928,9.112404,0.8874042,7.97,9.85,,60.277,70.18,0.28,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,True,False,1,False
-V,689702764544,31.239796,19.468998,41.12,61.19,1.6368,67.821,66.13,0.08,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-VST,46472052736,23.349073,15.47558,7.08,42.96,0.3441,373.28,13.77,0.78,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,False
-VMRK,47595151360,23.56705,,6.37,8.49,,75.129,29.5,0.48,NOT AVAILABLE - manual check only,True,True,,False,False,,True,True,False,2,False
-VMC,31746789376,29.20143,3.7453184,10.35,13.23,1.6502,58.22,21.61,0.23,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,False
-WRB,24805423104,13.748971,2.6762254,,20.21,4.4549,31.527,16.39,26.36,NOT AVAILABLE - manual check only,True,True,False,,True,False,True,True,False,1,False
-GWW,58689212416,31.662506,14.173146,35.76,46.09,1.732,61.977,16.07,6.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,False
-WAB,48646324224,38.761776,4.342843,10.74,11.55,,61.686,19.19,0.7,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,False
-WMT,856685936640,38.981953,9.113775,18.21,22.31,4.2203,71.653,3.45,44.99,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,False
-DIS,183287808000,21.886599,1.6689726,8.46,8.01,3.369,39.404,19.3,0.06,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,False
-WBD,77370245120,,2.3569846,4.25,-8.79,55.1758,94.199,5.1,4.14,NOT AVAILABLE - manual check only,True,,True,False,False,False,True,False,False,1,False
-WM,82673098752,29.254597,8.334878,10.76,29.84,1.9016,235.301,18.99,0.25,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,False
-WAT,42567495680,109.756966,2.8025289,21.49,1.92,1.5658,36.045,9.42,0.1,NOT AVAILABLE - manual check only,True,False,False,True,False,True,True,False,False,0,False
-WEC,33057417216,19.699028,2.425351,5.59,11.99,1.9861,157.985,21.8,0.15,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-WFC,250901217280,12.059593,1.5597624,,12.57,1.3852,,37.39,0.09,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,False
-WELL,166718750720,103.75336,3.5836313,0.26,3.84,,41.375,16.56,0.06,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,False
-WST,26069997568,47.370842,8.721571,16.64,19.09,3.096,10.585,22.47,0.66,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,False
-WDC,164698701824,16.975473,21.84126,104.67,130.85,0.9019,13.436,43.61,0.51,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,False
-WY,14421927936,30.31818,1.5250362,3.48,4.97,,57.625,8.03,0.33,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,False
-WSM,27310399488,23.809034,14.603274,40.94,54.96,3.0094,71.369,17.27,1.09,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,False
-WMB,84716584960,27.593626,6.439197,9.66,21.5,2.0746,200.371,39.54,0.45,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,False
-WTW,27303419904,18.214994,3.5564883,14.25,19.76,,91.39,17.56,0.27,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,True,False,1,False
-WDAY,45657448448,38.584522,7.0587573,9.6,16.01,0.7031,58.39,11.82,2.18,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,False
-WYNN,8353242112,19.453238,-48.779316,9.94,,0.7336,,16.54,27.45,NOT AVAILABLE - manual check only,True,True,True,False,,True,,True,False,2,False
-XEL,43599474688,19.123287,1.8116695,4.19,9.92,1.7763,173.135,22.7,0.2,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,False
-XYL,23962750976,24.435715,2.1775937,8.19,9.18,1.3219,28.642,17.0,0.34,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-YUM,37832278016,17.437737,-5.2535243,38.59,,1.7545,,32.78,0.16,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,False
-ZBRA,17626261504,33.886448,5.1050563,10.05,15.29,0.6247,86.23,21.26,0.85,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,False
-ZBH,17364760576,22.097088,1.3745621,5.48,6.41,0.5712,60.175,17.96,0.16,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,False
-ZTS,29359538176,11.590539,9.063656,27.07,64.91,6.6639,293.996,40.72,0.16,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,False
+ticker,market_cap,pe,pb,roce_pct,roe_pct,peg,debt_to_equity,opm_pct,insider_holding_pct,pledging_status,market_cap_ok,pe_ok,pb_ok,roce_ok,roe_ok,peg_ok,de_ok,opm_ok,insider_holding_ok,unknown_metric_count,required_fail_count,failed_filters,insider_bonus,qualified
+MMM,83490308096,28.754885,28.28267,18.33,81.89,1.6065,437.937,20.35,0.1,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+AOS,7712811520,15.8078,4.187574,31.95,27.13,1.3656,36.766,18.93,0.46,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+ABT,168712372224,31.553398,3.3009446,12.76,10.58,1.8991,63.212,14.71,0.49,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+ABBV,464433774592,73.61905,-78.24353,10.47,,0.5421,,40.03,0.11,NOT AVAILABLE - manual check only,True,False,True,False,,True,,True,False,2,2,PE 10-25; ROCE > 15%,False,False
+ACN,121715277824,15.89928,3.8161201,24.07,26.02,1.3333,40.283,15.33,0.04,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+ADBE,94481776640,13.263951,7.9000897,46.63,61.9,0.5816,57.693,34.82,0.23,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+AMD,1034842210304,161.30025,15.389525,6.33,10.2,0.626,6.361,17.25,0.42,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+AES,10637370368,5.5842695,2.1515152,3.42,9.57,,256.886,18.67,0.58,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+AFL,55919833088,12.032362,1.8481574,,16.91,,53.365,25.72,10.9,NOT AVAILABLE - manual check only,True,True,True,,True,,True,True,False,2,0,,False,True
+A,47308226560,33.0927,6.425152,14.9,20.97,1.3652,56.336,25.56,0.19,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+APD,61810827264,,4.4520187,-0.62,0.02,2.0651,110.091,25.54,1.89,NOT AVAILABLE - manual check only,True,,False,False,False,False,False,True,False,1,5,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+ABNB,97260748800,37.0,12.287616,29.72,34.54,1.4191,32.004,21.01,1.94,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+AKAM,15653612544,39.463768,3.2936196,6.02,8.92,1.4374,196.672,7.63,2.13,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+ALB,12342148096,387.37033,1.5349281,-2.36,2.65,0.7941,18.976,27.71,0.21,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+ARE,8152153088,,0.51996094,-3.1,-4.08,,68.67,17.28,1.38,NOT AVAILABLE - manual check only,True,,True,False,False,,True,True,False,2,2,ROCE > 15%; ROE > 15%,False,False
+ALGN,10211269632,24.95486,2.4195802,13.57,10.15,0.6239,2.855,18.25,6.13,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ALLE,13113523200,20.237534,6.1914325,19.46,33.73,2.0408,104.895,22.1,0.23,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+LNT,16679785472,20.357595,2.215373,5.02,11.13,1.96,160.951,19.05,0.15,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+ALL,56574439424,4.4801764,1.7929178,,46.11,1.6878,22.261,22.83,0.5,NOT AVAILABLE - manual check only,True,False,True,,True,True,True,True,False,1,1,PE 10-25,False,False
+GOOGL,4200982642688,17.243977,6.749057,32.4,48.68,1.2549,18.859,34.03,1.6,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+GOOG,4162458484736,17.068707,6.687166,32.4,48.68,1.1971,18.859,34.03,0.52,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+MO,112457244672,14.178947,-42.14643,40.85,,2.6418,,76.36,0.12,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,1,PEG <= 2,False,False
+AMZN,2712973606912,20.234915,4.9167256,16.6,30.56,1.4781,45.617,13.69,8.87,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,2,Price/Book <= 2.5; Operating margin > 15%,False,False
+AMCR,19337048064,17.588234,1.6401536,6.6,9.4,0.9797,128.294,9.69,0.25,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,4,ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+AEE,27667716096,17.595072,2.0211542,5.32,11.94,2.5039,157.846,25.24,0.32,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+AEP,65093595136,20.68685,2.0290518,5.68,10.13,2.004,160.789,23.25,0.03,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+AXP,204470304768,18.383728,5.9619966,,34.38,1.2238,172.38,20.32,22.56,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,2,Price/Book <= 2.5; Debt/Equity,False,False
+AIG,39180386304,13.673358,0.968263,,7.22,0.6373,22.466,19.41,0.55,NOT AVAILABLE - manual check only,True,True,True,,False,True,True,True,False,1,1,ROE > 15%,False,False
+AMT,75578720256,22.310865,20.318176,7.82,33.91,1.6139,438.721,45.41,0.08,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+AWK,25884450816,22.573656,2.2189853,6.64,10.1,2.3575,137.745,40.66,0.12,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+AMP,43363659776,11.961744,6.8206577,,63.43,1.4133,67.578,30.72,0.18,NOT AVAILABLE - manual check only,True,True,False,,True,True,True,True,False,1,1,Price/Book <= 2.5,False,False
+AME,57757786112,36.778103,5.129077,14.21,14.56,2.7999,20.522,26.18,0.39,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+AMGN,217896321024,25.064678,18.641998,18.02,91.47,2.4515,490.281,35.55,0.23,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+APH,214440476672,43.48,13.83832,20.28,38.12,0.9304,120.415,29.78,0.53,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+ADI,202136485888,49.483982,6.0247836,6.77,12.23,0.5757,27.314,39.5,0.24,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+AON,57157201920,14.862108,5.95154,20.23,44.7,2.2083,163.481,23.46,1.01,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+APA,15303354368,9.21519,2.1816003,20.2,26.66,1.1785,48.854,56.33,0.44,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,True,False,0,1,PE 10-25,False,False
+APO,67333730304,40.721428,3.3492935,5.46,11.41,0.4661,100.969,21.95,26.24,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+AAPL,4869931925504,38.31114,45.338314,68.72,148.75,2.706,78.445,32.62,1.65,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+AMAT,428574343168,46.51507,16.724163,33.71,41.07,0.8297,28.666,33.74,0.33,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+APP,90105700352,20.61645,28.431206,70.2,203.69,0.6831,111.13,77.68,4.72,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+APTV,9040355328,19.701357,1.0364692,6.97,5.16,0.9507,64.938,12.68,0.84,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+ACGL,31939045376,7.3239436,1.3700635,,19.94,,17.836,26.58,2.79,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,1,PE 10-25,False,False
+ADM,38773645312,21.980873,1.6449587,5.68,7.64,1.0151,39.134,4.01,0.71,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+ARES,39000260608,54.170506,10.656332,9.72,14.92,0.9025,172.378,9.47,11.16,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+ANET,261514952704,65.82539,17.672379,27.4,31.48,1.5225,,45.39,17.25,NOT AVAILABLE - manual check only,True,False,False,True,True,True,,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+AJG,57961263104,37.435432,2.4434814,6.58,6.72,0.7149,59.401,19.16,0.87,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+AIZ,13185229824,12.802683,2.164815,,18.34,,36.211,11.73,0.7,NOT AVAILABLE - manual check only,True,True,True,,True,,True,False,False,2,1,Operating margin > 15%,False,False
+T,166512967680,8.019802,1.5134529,9.23,18.34,1.5352,129.054,24.79,0.09,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,3,PE 10-25; ROCE > 15%; Debt/Equity,False,False
+ATO,26559932416,18.733015,1.7406857,6.14,9.79,1.8975,67.662,37.22,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ADSK,44308000768,27.461142,13.09693,26.94,53.85,0.845,109.518,29.23,0.23,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+ADP,102106095616,23.53242,16.996239,47.0,72.24,2.5013,91.436,23.46,0.14,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+AZO,45155500032,19.379675,-18.044413,36.82,,1.3095,,19.97,0.25,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+AVY,12874131456,18.585339,5.5509443,17.25,31.16,,158.653,13.59,0.64,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+AXON,33579487232,172.22916,9.13824,2.05,6.22,2.1074,50.363,5.17,4.51,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+BKR,55589748736,18.006432,2.7913468,11.48,16.46,1.6186,80.925,12.83,0.15,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+BALL,14921327616,16.151861,2.5959015,10.27,17.15,1.0106,131.495,9.23,0.26,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+BAC,375860232192,12.413395,1.3662244,,11.2,0.8463,,38.3,7.03,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+BAX,12144235520,,1.9568478,-1.26,-14.37,,156.449,14.43,0.34,NOT AVAILABLE - manual check only,True,,True,False,False,,False,False,False,2,4,ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+BDX,48157990912,30.588234,1.9723998,5.31,6.61,1.1074,68.84,15.73,0.43,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+BRK-B,1076027719680,12.642103,0.0009625145,,12.12,,17.142,32.56,0.27,NOT AVAILABLE - manual check only,True,True,True,,False,,True,True,False,2,1,ROE > 15%,False,False
+BBY,18449745920,14.637271,5.815045,20.76,43.13,1.6991,130.097,3.9,6.52,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+TECH,11353640960,62.413795,5.360581,10.33,9.03,2.1116,13.712,27.87,0.34,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+BIIB,32488151040,39.546764,1.7230625,6.99,4.58,2.3453,44.329,25.06,0.19,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+BLK,172164644864,25.38036,2.850736,4.89,12.28,0.8893,23.192,35.08,1.92,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+BX,133574524928,25.000002,9.916585,,31.37,1.0877,68.185,54.36,1.04,NOT AVAILABLE - manual check only,True,False,False,,True,True,True,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+XYZ,44657094656,132.73215,2.025451,10.44,1.61,0.5721,32.58,7.0,1.19,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+BE,85162582016,370.70514,52.620564,-0.81,22.21,0.6219,171.578,17.11,5.54,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+BNY,98654494720,16.809248,2.4719062,,14.12,1.1354,,40.05,0.24,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+BA,152984027136,69.37634,25.085535,8.99,173.54,1.4887,790.875,0.0,0.06,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+BKNG,119484530688,17.66889,-11.178125,67.24,,0.6067,,34.41,0.18,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+BSX,61737177088,17.246964,2.4721446,9.77,15.34,0.6251,50.151,22.9,0.25,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,1,ROCE > 15%,False,False
+BMY,124912001024,13.469164,5.5972543,16.84,46.6,17.0263,201.859,34.42,0.1,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+AVGO,1695307005952,43.844444,17.006992,17.0,44.25,0.361,59.604,54.31,1.94,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+BR,17717401600,16.346874,6.2981095,20.68,40.92,1.7766,123.939,24.61,0.36,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+BRO,20046508032,19.140574,1.5712037,7.73,10.02,,63.975,41.84,13.28,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+BF-B,12003889152,16.87742,3.023229,14.83,18.12,2.0047,61.502,27.55,2.8,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; PEG <= 2,False,False
+BG,20502951936,23.0,1.2851329,5.99,7.18,,97.995,4.62,18.37,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,False,False,1,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+BXP,10934040576,32.5,1.8705903,4.2,5.31,2.3159,211.631,28.75,0.38,NOT AVAILABLE - manual check only,True,False,True,False,False,False,False,True,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+CHRW,18429779968,30.156788,11.348395,24.64,37.12,1.8224,121.188,5.34,0.35,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,False,False,0,4,PE 10-25; Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+CDNS,96759332864,69.99004,14.109308,19.24,23.23,2.3143,38.661,28.57,0.33,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+CPT,11105697792,31.669968,2.5881274,6.26,7.89,,125.648,16.1,1.47,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,True,False,1,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+COF,119457775616,10.7283745,1.1600213,,9.03,0.1803,,33.63,1.23,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+CAH,52864999424,31.53315,-18.451468,18.83,,1.1136,,1.33,0.28,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,2,PE 10-25; Operating margin > 15%,False,False
+CCL,34637160448,11.348018,2.7253492,10.68,24.0,0.757,177.11,26.43,7.24,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+CARR,45436796928,39.37143,3.4590523,7.5,8.97,1.0741,91.998,13.07,4.76,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+CVNA,70686736384,33.387436,11.383434,-3.3,58.77,,110.88,9.22,2.1,NOT AVAILABLE - manual check only,True,False,False,False,True,,False,False,False,1,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+CASY,22832513024,29.742899,5.580085,13.63,19.98,2.7014,70.547,6.5,0.58,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Operating margin > 15%,False,False
+CAT,388618321920,36.36215,20.036972,19.42,56.97,1.421,232.783,22.18,0.22,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+CBOE,28327958528,21.142635,5.041352,23.32,26.3,2.3792,28.09,34.63,0.25,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+CBRE,37523169280,29.652176,4.4722853,6.97,15.8,0.7429,117.789,3.61,0.51,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+CDW,16663571456,16.020433,6.8388915,18.8,44.01,,263.278,7.34,0.46,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+COR,58975133696,22.943577,19.330122,14.27,96.87,0.6539,446.516,1.41,4.3,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+CNC,31116746752,,1.3791518,-15.11,-20.36,0.7484,71.082,3.76,0.39,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+CNP,24893038592,22.49405,2.1238692,5.34,9.83,1.6234,210.256,24.49,0.23,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+CF,17405399040,8.531899,3.033204,18.06,29.87,0.603,40.504,49.33,0.45,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+CRL,13977793536,,4.877471,0.13,-7.52,0.1222,105.047,15.11,0.47,NOT AVAILABLE - manual check only,True,,False,False,False,True,False,True,False,1,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+SCHW,167226753024,17.613844,3.8036423,,20.27,0.8418,151.106,52.28,6.21,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,2,Price/Book <= 2.5; Debt/Equity,False,False
+CHTR,14203066368,2.843872,0.76898724,8.87,27.2,0.6601,441.578,23.5,3.1,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,3,PE 10-25; ROCE > 15%; Debt/Equity,False,False
+CVX,405443805184,19.874039,2.1352272,7.21,12.23,0.8994,18.959,21.87,4.77,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+CMG,40948928512,29.962963,18.651297,25.78,49.56,,246.35,16.11,0.72,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,True,False,1,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+CB,127657328640,11.725373,1.692965,,14.82,2.5224,30.941,23.53,9.45,NOT AVAILABLE - manual check only,True,True,True,,False,False,True,True,False,1,2,ROE > 15%; PEG <= 2,False,False
+CHD,22370699264,30.227564,5.1437144,14.19,17.04,2.6723,55.851,18.07,0.2,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2,False,False
+CIEN,55495348224,87.74439,18.166372,5.44,22.4,0.5679,107.496,18.08,0.57,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+CI,71484973056,11.183547,1.6738335,9.05,16.76,0.7509,74.29,3.98,1.44,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,False,False,0,2,ROCE > 15%; Operating margin > 15%,False,False
+CINF,24855769088,7.646364,1.4901956,,21.48,,5.255,37.2,1.73,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,1,PE 10-25,False,False
+CTAS,77114769408,37.996063,14.816918,33.3,41.38,3.1404,52.096,24.1,14.46,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+CSCO,442358235136,33.693695,8.804833,19.84,27.32,0.9812,62.017,27.72,0.06,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+C,215550623744,13.846983,1.1199428,,8.53,0.6001,,36.23,0.27,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+CFG,27094304768,14.01525,1.1295675,,8.27,,,35.13,0.71,NOT AVAILABLE - manual check only,True,True,True,,False,,,True,False,3,1,ROE > 15%,False,False
+CLX,9724062720,16.717257,108.07796,18.34,163.76,1.0911,2221.429,12.88,0.81,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+CME,94619688960,22.318916,3.5648098,14.44,15.8,4.7092,14.587,65.04,0.44,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; PEG <= 2,False,False
+CMS,19987408896,19.141142,2.0930614,5.62,9.16,2.2767,185.604,17.17,0.55,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+KO,368513318912,25.720722,10.195215,21.13,42.05,4.025,115.519,34.87,9.9,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+CTSH,26355490816,12.555794,1.828666,20.64,14.92,0.8549,14.479,17.48,0.13,NOT AVAILABLE - manual check only,True,True,True,True,False,True,True,True,False,0,1,ROE > 15%,False,False
+COHR,66003300352,82.00487,6.0509877,6.72,7.98,,31.612,11.83,4.45,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,False,False,1,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+COIN,48282157056,,3.6906323,7.67,-7.85,2.3685,50.982,-13.92,1.32,NOT AVAILABLE - manual check only,True,,False,False,False,False,True,False,False,1,5,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+CL,67169783808,33.17323,284.66217,35.1,267.37,1.566,1388.163,20.97,0.15,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+CMCSA,76544090112,6.9134617,0.8521986,12.62,11.49,,100.474,17.23,0.74,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+FIX,60816150528,42.551342,18.87504,42.67,55.29,0.5431,11.498,17.06,1.08,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+COP,152269520896,16.788078,2.3300917,12.63,14.18,1.0836,35.639,31.51,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ED,38236581888,17.032948,1.4873904,5.63,8.96,2.0608,110.113,16.54,0.2,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+STZ,19278688256,10.749524,2.344279,14.26,23.69,1.495,123.205,35.93,12.56,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,2,ROCE > 15%; Debt/Equity,False,False
+CEG,91230609408,25.194715,2.8610318,8.16,15.06,,76.419,8.66,0.34,NOT AVAILABLE - manual check only,True,False,False,False,True,,True,False,False,1,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+COO,10821737472,19.5567,1.2990185,5.91,6.84,0.5198,33.634,20.82,0.63,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+CPRT,25214713856,17.56129,2.7716117,18.04,16.16,2.833,0.97,32.01,9.01,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+GLW,141431357440,75.66359,11.843757,9.42,16.81,0.9548,71.448,15.65,8.07,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+CPAY,25909278720,23.98784,7.3145866,16.06,29.22,0.7512,275.291,46.92,3.78,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+CTVA,7952976896,7.2242427,0.31602108,6.08,,1.0455,,0.0,0.11,NOT AVAILABLE - manual check only,True,False,True,False,,True,,False,False,2,3,PE 10-25; ROCE > 15%; Operating margin > 15%,False,False
+CSGP,11094309888,152.1111,1.3972952,-0.74,0.89,0.1054,14.537,8.22,0.75,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+COST,408092835840,44.454372,11.398273,27.44,28.4,4.4343,23.953,3.97,0.08,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Operating margin > 15%,False,False
+CRH,54513410048,14.477033,2.2701833,11.33,15.81,1.5259,77.592,19.02,0.14,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,1,ROCE > 15%,False,False
+CRWD,276503363584,9001.334,54.192257,-1.43,1.46,8.3997,15.958,-2.26,1.41,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+CCI,29034280960,27.118368,-8.65555,7.62,,0.5527,,46.83,0.1,NOT AVAILABLE - manual check only,True,False,True,False,,True,,True,False,2,2,PE 10-25; ROCE > 15%,False,False
+CSX,87862886400,27.57558,6.2391477,11.38,24.36,1.7231,138.068,38.42,0.22,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+CMI,72730902528,27.024042,5.6613197,17.6,21.11,1.0562,59.586,11.9,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,False,False,0,3,PE 10-25; Price/Book <= 2.5; Operating margin > 15%,False,False
+CVS,110579777536,22.812664,1.3863544,3.19,6.21,0.2113,95.503,3.86,0.06,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+DHR,150481190912,38.15686,2.861535,5.87,7.61,1.3236,52.97,19.78,10.96,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+DRI,22745821184,19.449514,10.352437,16.08,55.43,1.9045,415.302,9.85,0.3,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+DDOG,99542777856,554.44,22.786453,2.73,4.7,1.2748,29.259,0.67,0.56,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+DVA,11400422400,15.156065,-14.936889,13.44,88.48,0.4481,1241.986,16.06,46.91,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,2,ROCE > 15%; Debt/Equity,False,False
+DECK,10774709248,11.319028,4.700012,46.08,42.56,0.9765,20.521,15.23,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+DE,185232654336,38.166668,6.617796,12.82,18.24,1.5909,230.298,13.37,0.17,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+DELL,357657378816,32.68565,-252.25113,23.21,,0.6458,,12.02,7.7,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,2,PE 10-25; Operating margin > 15%,False,False
+DAL,55299518464,13.945272,2.5212123,12.78,20.12,,96.649,7.92,9.18,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+DVN,52415000576,10.358696,1.3124914,14.4,11.52,2.9248,28.488,41.08,0.77,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,3,ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+DXCM,32211515392,33.739132,12.289087,26.37,38.49,1.3487,53.346,24.33,0.26,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+FANG,51722452992,35.3174,1.3673817,3.22,3.49,22.2883,28.678,48.47,23.88,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+DLR,67431858176,87.097565,2.4740882,3.99,2.91,11.7208,67.944,25.88,0.01,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+DG,26240161792,15.4467535,2.824977,9.15,19.69,1.6026,169.811,6.81,0.28,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+DLTR,21044615168,13.728274,6.145417,16.75,46.03,1.4117,223.945,6.21,0.16,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+D,53923737600,21.214533,1.931632,5.34,8.28,2.3776,160.459,29.22,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+DPZ,9845620736,16.86204,-2.4713106,82.25,,1.354,,19.08,0.48,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+DASH,81958305792,99.03141,8.260185,5.37,8.89,1.0488,33.276,3.86,0.59,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+DOV,25547491328,22.717365,3.3161428,13.61,14.91,1.4696,42.316,18.69,1.26,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+DOW,20203870208,,1.2739115,-3.34,-5.54,38.8911,111.913,11.59,0.2,NOT AVAILABLE - manual check only,True,,True,False,False,False,False,False,False,1,5,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+DHI,37759672320,13.068732,1.5910805,13.2,12.63,1.1788,29.451,12.99,10.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+DTE,25896558592,19.691454,2.131577,5.36,11.03,1.6757,229.06,13.62,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,4,ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+DUK,88987410432,17.188253,1.6553534,5.35,9.86,2.1261,162.155,27.5,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+DD,17552885760,55.54701,1.2747761,2.66,1.79,,22.902,14.24,0.16,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+ETN,169385115648,44.455654,8.363089,16.23,19.68,2.6662,105.059,16.56,0.07,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+EBAY,47347998720,22.35294,10.149767,19.68,46.61,1.5617,153.012,21.57,10.03,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+ECHO,27409393664,,1.9339284,-56.67,-33.43,,123.757,14.28,13.5,NOT AVAILABLE - manual check only,True,,True,False,False,,False,False,False,2,4,ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+ECL,76725944320,36.347942,7.6303325,14.89,21.96,2.4937,138.023,18.52,0.15,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+EIX,20737626112,5.5614038,1.1886014,9.02,19.73,2.3775,228.042,26.9,0.26,NOT AVAILABLE - manual check only,True,False,True,False,True,False,False,True,False,0,4,PE 10-25; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+EW,49080459264,50.684525,4.6239476,10.88,9.18,1.8519,6.568,29.84,0.19,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+ELV,83804798976,17.09111,1.8669379,,11.13,1.3035,68.953,4.56,0.19,NOT AVAILABLE - manual check only,True,True,True,,False,True,True,False,False,1,2,ROE > 15%; Operating margin > 15%,False,False
+EME,34697289728,24.51262,8.531654,39.17,40.35,0.3108,13.432,10.62,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,2,Price/Book <= 2.5; Operating margin > 15%,False,False
+EMR,90146062336,35.363235,4.4234295,10.32,12.8,1.7818,67.677,26.92,0.25,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+ETR,48212525056,25.808184,2.5831308,5.63,10.25,1.524,186.77,24.46,0.22,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+EOG,74157940736,11.002335,2.3316183,14.0,22.51,1.3513,25.891,40.72,0.27,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,1,ROCE > 15%,False,False
+EQT,31382138880,11.640371,1.2424159,8.69,11.08,1.4894,19.595,23.37,0.9,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+EFX,16447885312,24.647888,3.7586918,11.62,14.27,1.3382,120.956,17.3,0.64,NOT AVAILABLE - manual check only,True,True,False,False,False,True,False,True,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+EQIX,101209522176,65.79346,7.037192,5.61,10.73,2.9822,162.217,27.02,0.27,NOT AVAILABLE - manual check only,True,False,False,False,False,False,False,True,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+ERIE,11560766464,20.080835,4.6859965,,24.81,,2.56,19.1,45.46,NOT AVAILABLE - manual check only,True,True,False,,True,,True,True,False,2,1,Price/Book <= 2.5,False,False
+ESS,18518820864,41.845795,3.2435467,7.55,7.71,,122.409,33.98,0.73,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,True,False,1,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+EL,33322827776,183.94,8.742395,6.29,4.75,2.1211,242.932,7.0,0.29,NOT AVAILABLE - manual check only,True,False,False,False,False,False,False,False,False,0,7,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+EG,14120478720,7.782544,0.9236584,,12.57,,23.26,19.13,0.83,NOT AVAILABLE - manual check only,True,False,True,,False,,True,True,False,2,2,PE 10-25; ROE > 15%,False,False
+EVRG,18254002176,20.145037,1.7855209,4.98,9.25,,160.554,25.24,0.19,NOT AVAILABLE - manual check only,True,True,True,False,False,,False,True,False,1,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+P,46698467328,191.9726,30.313648,8.24,17.71,2.2378,14.622,5.33,4.65,NOT AVAILABLE - manual check only,True,False,False,False,True,False,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Operating margin > 15%,False,False
+ES,24295522304,16.753246,1.4865519,5.51,9.02,2.2694,180.7,23.92,0.17,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+EXC,41962242048,14.974264,1.4157108,5.1,9.71,2.2467,177.362,16.59,0.07,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+EXE,19798204416,7.372413,1.0325385,9.91,14.89,0.8198,19.207,26.32,0.36,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+EXPE,31805851648,16.666668,26.30273,24.25,89.49,0.6802,230.271,18.98,0.62,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+EXPD,25019295744,28.016012,11.811599,37.31,42.67,2.9782,26.745,10.71,0.63,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Operating margin > 15%,False,False
+EXR,29408614400,29.41501,2.1234384,6.15,6.95,5.3155,101.674,45.88,0.94,NOT AVAILABLE - manual check only,True,False,True,False,False,False,False,True,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+XOM,674394669056,21.108107,2.6000316,11.12,12.58,1.3811,15.921,15.86,0.08,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+FFIV,25711007744,36.207336,6.691722,16.81,19.83,1.6292,6.546,24.65,0.5,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+FDS,9460434944,18.244171,4.682769,20.55,25.47,1.2237,77.049,24.68,0.44,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+FICO,14281437184,19.155561,-3.4856017,91.89,,0.7021,,53.79,3.02,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+FAST,58235502592,43.37607,14.311901,38.3,34.33,3.3899,10.851,21.02,0.09,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+FRT,9326662656,21.553537,2.892504,6.92,12.55,,134.114,35.03,1.03,NOT AVAILABLE - manual check only,True,True,False,False,False,,False,True,False,1,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+FDX,68719624192,15.65283,2.201982,8.45,14.85,1.2323,135.697,11.13,6.25,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,False,False,0,4,ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+FDXF,16879100928,25.773972,-33.962093,15.97,69.09,,,-5.77,20.08,NOT AVAILABLE - manual check only,True,False,True,True,True,,,False,False,2,2,PE 10-25; Operating margin > 15%,False,False
+FERG,43203796992,21.9813,6.967305,,,1.3805,111.063,10.16,0.17,NOT AVAILABLE - manual check only,True,True,False,False,,True,False,False,False,1,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+FIS,16729499648,5.084639,1.0437244,6.06,22.35,0.1819,132.51,20.67,0.13,NOT AVAILABLE - manual check only,True,False,True,False,True,True,False,True,False,0,3,PE 10-25; ROCE > 15%; Debt/Equity,False,False
+FITB,46133620736,17.127945,1.4277694,,8.44,1.6918,,39.08,0.35,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+FSLR,18765299712,10.765105,1.8182671,14.68,18.51,0.3571,1.88,42.64,5.36,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,1,ROCE > 15%,False,False
+FE,25078255616,23.17647,1.9388028,5.12,9.49,1.4457,200.908,19.3,0.14,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+FISV,23589171200,8.498085,0.8755206,10.3,,1.3563,,,,NOT AVAILABLE - manual check only,True,False,True,False,,True,,,,4,2,PE 10-25; ROCE > 15%,,False
+FLEX,43076079616,45.023167,7.8314304,13.52,18.38,,107.818,4.97,0.62,NOT AVAILABLE - manual check only,True,False,False,False,True,,False,False,False,1,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+F,48249909248,,1.350748,-6.02,-18.25,8.4768,456.708,1.88,0.4,NOT AVAILABLE - manual check only,True,,True,False,False,False,False,False,False,1,5,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+FTNT,132765483008,64.166664,85.59602,42.99,117.44,1.9161,36.194,33.6,17.36,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+FTV,17356920832,30.407408,2.8694828,7.61,7.32,,59.283,19.14,0.41,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+FOXA,26261833728,16.21875,2.2473207,13.52,14.29,1.1458,64.06,25.21,1.39,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+FOX,23567339520,14.5546875,2.0167432,13.52,14.29,1.0209,64.06,25.21,39.87,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+BEN,16670003200,22.319729,1.4185655,2.89,7.89,0.4069,24.805,12.98,48.5,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+FCX,103450705920,35.31373,5.144612,12.93,14.75,4.5363,32.149,33.4,0.72,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+GRMN,54222422016,28.985567,6.007179,20.23,21.89,3.0267,2.513,30.44,14.69,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+IT,11669931008,16.618706,-71.13164,27.24,113.58,0.7091,,22.62,2.67,NOT AVAILABLE - manual check only,True,True,True,True,True,True,,True,False,1,0,,False,True
+GE,321187840000,36.50472,18.208342,11.89,48.23,4.0588,113.225,20.57,0.3,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+GEHC,29038909440,14.813364,2.6458967,11.54,19.38,1.6484,93.965,14.98,0.37,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+GEV,263324024832,28.329512,22.022497,6.3,82.58,1.8622,28.364,7.47,0.13,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+GEN,13162928128,12.859649,4.9594045,16.15,41.94,1.3749,307.831,35.55,9.73,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+GNRC,12805061632,47.85872,4.445447,6.19,9.49,0.5635,49.003,17.93,1.69,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+GD,89308217344,20.115173,3.3241692,13.61,17.8,2.122,35.335,10.38,0.56,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Operating margin > 15%,False,False
+GIS,17115334656,,2.318557,4.2,-10.49,,182.422,15.24,0.29,NOT AVAILABLE - manual check only,True,,True,False,False,,False,True,False,2,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+GM,70791413760,34.941963,1.1071347,2.05,3.16,0.2941,202.341,3.2,0.17,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,False,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+GPC,17541275648,508.96,3.875605,1.96,0.71,,146.415,6.56,0.51,NOT AVAILABLE - manual check only,True,False,False,False,False,,False,False,False,1,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+GILD,179471122432,,15.184643,22.92,-20.68,2.2696,223.465,33.68,0.11,NOT AVAILABLE - manual check only,True,,False,True,False,False,False,True,False,1,4,Price/Book <= 2.5; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+GPN,20740788224,37.14692,0.9014998,4.16,2.43,0.2075,98.273,16.11,0.93,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+GL,12732416000,11.015957,2.0738516,,20.94,,55.675,24.64,0.7,NOT AVAILABLE - manual check only,True,True,True,,True,,True,True,False,2,0,,False,True
+GDDY,12311422976,14.444279,1834.151,23.24,442.86,0.5258,57334.33,27.06,0.97,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+GS,262799654912,13.928394,2.492922,,16.9,1.1741,725.381,42.18,0.55,NOT AVAILABLE - manual check only,True,True,True,,True,True,False,True,False,1,1,Debt/Equity,False,False
+HAL,26535202816,16.675394,2.412696,10.93,14.92,0.684,74.186,12.79,0.4,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+HIG,34143416320,8.681129,1.7740778,,22.06,,22.33,17.61,0.34,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,1,PE 10-25,False,False
+HAS,12629121024,16.017889,17.936699,1.67,159.56,1.5757,531.042,22.16,0.58,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+HCA,92379029504,14.304056,-14.002232,27.23,,1.34,,15.16,16.61,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+DOC,13817381888,55.685715,1.7129548,3.18,3.04,,108.653,15.99,0.3,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+HSIC,9459581952,24.746355,3.0089686,8.55,8.85,1.7438,80.733,5.76,0.83,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+HSY,32186281984,21.883879,7.054032,13.41,32.81,0.8461,129.821,23.12,0.31,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+HPE,92033138688,35.737114,3.472751,3.21,10.94,0.498,76.464,12.56,0.37,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+HLT,71876730880,46.964703,-11.435528,21.95,,1.2704,,62.99,2.19,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,1,PE 10-25,False,False
+HD,282196508672,19.765898,16.98799,28.92,104.3,2.504,380.261,12.86,0.07,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,4,Price/Book <= 2.5; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+HONA,49010401280,47.143295,-8.602982,28.57,,1.0445,,14.68,0.08,NOT AVAILABLE - manual check only,True,False,True,True,,True,,False,False,2,2,PE 10-25; Operating margin > 15%,False,False
+HON,67821993984,8.230385,3.658762,13.57,46.58,3.4743,185.369,20.25,0.08,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+HRL,11144603648,32.66129,1.4208533,6.17,4.29,1.4015,36.326,8.62,0.46,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+HST,15673028608,15.140939,2.4190433,9.06,15.56,3.3561,85.298,18.21,1.47,NOT AVAILABLE - manual check only,True,True,True,False,True,False,True,True,False,0,2,ROCE > 15%; PEG <= 2,False,False
+HWM,92230803456,49.735485,16.13887,21.16,34.73,,81.368,28.5,0.87,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+HPQ,28965525504,12.259542,-314.90195,25.76,,3.4205,,5.4,0.31,NOT AVAILABLE - manual check only,True,True,True,True,,False,,False,False,2,2,PEG <= 2; Operating margin > 15%,False,False
+HUBB,25122945024,28.170616,6.422214,17.61,24.44,1.9473,141.642,21.67,0.35,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+HUM,46634385408,36.916348,2.4272346,,6.89,1.2545,76.485,3.46,0.21,NOT AVAILABLE - manual check only,True,False,True,,False,True,True,False,False,1,3,PE 10-25; ROE > 15%; Operating margin > 15%,False,False
+HBAN,30972958720,11.702291,1.0413694,,9.0,1.6313,,41.93,0.81,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+HII,10581711872,16.003576,1.9920183,9.09,12.97,0.831,55.252,7.08,0.48,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+IBM,209756798976,19.7551,6.088383,10.83,34.46,2.1883,188.97,16.55,0.1,NOT AVAILABLE - manual check only,True,True,False,False,True,False,False,True,False,0,4,Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+IEX,17175998464,33.095173,4.3017244,10.97,12.96,1.715,47.06,22.17,0.22,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+IDXX,40839344128,36.403793,25.355345,61.9,74.21,2.8525,67.971,34.98,0.22,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+ITW,74879623168,23.815218,25.872862,38.63,104.62,2.5119,334.853,26.9,0.37,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+ILMN,41229041664,49.463768,14.527268,23.46,32.34,3.0533,89.042,21.14,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+INCY,23371051008,14.687899,3.652433,30.63,30.67,10.8221,0.603,41.9,1.85,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+IR,29515116544,31.433884,2.9000037,7.33,9.47,0.6181,47.903,16.88,0.21,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+PODD,9133254656,24.707317,6.42171,15.89,26.02,,66.685,16.18,0.33,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,True,False,1,1,Price/Book <= 2.5,False,False
+INTC,630790946816,,6.874244,1.47,-10.71,,48.997,12.19,13.99,NOT AVAILABLE - manual check only,True,,False,False,False,,True,False,False,2,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+IBKR,150446915584,35.039684,6.738915,19.56,24.02,1.4786,205.748,76.53,2.67,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+ICE,84293378048,21.177713,2.850444,9.76,14.09,2.1595,69.226,52.63,0.81,NOT AVAILABLE - manual check only,True,True,False,False,False,False,True,True,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+IFF,21029459968,,1.5055805,-0.85,-5.55,1.7672,44.821,8.49,0.11,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+IP,16930349056,,1.1711051,-9.37,-16.48,,68.509,2.3,0.24,NOT AVAILABLE - manual check only,True,,True,False,False,,True,False,False,2,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+INTU,75114692608,17.066181,3.972076,23.56,23.6,0.9278,44.34,17.64,2.41,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+ISRG,140427083776,45.051727,7.6346955,15.96,17.42,1.8715,,33.6,0.51,NOT AVAILABLE - manual check only,True,False,False,True,True,True,,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+IVZ,13536382976,,1.3588618,-1.13,-0.57,0.9008,12.056,19.95,0.6,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+INVH,15379829760,24.11111,1.6985193,5.15,7.05,,94.425,25.11,0.34,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+IQV,42501365760,32.155666,6.8872523,10.74,22.82,0.9741,257.975,13.03,1.09,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+IRM,33756522496,80.41844,-26.351383,5.72,,,,19.06,0.88,NOT AVAILABLE - manual check only,True,False,True,False,,,,True,False,3,2,PE 10-25; ROCE > 15%,False,False
+JBHT,21994876928,33.361824,6.0142264,14.51,18.45,1.6899,38.373,7.42,20.44,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+JBL,31898236928,31.253595,19.778442,21.52,66.37,,248.609,5.85,1.19,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,False,False,1,4,PE 10-25; Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+JKHY,9993850880,20.628075,4.867504,25.42,24.04,1.8075,3.793,22.5,0.61,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+J,16158350336,45.867107,4.9537134,8.72,8.0,0.4278,124.734,7.39,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+JNJ,617006301184,29.667439,7.2562633,23.13,25.74,2.8229,57.709,29.19,0.05,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+JCI,94641045504,44.01127,7.019814,8.13,14.33,1.6737,70.107,15.88,0.17,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+JPM,883527974912,14.246893,2.4989662,,17.79,1.5696,,50.39,0.39,NOT AVAILABLE - manual check only,True,True,True,,True,True,,True,False,2,0,,False,True
+KVUE,33037305856,20.235294,3.129549,11.49,15.58,1.4024,81.617,19.42,0.07,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,2,Price/Book <= 2.5; ROCE > 15%,False,False
+KDP,41328287744,30.676767,1.6509922,7.3,5.1,0.9807,99.649,12.89,4.71,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+KEY,21427941376,11.74269,1.2444224,,10.33,1.337,,34.71,0.3,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+KEYS,65482944512,52.048717,9.968641,12.46,20.9,0.7007,42.094,25.68,0.58,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+KMB,31382159360,18.648222,17.932344,23.14,104.91,2.0208,348.933,19.0,0.71,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+KIM,14918355968,25.860464,1.4520762,4.25,5.81,,84.993,36.56,2.21,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,True,False,1,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+KMI,69186740224,20.045162,2.1854117,6.9,10.99,3.1918,98.619,30.06,12.7,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,3,ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+KKR,83390988288,28.846645,2.8437796,2.89,7.28,0.4147,69.812,20.65,23.05,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+KLAC,269992787968,56.52732,42.587486,43.16,87.5,1.8006,96.88,42.49,0.11,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+KHC,26313428992,,0.73092,-6.16,-8.76,,52.591,15.49,27.78,NOT AVAILABLE - manual check only,True,,True,False,False,,True,True,False,2,2,ROCE > 15%; ROE > 15%,False,False
+KR,34862448640,31.908108,6.024084,5.77,14.44,0.5735,413.24,2.98,6.89,NOT AVAILABLE - manual check only,True,False,False,False,False,True,False,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+LHX,44058382336,23.923155,2.2152936,7.45,9.34,1.1901,52.753,12.57,0.45,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+LH,25018537984,25.182856,2.899669,8.55,11.73,1.214,79.124,12.24,0.35,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+LRCX,434857443328,59.197613,34.86405,47.86,65.07,1.4467,33.049,37.39,0.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+LVS,23466213376,14.042636,40.39019,16.72,122.87,0.8432,1703.902,19.66,61.71,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,True,0,2,Price/Book <= 2.5; Debt/Equity,True,False
+LDOS,14775452672,10.9934635,2.796276,19.8,27.78,,123.276,11.72,0.55,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+LEN,19225839616,15.557504,0.880157,8.43,5.96,11.3018,28.201,5.69,10.6,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,False,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+LII,12313968640,15.821491,9.492221,36.1,71.76,0.9442,156.082,22.86,9.6,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+LLY,1019126611968,38.3121,30.073418,38.44,102.29,1.1368,162.071,54.22,0.16,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+LIN,221030776832,30.954165,5.6557126,13.07,18.4,1.7997,68.947,28.12,0.25,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+LYV,39316578304,,472.74512,11.33,17.68,4.4087,620.214,6.7,32.41,NOT AVAILABLE - manual check only,True,,False,False,True,False,False,False,False,1,5,Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+LMT,116643954688,18.62233,13.257698,19.29,89.17,1.0155,234.238,11.96,0.11,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+L,21675470848,13.009816,1.1337924,,9.31,,44.609,14.53,20.07,NOT AVAILABLE - manual check only,True,True,True,,False,,True,False,False,2,2,ROE > 15%; Operating margin > 15%,False,False
+LOW,101438570496,15.296109,-13.638079,29.62,,1.3123,,13.36,0.11,NOT AVAILABLE - manual check only,True,True,True,True,,True,,False,False,2,1,Operating margin > 15%,False,False
+LULU,10457668608,7.7744856,2.2018647,33.65,30.9,1.1303,44.689,13.21,4.54,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,False,False,0,2,PE 10-25; Operating margin > 15%,False,False
+LITE,97362173952,,20.70859,-148.15,-240.03,,35.987,27.95,0.6,NOT AVAILABLE - manual check only,True,,False,False,False,,True,True,False,2,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+LYB,18923563008,,1.7731636,-0.82,-2.27,1.5257,132.759,17.92,20.12,NOT AVAILABLE - manual check only,True,,True,False,False,True,False,True,False,1,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+MTB,31647377408,11.600847,1.2449014,,10.74,1.3627,,45.11,0.32,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+MPC,118600720384,14.638821,6.265094,13.11,42.1,0.8956,133.328,13.56,0.33,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+MAR,93604667392,37.15942,-20.76834,21.96,,1.759,,65.28,18.08,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,1,PE 10-25,False,False
+MRSH,81154547712,20.969175,5.3530173,17.26,25.9,1.4978,145.027,26.32,0.08,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+MLM,34250518528,31.356956,2.5082955,8.17,8.89,1.8321,54.945,20.18,16.15,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+MRVL,244708294656,90.162254,13.088348,17.04,16.52,1.3866,28.525,16.68,0.49,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+MAS,13479732224,15.751152,-36.93139,34.07,5862.5,1.5627,,23.64,0.23,NOT AVAILABLE - manual check only,True,True,True,True,True,True,,True,False,1,0,,False,True
+MA,483785244672,30.394056,86.3446,61.47,241.2,1.462,439.583,61.11,0.11,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+MKC,12019109888,7.432612,1.7162286,10.94,22.62,1.9027,66.141,17.76,0.01,NOT AVAILABLE - manual check only,True,False,True,False,True,True,True,True,False,0,2,PE 10-25; ROCE > 15%,False,False
+MCD,164095000576,18.83753,-160.36653,22.63,,2.0568,,46.48,0.26,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,1,PEG <= 2,False,False
+MCK,105197150208,24.215782,-24.684835,42.13,,1.6613,,1.35,0.06,NOT AVAILABLE - manual check only,True,True,True,True,,True,,False,False,2,1,Operating margin > 15%,False,False
+MDT,110491926528,21.275862,2.201213,8.42,10.65,1.6044,55.365,19.33,0.35,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+MRK,356012851200,114.52381,8.495232,20.66,6.96,2.7047,128.408,-0.24,0.06,NOT AVAILABLE - manual check only,True,False,False,True,False,False,False,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+META,1854788337664,27.402334,7.1018343,26.87,29.85,0.9846,42.997,34.83,0.15,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+MET,60008087552,18.090038,2.1946175,,13.09,0.5068,179.933,5.52,16.35,NOT AVAILABLE - manual check only,True,True,True,,False,True,False,False,False,1,3,ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+MTD,29778132992,33.55588,2322.1719,44.44,,2.7682,16668.447,31.2,0.44,NOT AVAILABLE - manual check only,True,False,False,True,,False,False,True,False,1,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+MGM,7798345216,18.472727,3.0504403,1.85,18.92,0.4837,893.311,6.79,27.88,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+MCHP,44157468672,119.588234,6.8451176,3.69,7.19,0.226,83.688,23.96,1.79,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+MU,1213973397504,14.451332,12.048311,14.2,88.26,0.1598,3.743,80.68,0.24,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,2,Price/Book <= 2.5; ROCE > 15%,False,False
+MSFT,3842942959616,28.815704,8.688492,28.66,34.04,1.6173,29.118,45.11,0.09,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+MAA,13712956416,33.704678,2.4609833,6.06,7.05,,102.377,25.36,0.46,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+MRNA,75858812928,,11.213337,-26.64,-39.0,,19.036,-557.93,7.34,NOT AVAILABLE - manual check only,True,,False,False,False,,True,False,False,2,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+MDLZ,74268368896,21.315018,2.7971928,7.28,13.34,0.9044,82.643,21.98,0.24,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+MPWR,70752649216,87.73492,18.162586,19.05,21.98,1.0364,0.486,30.99,3.59,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+MNST,84121681920,39.75926,8.983263,28.33,25.7,2.2582,0.992,29.18,28.3,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+MCO,76435161088,28.005075,25.26822,26.55,76.93,1.6411,240.682,49.47,14.38,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+MS,298894458880,15.359967,2.8068907,,17.97,1.7595,517.282,41.57,24.33,NOT AVAILABLE - manual check only,True,True,False,,True,True,False,True,False,1,2,Price/Book <= 2.5; Debt/Equity,False,False
+MOS,6698061312,,0.5842715,7.1,-5.07,2.0198,52.249,-0.12,0.34,NOT AVAILABLE - manual check only,True,,True,False,False,False,True,False,False,1,4,ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+MSI,74043580416,35.201416,27.711985,23.83,91.57,2.0244,357.85,27.35,0.4,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+MSCI,38963564544,29.318928,-14.487485,44.0,,1.866,,56.3,3.6,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,1,PE 10-25,False,False
+NDAQ,50492424192,26.335278,4.234682,10.82,16.52,1.7643,77.687,49.33,11.0,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+NTAP,44443729920,31.95904,29.663084,26.13,114.82,2.1387,169.498,26.67,0.35,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+NFLX,279233789952,21.088049,9.261151,30.26,49.54,1.2194,55.236,33.38,0.57,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+NEM,121764675584,14.57251,3.4723558,22.51,25.91,,15.807,51.57,0.31,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,True,False,1,1,Price/Book <= 2.5,False,False
+NWSA,15471404032,27.85437,1.8286698,8.93,7.98,2.5251,31.561,12.54,0.04,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+NWS,17067616256,30.728155,2.0173368,8.93,7.98,2.8049,31.561,12.54,35.35,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+NEE,160265715712,17.26517,2.8052433,4.79,11.68,1.5549,161.676,31.52,0.12,NOT AVAILABLE - manual check only,True,True,False,False,False,True,False,True,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+NKE,50246103040,16.128572,3.3788905,14.68,21.56,1.3992,73.095,7.92,1.96,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+NI,18909054976,20.973404,1.9746594,5.8,8.55,2.0194,146.649,17.16,0.35,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+NDSN,18577967104,33.793316,5.682984,13.6,17.76,1.8315,55.619,27.4,0.3,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+NSC,71299678208,27.460207,4.3868327,10.75,16.98,3.7182,105.519,35.3,0.05,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+NTRS,31358597120,14.725085,2.505335,,17.07,0.9845,,42.5,0.86,NOT AVAILABLE - manual check only,True,True,False,,True,True,,True,False,2,1,Price/Book <= 2.5,False,False
+NOC,67906125824,15.198728,3.797026,15.29,26.96,3.4068,95.348,11.6,0.27,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,False,False,0,3,Price/Book <= 2.5; PEG <= 2; Operating margin > 15%,False,False
+NCLH,6952103936,9.175758,2.7021239,8.09,36.73,1.1845,621.051,14.04,0.85,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+NRG,20018343936,24.79948,4.762929,8.88,23.77,0.3865,483.357,12.77,4.46,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+NUE,54538645504,19.200478,2.4668036,8.8,14.55,,30.512,15.67,1.18,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+NVDA,5649190617088,29.576487,24.670464,81.14,117.21,0.4791,16.971,66.24,4.01,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+NVR,16052447232,15.576129,4.7335663,36.41,31.54,,32.15,13.89,5.55,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,False,False,1,2,Price/Book <= 2.5; Operating margin > 15%,False,False
+NXPI,61442322432,20.790102,5.392259,13.8,27.92,0.4684,93.325,30.41,0.14,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,True,False,0,2,Price/Book <= 2.5; ROCE > 15%,False,False
+ORLY,68680769536,26.952381,-37.75011,44.77,,1.6087,,20.15,0.5,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,1,PE 10-25,False,False
+OXY,58058940416,17.132744,1.7353371,5.53,10.63,1.1262,34.511,45.44,26.81,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ODFL,37534113792,34.70769,8.234328,27.31,24.82,2.1649,0.44,28.84,8.24,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+OMC,20342753280,200.40541,2.1054575,2.18,6.05,,107.744,15.38,0.93,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+ON,33049257984,55.48366,4.578008,1.8,8.31,0.1645,65.055,19.53,0.31,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+OKE,55400361984,15.177893,2.415148,10.41,16.28,1.7103,143.07,13.25,0.15,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,False,False,0,3,ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+ORCL,431382593536,22.304075,6.9611588,10.98,41.19,0.8072,251.716,35.63,38.4,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+OTIS,24381872128,16.465296,-4.242003,74.04,,2.2203,,15.13,0.14,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,1,PEG <= 2,False,False
+PCAR,57731710976,23.090527,2.8409357,8.93,12.76,0.8317,72.91,12.02,1.86,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+PKG,20362524672,29.68052,4.3414006,11.4,14.89,1.5303,94.474,13.12,1.58,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+PLTR,453577277440,161.3248,46.398724,18.3,38.1,1.8461,2.139,47.12,3.45,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+PANW,329850322944,1008.1,11.953872,1.39,1.74,2.0083,9.337,5.4,0.75,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+PSKY,10658484224,316.6667,0.9047619,-16.24,-0.9,0.7634,126.479,9.35,50.8,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,False,True,0,5,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity; Operating margin > 15%,True,False
+PH,122650632192,34.12456,7.961476,20.03,25.08,3.2312,56.66,23.46,0.18,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+PAYX,35220709376,19.630953,9.41927,27.65,47.05,1.8455,124.704,38.5,10.18,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+PYPL,45168332800,10.038022,2.296351,19.96,24.5,0.9268,71.751,16.97,0.71,NOT AVAILABLE - manual check only,True,True,True,True,True,True,True,True,False,0,0,,False,True
+PNR,8463587840,13.667525,2.2579408,13.98,17.13,0.883,47.067,23.44,0.96,NOT AVAILABLE - manual check only,True,True,True,False,True,True,True,True,False,0,1,ROCE > 15%,False,False
+PEP,171965743104,16.499344,7.7820363,15.23,51.51,1.376,238.949,16.84,0.18,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+PFE,158450925568,36.578945,1.8597806,5.95,5.01,12.8897,74.253,27.88,0.1,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+PCG,36989161472,8.863309,0.8394658,4.35,9.32,0.5184,189.45,24.79,0.2,NOT AVAILABLE - manual check only,True,False,True,False,False,True,False,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+PM,292177674240,25.714678,-34.040314,35.35,,2.292,,40.0,0.16,NOT AVAILABLE - manual check only,True,False,True,True,,False,,True,False,2,2,PE 10-25; PEG <= 2,False,False
+PSX,106079379456,15.101597,3.3508952,10.78,23.45,0.8205,62.884,8.53,0.21,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+PNW,11625238528,18.410748,1.652454,4.32,9.37,3.5788,233.288,21.34,0.15,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+PNC,88178524160,12.1645565,1.5189602,,12.62,1.5711,,38.69,0.3,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+PPG,23374845952,15.086083,2.7685626,13.29,19.3,1.5318,86.938,14.02,0.11,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+PPL,24683470848,19.408283,1.640246,5.6,8.63,1.1813,135.434,23.59,0.17,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+PFG,23971155968,15.948718,1.9790009,,12.95,,35.307,12.34,1.12,NOT AVAILABLE - manual check only,True,True,True,,False,,True,False,False,2,2,ROE > 15%; Operating margin > 15%,False,False
+PG,336578478080,21.889729,6.3149867,24.2,30.29,3.792,64.49,22.08,0.09,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+PGR,122063921152,10.547141,3.5589664,,34.94,63.4591,24.428,18.21,0.24,NOT AVAILABLE - manual check only,True,True,False,,True,False,True,True,False,1,2,Price/Book <= 2.5; PEG <= 2,False,False
+PLD,125312303104,28.71047,2.2413285,4.94,7.75,116.6137,63.823,43.03,0.26,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+PRU,38847000576,10.208523,1.2309912,,12.01,0.6834,163.891,7.52,0.18,NOT AVAILABLE - manual check only,True,True,True,,False,True,False,False,False,1,3,ROE > 15%; Debt/Equity; Operating margin > 15%,False,False
+PEG,33927450624,16.932837,1.9562031,6.43,11.83,3.2665,142.409,18.87,0.13,NOT AVAILABLE - manual check only,True,True,True,False,False,False,False,True,False,0,4,ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity,False,False
+PTC,15628156928,13.969932,4.595871,18.54,35.05,1.3113,46.335,28.23,0.35,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+PSA,53030547456,27.106972,10.297522,10.69,21.93,3.8787,109.632,45.7,9.56,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+PHM,22044985344,11.821246,1.66895,17.46,14.9,1.0218,19.065,15.69,0.67,NOT AVAILABLE - manual check only,True,True,True,True,False,True,True,True,False,0,1,ROE > 15%,False,False
+PWR,101716328448,77.49828,10.548834,10.18,15.34,1.4518,67.78,7.22,0.67,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+QCOM,197452333056,21.152174,7.0650053,32.51,33.75,0.8803,55.21,18.53,0.12,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+DGX,25753415680,24.509453,3.4149017,11.44,14.6,1.5271,81.074,15.25,0.43,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+Q,27506739200,46.95714,3.7916715,8.08,6.72,1.3166,59.992,22.32,0.07,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+RL,21650399232,22.882242,7.9574714,20.83,37.54,1.8574,110.373,18.39,2.54,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+RJF,30392141824,13.793374,2.3935673,,18.42,0.7824,47.594,19.3,10.55,NOT AVAILABLE - manual check only,True,True,True,,True,True,True,True,False,1,0,,False,True
+RDDT,28447748096,34.386044,8.654882,14.89,30.71,0.7581,0.635,28.79,0.65,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+RTX,248903958528,32.45694,3.7498477,9.41,12.27,2.2145,57.02,12.7,0.09,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+O,51218784256,39.51095,1.2950381,3.27,3.23,2.8516,74.722,46.97,0.12,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,True,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+REG,13386245120,24.189188,1.967195,5.98,8.19,,71.972,39.64,0.65,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+REGN,75692515328,18.180021,2.3257654,14.57,14.04,1.3196,8.535,33.11,2.08,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+RF,23087290368,11.01626,1.3227254,,11.87,1.4531,,39.31,0.27,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+RSG,64169992192,29.68272,5.329603,10.41,18.15,2.7439,118.798,20.43,0.18,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+RMD,30784524288,21.006718,4.7943316,25.21,24.27,1.2899,12.542,30.86,0.5,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+RVTY,16908687360,72.85097,2.3390396,3.33,3.21,0.7337,46.225,17.05,0.26,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,True,False,0,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+HOOD,101362540544,50.106667,10.691322,22.36,23.62,2.1423,240.279,43.88,0.96,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+ROK,50557321216,42.542133,14.440312,13.8,30.63,1.9085,103.347,20.97,0.16,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+ROL,14511345664,27.41818,10.151464,30.98,37.01,2.6402,78.015,18.8,38.49,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; PEG <= 2,False,False
+ROP,35042557952,14.769487,1.8738862,7.33,13.07,1.432,60.531,27.73,0.39,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ROST,73311305728,27.634823,10.83436,26.86,42.63,2.4926,70.281,13.58,2.14,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Operating margin > 15%,False,False
+RCL,74282139648,17.155033,7.256813,18.15,44.67,0.9494,224.816,27.07,6.2,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+SPGI,113872396288,23.52436,3.6148984,12.16,14.26,1.9431,42.98,44.79,0.11,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+CRM,193149878272,21.511457,5.03281,11.86,19.38,0.7791,110.417,21.38,2.98,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,False,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+SNDK,251839234048,23.309256,16.286087,77.34,91.64,,1.277,78.47,0.98,NOT AVAILABLE - manual check only,True,True,False,True,True,,True,True,False,1,1,Price/Book <= 2.5,False,False
+SBAC,16813905920,17.097088,-3.6315937,19.32,,10.7669,,52.16,0.77,NOT AVAILABLE - manual check only,True,True,True,True,,False,,True,False,2,1,PEG <= 2,False,False
+SLB,72337145856,23.775612,2.7743626,12.08,12.91,1.374,47.002,12.71,0.22,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+STX,193054392320,60.99066,88.85295,58.06,371.53,0.5262,179.88,43.07,0.32,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+SRE,51252707328,22.71884,1.5677254,3.04,6.68,0.6657,84.663,28.33,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+NOW,138930388992,86.14103,11.100282,14.65,14.24,1.0143,67.538,4.06,0.17,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+SHW,77563658240,29.50231,20.003132,20.04,65.12,2.1026,389.958,18.12,6.36,NOT AVAILABLE - manual check only,True,False,False,True,True,False,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+SPG,76285337600,14.181369,14.796406,17.44,120.51,,503.504,46.02,1.8,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,True,False,1,2,Price/Book <= 2.5; Debt/Equity,False,False
+SWKS,12794700800,44.056995,2.2301197,8.4,5.09,12.7368,11.869,8.82,0.4,NOT AVAILABLE - manual check only,True,False,True,False,False,False,True,False,False,0,5,PE 10-25; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+SJM,12518608896,54.00461,2.176877,2.33,3.93,,120.682,17.9,2.26,NOT AVAILABLE - manual check only,True,False,True,False,False,,False,True,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+SW,22313205760,45.25532,1.2354786,4.72,2.71,,78.427,5.47,0.51,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+SNA,19082135552,18.831036,3.1582282,18.5,17.93,1.8947,21.595,25.4,2.42,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+SOLV,14954153984,10.739608,3.1134818,18.46,33.96,,110.313,9.78,15.34,NOT AVAILABLE - manual check only,True,True,False,True,True,,False,False,False,1,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+SO,96308396032,20.173494,2.4338624,5.93,11.48,1.9727,182.058,29.61,0.1,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+LUV,20776673280,26.54375,2.9338217,3.73,11.1,0.1993,97.275,3.38,1.01,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+SWK,13793859584,22.332516,1.5396544,5.84,6.89,,58.172,8.44,0.32,NOT AVAILABLE - manual check only,True,True,True,False,False,,True,False,False,1,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+SBUX,107969396736,54.745663,-14.066538,13.98,,1.1143,,12.92,0.13,NOT AVAILABLE - manual check only,True,False,True,False,,True,,False,False,2,3,PE 10-25; ROCE > 15%; Operating margin > 15%,False,False
+STT,48336523264,15.530451,2.0223427,,12.44,0.6722,,34.31,0.36,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+STLD,33250684928,21.051723,3.5369182,10.93,17.57,,46.924,11.5,6.57,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+STE,20332673024,25.525091,2.8213487,11.55,11.39,1.7414,28.312,19.15,0.31,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+SYK,105647521792,28.571575,4.4042025,12.79,16.51,1.2877,64.391,27.02,5.36,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+SMCI,28702816256,13.40184,2.799026,13.1,21.47,,63.951,13.38,12.68,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,False,False,1,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+SYF,23351865344,7.3610253,1.5364031,,20.79,0.8772,,50.22,0.35,NOT AVAILABLE - manual check only,True,False,True,,True,True,,True,False,2,1,PE 10-25,False,False
+SNPS,93882785792,85.49738,3.013156,4.13,3.66,2.1917,34.804,14.52,2.99,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+SYY,37161746432,21.230135,13.909531,16.74,77.69,1.449,564.591,4.84,0.18,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,False,False,0,3,Price/Book <= 2.5; Debt/Equity; Operating margin > 15%,False,False
+TMUS,175531982848,17.117153,3.126003,9.27,17.99,0.5854,214.035,25.22,55.55,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,True,True,0,3,Price/Book <= 2.5; ROCE > 15%; Debt/Equity,True,False
+TROW,22317105152,10.504016,2.0283449,17.78,19.4,2.1611,3.702,28.69,1.7,NOT AVAILABLE - manual check only,True,True,True,True,True,False,True,True,False,0,1,PEG <= 2,False,False
+TTWO,37906546688,,10.506323,-0.54,-9.04,2.8155,81.607,0.51,1.78,NOT AVAILABLE - manual check only,True,,False,False,False,False,True,False,False,1,5,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+TPR,23552145408,16.269972,34.198032,37.96,197.13,1.6114,571.608,19.82,0.42,NOT AVAILABLE - manual check only,True,True,False,True,True,True,False,True,False,0,2,Price/Book <= 2.5; Debt/Equity,False,False
+TRGP,60413796352,26.960766,16.521433,15.41,70.84,,515.794,27.8,1.38,NOT AVAILABLE - manual check only,True,False,False,True,True,,False,True,False,1,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+TGT,70870294528,16.182571,3.97179,13.62,26.41,1.9793,107.583,6.04,0.27,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+TEL,63797133312,21.603922,4.823465,16.44,23.29,0.9194,43.441,20.77,0.12,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,True,False,0,1,Price/Book <= 2.5,False,False
+TDY,28609329152,29.84381,2.6202343,8.6,9.15,,18.565,20.2,0.84,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+TER,70203252736,61.766163,22.35921,21.51,36.46,0.7296,2.883,33.16,0.2,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+TSLA,1463662804992,346.34576,16.84883,5.29,4.67,4.5442,18.373,1.41,17.82,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+TXN,268312150016,44.650455,14.896314,19.9,35.18,0.9708,78.036,42.58,0.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+TPL,23464497152,43.502556,14.0301895,39.43,36.57,,1.077,78.18,0.4,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+TXT,13287709696,14.549907,1.6493394,9.17,12.13,0.896,52.285,8.7,0.73,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,False,False,0,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+TMO,242110529536,35.2043,4.595958,9.17,13.51,1.9816,80.575,18.75,0.13,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+TJX,145944543232,24.570368,14.093903,32.91,62.17,2.5693,134.419,10.91,0.15,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,4,Price/Book <= 2.5; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+TKO,33231976448,61.823948,3.8429382,5.93,7.06,1.5863,59.216,32.39,18.21,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+TSCO,16199137280,16.192709,6.1870646,17.64,39.51,2.0348,248.71,12.07,0.35,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,False,False,0,4,Price/Book <= 2.5; PEG <= 2; Debt/Equity; Operating margin > 15%,False,False
+TT,102070960128,34.594334,11.851975,25.8,36.64,1.5456,53.404,19.25,0.27,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+TDG,60272414720,33.112057,-6.4913616,20.27,,3.0456,,46.01,0.41,NOT AVAILABLE - manual check only,True,False,True,True,,False,,True,False,2,2,PE 10-25; PEG <= 2,False,False
+TRV,75166269440,9.679829,2.2697098,,26.51,,27.378,23.7,0.28,NOT AVAILABLE - manual check only,True,False,True,,True,,True,True,False,2,1,PE 10-25,False,False
+TRMB,13412504576,,2.3641596,7.48,-1.94,1.3966,28.553,15.13,0.4,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,True,False,1,2,ROCE > 15%; ROE > 15%,False,False
+TFC,56744538112,10.678162,0.9669429,,9.06,1.1007,,39.81,0.18,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+TYL,13219803136,42.363518,4.3503046,10.18,9.73,1.518,47.906,14.74,0.52,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,False,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+TSN,18254979072,32.030865,1.0097295,4.02,3.26,1.0438,44.025,2.71,2.61,NOT AVAILABLE - manual check only,True,False,True,False,False,True,True,False,False,0,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+USB,89603538944,11.479041,1.4779882,,12.62,1.7932,,39.65,0.12,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+UBER,139118772224,14.936404,5.086632,12.61,37.16,5.919,51.872,13.32,0.21,NOT AVAILABLE - manual check only,True,True,False,False,True,False,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Operating margin > 15%,False,False
+UDR,12222208000,21.056961,3.691335,6.21,13.74,,156.144,20.18,0.44,NOT AVAILABLE - manual check only,True,True,False,False,False,,False,True,False,1,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+ULTA,23246809088,19.799345,8.56542,32.44,46.12,1.9591,95.472,12.51,0.25,NOT AVAILABLE - manual check only,True,True,False,True,True,True,True,False,False,0,2,Price/Book <= 2.5; Operating margin > 15%,False,False
+UNP,165319327744,22.514565,8.50801,16.19,39.7,2.7237,150.772,40.98,0.07,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+UAL,36517339136,10.534644,2.1871657,10.88,23.25,,201.641,5.53,0.59,NOT AVAILABLE - manual check only,True,True,True,False,True,,False,False,False,1,3,ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+UPS,79139700736,17.289963,5.253883,14.24,29.6,1.3619,189.9,9.05,0.02,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+URI,67286622208,25.974052,7.305904,15.56,28.89,1.3403,166.793,25.99,0.43,NOT AVAILABLE - manual check only,True,False,False,True,True,True,False,True,False,0,3,PE 10-25; Price/Book <= 2.5; Debt/Equity,False,False
+UNH,333815513088,23.916397,3.4187956,9.6,14.15,1.0118,69.211,7.13,0.25,NOT AVAILABLE - manual check only,True,True,False,False,False,True,True,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+UHS,10356324352,7.172245,1.3783042,17.29,20.95,1.2093,68.74,11.14,4.98,NOT AVAILABLE - manual check only,True,False,True,True,True,True,True,False,False,0,2,PE 10-25; Operating margin > 15%,False,False
+VLO,116984922112,16.950356,4.679258,8.12,27.64,1.8505,40.148,12.27,0.42,NOT AVAILABLE - manual check only,True,True,False,False,True,True,True,False,False,0,3,Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+VEEV,44254543872,44.808197,6.0973053,12.48,14.42,1.2067,2.041,29.64,8.62,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+VTR,43092627456,152.74545,2.9416296,3.28,2.01,4.9384,84.928,14.81,0.51,NOT AVAILABLE - manual check only,True,False,False,False,False,False,True,False,False,0,6,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+VLTO,23082354688,23.848866,7.465699,22.51,34.31,2.2699,115.978,21.37,0.19,NOT AVAILABLE - manual check only,True,True,False,True,True,False,False,True,False,0,3,Price/Book <= 2.5; PEG <= 2; Debt/Equity,False,False
+VRSN,26064128000,31.339132,-11.562864,,,2.1631,,68.18,10.58,NOT AVAILABLE - manual check only,True,False,True,,,False,,True,False,3,2,PE 10-25; PEG <= 2,False,False
+VRSK,21329969152,25.173578,-18.386627,34.46,,1.4456,,45.11,0.27,NOT AVAILABLE - manual check only,True,False,True,True,,True,,True,False,2,1,PE 10-25,False,False
+VZ,190787272704,11.958333,1.8359188,8.59,15.84,0.8273,184.081,23.0,0.05,NOT AVAILABLE - manual check only,True,True,True,False,True,True,False,True,False,0,2,ROCE > 15%; Debt/Equity,False,False
+VRTX,127929335808,29.499123,6.315362,21.38,23.54,1.8976,9.767,38.05,0.21,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+VRT,97086308352,57.183674,20.404562,23.42,43.94,0.8388,70.166,20.36,0.24,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+VTRS,20215199744,,1.398157,-10.61,-2.75,1.0487,95.535,12.55,0.32,NOT AVAILABLE - manual check only,True,,True,False,False,True,True,False,False,1,3,ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+VICI,24939405312,8.77907,0.8549428,7.97,9.85,,60.277,70.18,0.28,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,True,False,1,3,PE 10-25; ROCE > 15%; ROE > 15%,False,False
+V,677086953472,30.668367,19.112877,41.12,61.19,1.6368,67.821,66.13,0.08,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+VST,46995640320,23.572392,15.64994,7.08,42.96,0.3441,373.28,13.77,0.78,NOT AVAILABLE - manual check only,True,True,False,False,True,True,False,False,False,0,4,Price/Book <= 2.5; ROCE > 15%; Debt/Equity; Operating margin > 15%,False,False
+VMRK,46264254464,22.908047,,6.37,8.49,,75.129,29.5,0.48,NOT AVAILABLE - manual check only,True,True,,False,False,,True,True,False,2,2,ROCE > 15%; ROE > 15%,False,False
+VMC,31495407616,28.662737,3.7156615,10.35,13.23,1.6502,58.22,21.61,0.23,NOT AVAILABLE - manual check only,True,False,False,False,False,True,True,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+WRB,25607276544,14.193416,2.7248669,,20.21,4.4549,31.527,16.39,26.36,NOT AVAILABLE - manual check only,True,True,False,,True,False,True,True,False,1,2,Price/Book <= 2.5; PEG <= 2,False,False
+GWW,60303339520,32.677387,14.597633,35.76,46.09,1.732,61.977,16.07,6.28,NOT AVAILABLE - manual check only,True,False,False,True,True,True,True,True,False,0,2,PE 10-25; Price/Book <= 2.5,False,False
+WAB,48568627200,38.75202,4.335907,10.74,11.55,,61.686,19.19,0.7,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+WMT,829709352960,37.775364,8.429137,18.21,22.31,4.2203,71.653,3.45,44.25,NOT AVAILABLE - manual check only,True,False,False,True,True,False,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; PEG <= 2; Operating margin > 15%,False,False
+DIS,176450125824,21.070105,1.6067104,8.46,8.01,3.369,39.404,19.3,0.06,NOT AVAILABLE - manual check only,True,True,True,False,False,False,True,True,False,0,3,ROCE > 15%; ROE > 15%; PEG <= 2,False,False
+WBD,77570809856,,2.3630948,4.25,-8.79,55.1758,94.199,5.1,4.14,NOT AVAILABLE - manual check only,True,,True,False,False,False,True,False,False,1,4,ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%,False,False
+WM,81721769984,28.917963,8.238968,10.76,29.84,1.9016,235.301,18.99,0.25,NOT AVAILABLE - manual check only,True,False,False,False,True,True,False,True,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Debt/Equity,False,False
+WAT,41749606400,107.648094,2.7486813,21.49,1.92,1.5658,36.045,9.42,0.1,NOT AVAILABLE - manual check only,True,False,False,True,False,True,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; ROE > 15%; Operating margin > 15%,False,False
+WEC,33103036416,19.726213,,5.59,11.99,1.9861,157.985,21.8,0.15,NOT AVAILABLE - manual check only,True,True,,False,False,True,False,True,False,1,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+WFC,243280723968,11.693314,1.4780451,,12.57,1.3852,,37.39,0.09,NOT AVAILABLE - manual check only,True,True,True,,False,True,,True,False,2,1,ROE > 15%,False,False
+WELL,164081467392,102.572075,3.5269425,0.26,3.84,,41.375,16.56,0.06,NOT AVAILABLE - manual check only,True,False,False,False,False,,True,True,False,1,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; ROE > 15%,False,False
+WST,25685745664,46.732395,8.593022,16.64,19.09,,10.585,22.47,0.66,NOT AVAILABLE - manual check only,True,False,False,True,True,,True,True,False,1,2,PE 10-25; Price/Book <= 2.5,False,False
+WDC,149729050624,15.432553,,104.67,130.85,0.9019,13.436,43.61,0.5,NOT AVAILABLE - manual check only,True,True,,True,True,True,True,True,False,1,0,,False,True
+WY,13311993856,27.984846,1.410893,3.48,4.97,,57.625,8.03,0.33,NOT AVAILABLE - manual check only,True,False,True,False,False,,True,False,False,1,4,PE 10-25; ROCE > 15%; ROE > 15%; Operating margin > 15%,False,False
+WSM,27360102400,23.80123,14.628464,40.94,54.96,3.0094,71.369,17.27,1.09,NOT AVAILABLE - manual check only,True,True,False,True,True,False,True,True,False,0,2,Price/Book <= 2.5; PEG <= 2,False,False
+WMB,86282231808,28.103586,6.5582004,9.66,21.5,2.0746,200.371,39.54,0.45,NOT AVAILABLE - manual check only,True,False,False,False,True,False,False,True,False,0,5,PE 10-25; Price/Book <= 2.5; ROCE > 15%; PEG <= 2; Debt/Equity,False,False
+WTW,26803767296,17.88166,3.4914045,14.25,19.76,,91.39,17.56,0.27,NOT AVAILABLE - manual check only,True,True,False,False,True,,True,True,False,1,2,Price/Book <= 2.5; ROCE > 15%,False,False
+WDAY,44859740160,38.618256,6.9442267,9.6,16.01,0.7031,58.39,11.82,2.18,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,False,False,0,4,PE 10-25; Price/Book <= 2.5; ROCE > 15%; Operating margin > 15%,False,False
+WYNN,7813658112,18.196642,-45.62838,9.94,,0.7336,,16.54,27.45,NOT AVAILABLE - manual check only,True,True,True,False,,True,,True,False,2,1,ROCE > 15%,False,False
+XEL,44598890496,19.561644,1.8531977,4.19,9.92,1.7763,173.135,22.7,0.2,NOT AVAILABLE - manual check only,True,True,True,False,False,True,False,True,False,0,3,ROCE > 15%; ROE > 15%; Debt/Equity,False,False
+XYL,23766622208,24.235716,2.1597707,8.19,9.18,1.3219,28.642,17.0,0.34,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+YUM,37147295744,17.143576,-5.1474814,38.59,,1.7545,,32.78,0.16,NOT AVAILABLE - manual check only,True,True,True,True,,True,,True,False,2,0,,False,True
+ZBRA,17782183936,34.482567,5.1853485,10.05,15.29,0.6247,86.23,21.26,0.85,NOT AVAILABLE - manual check only,True,False,False,False,True,True,True,True,False,0,3,PE 10-25; Price/Book <= 2.5; ROCE > 15%,False,False
+ZBH,16840230912,21.429613,1.3330414,5.48,6.41,0.5712,60.175,17.96,0.16,NOT AVAILABLE - manual check only,True,True,True,False,False,True,True,True,False,0,2,ROCE > 15%; ROE > 15%,False,False
+ZTS,28797554688,11.2767,,27.07,64.91,6.6639,293.996,40.72,0.16,NOT AVAILABLE - manual check only,True,True,,True,True,False,False,True,False,1,2,PEG <= 2; Debt/Equity,False,False
