@@ -1,0 +1,15 @@
+{
+  "generated": "2026-10-07T14:19:13",
+  "date": "2026-10-07",
+  "watchlist_available": true,
+  "rules": {
+    "volume_multiple": 2.0,
+    "avg_volume_days": 50,
+    "ema_days": 20,
+    "require_full_qualification": false
+  },
+  "watchlist_count": 0,
+  "buy_signal_count": 0,
+  "buy_signals": [],
+  "watchlist": []
+}
