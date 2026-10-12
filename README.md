@@ -10,6 +10,10 @@ public-dashboards/
 ├── v20-dashboard/
 │   ├── index.html
 │   └── buy_zone_candidates.csv    <- synced daily by ai-build-2026's workflow
+├── fundamental-screener/
+├── trend-template/
+│   ├── index.html
+│   └── trend_template.json        <- synced weekdays by ai-build-2026's trend-template.yml
 └── (future dashboards go in their own subfolder here)
 ```
 
