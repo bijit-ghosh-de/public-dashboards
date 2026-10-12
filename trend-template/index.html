@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trend Template — S&P 500</title>
+<style>
+  :root{
+    --bg:#000; --card:#0a0f0a; --line:#1a3d1a; --neon:#39FF14;
+    --text:#c9f7c9; --text-dim:#5a8a5a; --fail:#ff4444; --warn:#e6b800;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  .wrap{max-width:1150px;margin:0 auto;padding:32px 20px 80px;}
+  h1{font-family:'Courier New',monospace;font-size:22px;margin:0 0 2px;letter-spacing:1px;color:var(--neon);}
+  .subtitle{color:var(--text-dim);font-size:12px;margin:0 0 20px;font-family:'Courier New',monospace;line-height:1.5;}
+  .mono{font-family:'Courier New',monospace;}
+  .card{background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:20px;}
+  .card h2{font-family:'Courier New',monospace;font-size:12px;color:var(--neon);margin:0 0 10px;text-transform:uppercase;letter-spacing:.5px;font-weight:600;}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
+  .stat{flex:1 1 150px;background:var(--card);border:1px solid var(--line);padding:12px;}
+  .stat .n{font-family:'Courier New',monospace;font-size:24px;color:var(--neon);}
+  .stat .l{font-family:'Courier New',monospace;font-size:11px;color:var(--text-dim);text-transform:uppercase;}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:6px;font-family:'Courier New',monospace;font-size:12.5px;}
+  .bar-row label{display:flex;align-items:center;gap:6px;width:330px;cursor:pointer;flex-shrink:0;}
+  .bar{flex:1;background:#0f1a0f;height:16px;position:relative;min-width:60px;}
+  .bar .fail{background:var(--fail);height:100%;opacity:.85;}
+  .bar .sole{position:absolute;left:0;top:0;height:100%;background:var(--warn);}
+  .bar-row .num{width:150px;text-align:right;color:var(--text-dim);flex-shrink:0;}
+  .legend{font-family:'Courier New',monospace;font-size:11px;color:var(--text-dim);margin-top:8px;}
+  .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin-bottom:14px;}
+  .controls label{display:block;font-family:'Courier New',monospace;font-size:11px;color:var(--text-dim);margin-bottom:4px;text-transform:uppercase;}
+  .controls select,.controls input{background:#000;border:1px solid var(--line);color:var(--neon);font-family:'Courier New',monospace;font-size:13px;padding:6px 8px;}
+  .summary{font-family:'Courier New',monospace;font-size:13px;color:var(--neon);margin-bottom:10px;}
+  .summary span{color:var(--text-dim);}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{text-align:left;color:var(--neon);border-bottom:1px solid var(--line);padding:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;font-family:'Courier New',monospace;cursor:pointer;white-space:nowrap;}
+  th:hover{color:#fff;}
+  td{padding:8px;border-bottom:1px solid var(--line);font-family:'Courier New',monospace;white-space:nowrap;}
+  tr:hover td{background:var(--card);}
+  .ticker{color:var(--neon);font-weight:700;}
+  .s-PASS{color:var(--neon);} .s-NEAR_MISS{color:var(--warn);} .s-OTHER,.s-NO_DATA,.s-STALE{color:var(--text-dim);}
+  .dim{color:var(--text-dim);} .bad{color:var(--fail);}
+  .empty{color:var(--text-dim);font-style:italic;padding:30px 0;font-family:'Courier New',monospace;}
+  .footer{color:#3a5a3a;font-size:11px;margin-top:24px;line-height:1.6;}
+  @media (max-width:700px){.bar-row{flex-wrap:wrap}.bar-row label{width:100%}.bar-row .num{width:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>TREND TEMPLATE · S&P 500</h1>
+  <p class="subtitle">A separate lens (Minervini's 8-point trend template). Pure price trend. It is not part of V20 and is never combined with the V20 buy zone or the fundamental screen.</p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="card" id="bottleneck"></div>
+
+  <div class="controls">
+    <div><label>Show</label>
+      <select id="fStatus">
+        <option value="PASS">PASS (8 of 8)</option>
+        <option value="NEAR_MISS">NEAR MISS (7 of 8)</option>
+        <option value="SCORED">All scored</option>
+      </select></div>
+    <div><label>Sector</label><select id="fSector"><option value="">All</option></select></div>
+    <div><label>Min RS rank</label><input type="number" id="fRs" min="1" max="99" step="1" value="1" style="width:80px"></div>
+    <div><label>Ticker</label><input type="text" id="fTicker" placeholder="e.g. NVDA" style="width:110px"></div>
+  </div>
+
+  <div class="summary" id="summary">Loading...</div>
+  <div class="table-scroll"><table><thead><tr id="head"></tr></thead><tbody id="body"></tbody></table></div>
+
+  <p class="footer">
+    Rules, all on the latest completed daily bar: price above the 150- and 200-day averages; 150-day above 200-day; 200-day rising over the last month; 50-day above both; price above the 50-day; at least 30% above the 52-week low; within 25% of the 52-week high; RS rank 70 or higher.<br>
+    RS rank is each stock's 12-month return ranked against the whole S&P 500 (99 = strongest). Stocks with under about a year of history are shown as NO DATA, never as a pass.<br>
+    Yellow in the bars = stocks that fail ONLY that rule (the true bottleneck). Not a buy or sell recommendation; no holdings or trade data appear on this page.
+  </p>
+</div>
+
+<script>
+const DATA_URL = "trend_template.json";
+const CRIT = [
+  ["c1_above_150_200","Price above 150d and 200d"],
+  ["c2_150_above_200","150d above 200d"],
+  ["c3_200_rising","200d rising (1 month)"],
+  ["c4_50_above_150_200","50d above 150d and 200d"],
+  ["c5_above_50","Price above 50d"],
+  ["c6_30pct_above_low","30%+ above 52w low"],
+  ["c7_within_25pct_of_high","Within 25% of 52w high"],
+  ["c8_rs_rank_70","RS rank 70+"]
+];
+const COLS = [["ticker","Ticker"],["status","Status"],["rs_rank","RS"],["ret_12m_pct","12m %"],["close","Close"],
+  ["pct_above_52w_low","% > 52w low"],["pct_below_52w_high","% < 52w high"],["sector","Sector"],["failed_criteria","Fails"]];
+let rows = [], summary = null, isolate = "", sortKey = "rs_rank", sortAsc = false;
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const num = v => (v === null || v === undefined || v === "") ? null : Number(v);
+const critLabel = k => (CRIT.find(c => c[0] === k) || [k, k])[1];
+
+function renderStats(){
+  const s = summary;
+  const items = [["PASS", s.pass_count], ["NEAR MISS", s.near_miss_count], ["OTHER", s.other_count],
+                 ["NO DATA / STALE", s.no_data_count + s.stale_count], ["LATEST BAR", s.bar_date_latest || "—"]];
+  document.getElementById("stats").innerHTML = items.map(([l,n]) =>
+    `<div class="stat"><div class="n">${esc(n)}</div><div class="l">${l}</div></div>`).join("");
+}
+
+function renderBottleneck(){
+  const total = summary.scored_count || 1;
+  const bars = CRIT.map(([k,label]) => {
+    const c = summary.criteria[k], failPct = c.fail_count / total * 100, solePct = c.sole_fail_count / total * 100;
+    return `<div class="bar-row">
+      <label><input type="radio" name="iso" value="${k}"> ${esc(label)}</label>
+      <div class="bar"><div class="fail" style="width:${failPct}%"></div><div class="sole" style="width:${solePct}%"></div></div>
+      <span class="num">${c.fail_count} fail · ${c.sole_fail_count} only this</span></div>`;
+  }).join("");
+  document.getElementById("bottleneck").innerHTML =
+    `<h2>Which rule is the bottleneck? (stocks failing, out of ${summary.scored_count})</h2>${bars}
+     <label class="mono" style="display:flex;gap:6px;margin-top:10px;font-size:12.5px;cursor:pointer"><input type="radio" name="iso" value="" checked> No isolation (use the filters below)</label>
+     <div class="legend">Red = fails this rule. Yellow = fails only this rule. Pick a rule to list stocks that fail ONLY it.</div>`;
+  document.querySelectorAll('input[name="iso"]').forEach(r => r.addEventListener("change", e => { isolate = e.target.value; render(); }));
+}
+
+function fmt(c, r){
+  const v = r[c];
+  if(c === "ticker") return `<td class="ticker">${esc(v)}</td>`;
+  if(c === "status") return `<td class="s-${esc(v)}">${esc(String(v).replace("_"," "))}</td>`;
+  if(c === "failed_criteria") return `<td class="dim">${v ? esc(v.split(",").map(critLabel).join("; ")) : "—"}</td>`;
+  if(v === null || v === undefined || v === "") return `<td class="dim">—</td>`;
+  if(c === "ret_12m_pct") return `<td class="${v < 0 ? "bad" : ""}">${Number(v).toFixed(1)}</td>`;
+  if(["pct_above_52w_low","pct_below_52w_high"].includes(c)) return `<td>${Number(v).toFixed(1)}</td>`;
+  return `<td>${esc(v)}</td>`;
+}
+
+function render(){
+  const st = document.getElementById("fStatus").value, sec = document.getElementById("fSector").value;
+  const minRs = num(document.getElementById("fRs").value) || 1;
+  const tk = document.getElementById("fTicker").value.trim().toUpperCase();
+  let list = rows.filter(r => ["PASS","NEAR_MISS","OTHER"].includes(r.status));
+  if(isolate){
+    list = list.filter(r => r.criteria_passed === 7 && r.failed_criteria === isolate);
+  } else if(st !== "SCORED"){
+    list = list.filter(r => r.status === st);
+  }
+  if(sec) list = list.filter(r => r.sector === sec);
+  list = list.filter(r => (r.rs_rank ?? 0) >= minRs);
+  if(tk) list = list.filter(r => r.ticker.includes(tk));
+  list.sort((a,b) => {
+    const av = a[sortKey] ?? (sortAsc ? Infinity : -Infinity), bv = b[sortKey] ?? (sortAsc ? Infinity : -Infinity);
+    return av < bv ? (sortAsc ? -1 : 1) : av > bv ? (sortAsc ? 1 : -1) : 0;
+  });
+  const what = isolate ? `failing ONLY "${critLabel(isolate)}"` : (st === "SCORED" ? "scored" : st.replace("_"," ").toLowerCase());
+  document.getElementById("summary").innerHTML = `<span>Showing</span> ${list.length} <span>${esc(what)} stocks of ${summary.scored_count} scored</span>`;
+  document.getElementById("head").innerHTML = COLS.map(([k,l]) => `<th data-k="${k}">${l}${sortKey===k ? (sortAsc?" ▲":" ▼") : ""}</th>`).join("");
+  document.querySelectorAll("th").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.k; if(sortKey === k) sortAsc = !sortAsc; else { sortKey = k; sortAsc = false; } render();
+  }));
+  document.getElementById("body").innerHTML = list.length
+    ? list.map(r => "<tr>" + COLS.map(([c]) => fmt(c, r)).join("") + "</tr>").join("")
+    : `<tr><td colspan="${COLS.length}"><div class="empty">No stocks match. Loosen a filter.</div></td></tr>`;
+}
+
+async function load(){
+  try{
+    const res = await fetch(DATA_URL + "?t=" + Date.now());
+    if(!res.ok) throw new Error("data not synced yet");
+    const j = await res.json();
+    rows = j.rows; summary = j.summary;
+    const secs = [...new Set(rows.map(r => r.sector).filter(Boolean))].sort();
+    document.getElementById("fSector").innerHTML = '<option value="">All</option>' + secs.map(s => `<option>${esc(s)}</option>`).join("");
+    renderStats(); renderBottleneck(); render();
+    ["fStatus","fSector","fRs","fTicker"].forEach(id => document.getElementById(id).addEventListener("input", render));
+  }catch(e){
+    document.getElementById("summary").textContent = "";
+    document.getElementById("body").innerHTML = `<tr><td><div class="empty">Could not load data: ${esc(e.message)}</div></td></tr>`;
+  }
+}
+load();
+</script>
+</body>
+</html>
