@@ -11,6 +11,8 @@ public-dashboards/
 │   ├── index.html
 │   └── buy_zone_candidates.csv    <- synced daily by ai-build-2026's workflow
 ├── fundamental-screener/
+├── deep-discount-breakout/
+│   └── index.html                 <- reads ../v20-dashboard/volume_breakout_signals.json (no extra sync)
 ├── trend-template/
 │   ├── index.html
 │   └── trend_template.json        <- synced weekdays by ai-build-2026's trend-template.yml
