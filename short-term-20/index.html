@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short-Term 20% — S&P 500</title>
+<style>
+  :root{
+    --bg:#000; --card:#0a0f0a; --line:#1a3d1a; --neon:#39FF14;
+    --text:#c9f7c9; --text-dim:#5a8a5a; --fail:#ff4444; --warn:#e6b800;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  .wrap{max-width:1150px;margin:0 auto;padding:32px 16px 80px;}
+  h1{font-family:'Courier New',monospace;font-size:22px;margin:0 0 2px;letter-spacing:1px;color:var(--neon);}
+  .subtitle{color:var(--text-dim);font-size:12px;margin:0 0 14px;font-family:'Courier New',monospace;line-height:1.5;}
+  .card{background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:20px;}
+  .card h2{font-family:'Courier New',monospace;font-size:12px;color:var(--neon);margin:0 0 10px;text-transform:uppercase;letter-spacing:.5px;font-weight:600;}
+  .banner{font-family:'Courier New',monospace;font-size:13px;padding:12px 16px;margin-bottom:20px;border:1px solid var(--line);background:var(--card);line-height:1.5;}
+  .banner.warn{border-color:var(--warn);color:var(--warn);}
+  .banner.ok{border-color:var(--neon);color:var(--neon);}
+  .setups{display:flex;flex-wrap:wrap;gap:10px;}
+  .setup{flex:1 1 320px;border:1px solid var(--line);padding:12px;font-family:'Courier New',monospace;font-size:12px;line-height:1.6;}
+  .setup b{color:var(--neon);text-transform:uppercase;font-size:11px;display:block;margin-bottom:4px;}
+  .v{display:inline-block;padding:1px 8px;border:1px solid var(--line);font-size:11px;margin-left:6px;}
+  .v.EDGE{border-color:var(--neon);color:var(--neon);} .v.NO_EDGE{border-color:var(--fail);color:var(--fail);}
+  .v.INSUFFICIENT,.v.NONE{border-color:var(--warn);color:var(--warn);}
+  .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin-bottom:14px;}
+  .controls label{display:block;font-family:'Courier New',monospace;font-size:11px;color:var(--text-dim);margin-bottom:4px;text-transform:uppercase;}
+  .controls select,.controls input{background:#000;border:1px solid var(--line);color:var(--neon);font-family:'Courier New',monospace;font-size:13px;padding:6px 8px;}
+  .summary{font-family:'Courier New',monospace;font-size:13px;color:var(--neon);margin-bottom:10px;}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{text-align:left;color:var(--neon);border-bottom:1px solid var(--line);padding:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;font-family:'Courier New',monospace;cursor:pointer;white-space:nowrap;}
+  td{padding:8px;border-bottom:1px solid var(--line);font-family:'Courier New',monospace;white-space:nowrap;}
+  tr:hover td{background:var(--card);}
+  .ticker{color:var(--neon);font-weight:700;}
+  .dim{color:var(--text-dim);} .bad{color:var(--fail);} .warnc{color:var(--warn);}
+  .chip{display:inline-block;border:1px solid var(--line);color:var(--text-dim);font-size:10.5px;padding:1px 6px;margin-right:4px;}
+  .chip.w{border-color:var(--warn);color:var(--warn);}
+  .empty{color:var(--text-dim);font-style:italic;padding:30px 0;font-family:'Courier New',monospace;}
+  .footer{color:#3a5a3a;font-size:11px;margin-top:24px;line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>SHORT-TERM 20% · S&P 500</h1>
+  <p class="subtitle">A separate system for short holds aimed at a +20% gain. Not V20, not the long-term portfolio. Two setups, always shown separately. Entry assumed at the next open; exit at +20%, at a volatility-based stop (2x ATR, 5-12%), or after 60 sessions.</p>
+  <div id="freshness"></div>
+  <div id="banner"></div>
+
+  <div class="card"><h2>Has it worked? (backtest vs random entries)</h2><div class="setups" id="setups"></div>
+    <div class="footer" id="biases"></div></div>
+
+  <div class="card"><h2>Today's candidates</h2>
+    <div class="controls">
+      <div><label for="fSetup">Setup</label><select id="fSetup"><option value="">All</option><option value="A">A Breakout</option><option value="B">B Pullback</option></select></div>
+      <div><label for="fSector">Sector</label><select id="fSector"><option value="">All</option></select></div>
+      <div><label for="fTicker">Ticker</label><input id="fTicker" placeholder="e.g. NVDA" size="8"></div>
+    </div>
+    <div class="summary" id="summary"></div>
+    <div class="table-scroll"><table><thead id="head"></thead><tbody id="body"></tbody></table></div>
+  </div>
+  <div class="footer">A screen, not a recommendation. Levels use the signal-day close; recompute from your actual fill (target = fill x 1.20). Backtests are before tax and use today's S&amp;P 500 members, which flatters results. Any buy or sell still needs your full checklist (earnings, analyst target, free cash flow, short interest, news).</div>
+</div>
+<script src="../shared/freshness.js"></script>
+<script>
+const CAND_URL = "candidates.json", BT_URL = "backtest_results.json";
+const COLS = [["ticker","Ticker"],["setup","Setup"],["validation","Backtest"],["close","Close"],["target","Target +20%"],["stop","Stop"],
+  ["stop_pct","Stop %"],["risk_reward","R:R"],["volume_ratio","Vol x"],["pct_below_20d_high","% < 20d high"],["next_earnings","Next earnings"],["sector","Sector"]];
+let data = null, bt = null, rows = [], sortKey = "setup", sortAsc = true;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct = v => (v === null || v === undefined) ? "—" : v + "%";
+
+async function load(url){
+  try { const r = await fetch(url + "?t=" + Date.now()); if(!r.ok) return null; return await r.json(); } catch(e){ return null; }
+}
+
+function renderSetups(){
+  const el = document.getElementById("setups");
+  if(!bt){ el.innerHTML = `<div class="setup"><b>No backtest yet</b>Run the backtest workflow once. Until then every candidate is shown as UNVALIDATED.</div>`; return; }
+  el.innerHTML = Object.entries(bt.setups).map(([k, r]) => {
+    const m = r.main || {}, b = r.baseline || {};
+    const yrs = Object.entries(m.yearly || {}).map(([y, v]) => `${y}: ${v.expectancy_pct}% (${v.trades})`).join(" · ");
+    return `<div class="setup"><b>Setup ${esc(k)} · ${esc(r.name)} <span class="v ${esc(r.verdict)}">${esc(r.verdict.replace("_"," "))}</span></b>
+      Trades ${esc(m.trades ?? 0)} · hit ${pct(m.hit_rate_pct)} · stopped ${pct(m.stop_rate_pct)} · time-out ${pct(m.time_stop_rate_pct)}<br>
+      Expectancy per trade <span class="${(m.expectancy_pct||0) > 0 ? "" : "bad"}">${esc(m.expectancy_pct ?? "—")}%</span>
+      vs random entries ${esc(b.expectancy_pct ?? "—")}%<br>
+      Avg win ${pct(m.avg_win_pct)} · avg loss ${pct(m.avg_loss_pct)} · median days to target ${esc(m.median_days_to_target ?? "—")} · worst losing streak ${esc(m.worst_losing_streak ?? "—")}<br>
+      <span class="dim">By year: ${esc(yrs || "—")}</span><br>
+      <span class="dim">${esc((r.verdict_reasons || []).join("; "))}</span></div>`;
+  }).join("");
+  document.getElementById("biases").innerHTML = "Known limits: " + (bt.biases || []).map(esc).join(" ");
+}
+
+function renderBanner(){
+  const el = document.getElementById("banner");
+  if(!data){ el.innerHTML = `<div class="banner warn">Candidate data not available yet. The daily job has not published candidates.json.</div>`; return; }
+  const hid = Object.entries(data.hidden_by_gate || {}).filter(([,n]) => n > 0);
+  let html = "";
+  if(hid.length){
+    html += `<div class="banner warn">${hid.map(([s,n]) => `Setup ${esc(s)}: ${n} signal(s) hidden because the backtest found no edge for it.`).join("<br>")}</div>`;
+  }
+  if(data.candidate_count === 0){
+    html += `<div class="banner">No candidates on the last completed day (${esc(data.bar_date_latest || "—")}).</div>`;
+  } else if(!bt || Object.values(bt.setups).every(r => r.verdict !== "EDGE")){
+    html += `<div class="banner warn">${data.candidate_count} candidate(s), none backed by a validated edge. Treat them as ideas to research, not signals.</div>`;
+  } else {
+    html += `<div class="banner ok">${data.candidate_count} candidate(s) on ${esc(data.bar_date_latest)}.</div>`;
+  }
+  el.innerHTML = html;
+}
+
+function filtered(){
+  const s = document.getElementById("fSetup").value, sec = document.getElementById("fSector").value;
+  const t = document.getElementById("fTicker").value.trim().toUpperCase();
+  return rows.filter(r => (!s || r.setup === s) && (!sec || r.sector === sec) && (!t || r.ticker.includes(t)));
+}
+function renderTable(){
+  const f = filtered().sort((a, b) => {
+    const x = a[sortKey], y = b[sortKey];
+    if(x === y) return 0; if(x === null || x === undefined) return 1; if(y === null || y === undefined) return -1;
+    return (x > y ? 1 : -1) * (sortAsc ? 1 : -1);
+  });
+  document.getElementById("summary").textContent = `${f.length} of ${rows.length} candidate(s)`;
+  document.getElementById("head").innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortAsc ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
+  document.getElementById("body").innerHTML = f.length ? f.map(r => `<tr>
+    <td class="ticker">${esc(r.ticker)}</td><td>${esc(r.setup)}</td>
+    <td class="${r.validation === "VALIDATED" ? "" : "warnc"}">${esc(r.validation)}</td>
+    <td>${esc(r.close)}</td><td>${esc(r.target)}</td><td>${esc(r.stop)}</td><td>${esc(r.stop_pct)}</td><td>${esc(r.risk_reward)}</td>
+    <td>${esc(r.volume_ratio ?? "—")}</td><td>${esc(r.pct_below_20d_high ?? "—")}</td>
+    <td>${r.earnings_soon ? `<span class="chip w">EARNINGS ${esc(r.next_earnings)}</span>` : esc(r.next_earnings ?? "—")}</td>
+    <td class="dim">${esc(r.sector)}</td></tr>`).join("")
+    : `<tr><td colspan="${COLS.length}" class="empty">No candidates match.</td></tr>`;
+  document.querySelectorAll("#head th").forEach(th => th.onclick = () => {
+    const k = th.dataset.k; if(sortKey === k) sortAsc = !sortAsc; else { sortKey = k; sortAsc = true; } renderTable(); });
+}
+
+(async function init(){
+  [data, bt] = await Promise.all([load(CAND_URL), load(BT_URL)]);
+  rows = (data && data.rows) || [];
+  const secs = [...new Set(rows.map(r => r.sector).filter(Boolean))].sort();
+  document.getElementById("fSector").innerHTML += secs.map(s => `<option>${esc(s)}</option>`).join("");
+  ["fSetup","fSector","fTicker"].forEach(id => document.getElementById(id).addEventListener("input", renderTable));
+  if(window.FreshStrip && data) FreshStrip.render(document.getElementById("freshness"), {generated: data.generated_at_utc, barDate: data.bar_date_latest});
+  renderBanner(); renderSetups(); renderTable();
+})();
+</script>
+</body>
+</html>

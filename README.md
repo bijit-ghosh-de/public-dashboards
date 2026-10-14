@@ -16,6 +16,10 @@ public-dashboards/
 ├── trend-template/
 │   ├── index.html
 │   └── trend_template.json        <- synced weekdays by ai-build-2026's trend-template.yml
+├── short-term-20/
+│   ├── index.html
+│   ├── candidates.json            <- synced weekdays by ai-build-2026's short-term-20-daily.yml
+│   └── backtest_results.json      <- synced by short-term-20-backtest.yml
 ├── shared/
 │   └── freshness.js               <- "Data generated / prices as of" strip used by the pages above
 └── (future dashboards go in their own subfolder here)
