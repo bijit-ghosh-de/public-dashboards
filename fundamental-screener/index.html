@@ -78,6 +78,24 @@
 
   <div id="filterBreakdown" style="background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:22px;"></div>
 
+  <div id="pegPanel" style="background:var(--card);border:1px solid var(--line);padding:16px;margin-bottom:22px;">
+    <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--gold);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px;">PEG explorer (optional)</div>
+    <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:10px;">Type any PEG number to list every stock at or below it. Leave it empty to switch this off. PEG is lower = cheaper for its growth.</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:'Courier New',monospace;font-size:12.5px;color:var(--text);">
+      <label>PEG at most <input type="number" id="pegMax" step="0.1" min="0" placeholder="e.g. 1" style="width:90px;"></label>
+      <label>and at least <input type="number" id="pegMin" step="0.1" min="0" placeholder="optional" style="width:90px;"></label>
+      <button class="reset-btn" style="margin:0;padding:6px 12px;" data-peg="1">1</button>
+      <button class="reset-btn" style="margin:0;padding:6px 12px;" data-peg="1.5">1.5</button>
+      <button class="reset-btn" style="margin:0;padding:6px 12px;" data-peg="2">2</button>
+      <button class="reset-btn" style="margin:0;padding:6px 12px;" data-peg="3">3</button>
+      <button class="reset-btn" style="margin:0;padding:6px 12px;" data-peg="">Clear</button>
+    </div>
+    <label style="display:flex;align-items:center;gap:6px;margin-top:10px;font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);cursor:pointer;">
+      <input type="checkbox" id="pegWithOthers"> Only stocks that also pass the other required V20 filters (market cap, P/E, P/B, ROCE, ROE, debt, margin; unknown counts as pass; insider holding is a bonus and ignored). Default: PEG only.
+    </label>
+    <div id="pegNote" style="margin-top:8px;font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);"></div>
+  </div>
+
   <div style="font-family:'Courier New',monospace;font-size:12px;color:var(--text-dim);margin-bottom:8px;text-transform:uppercase;">Or adjust thresholds and combine (mix-and-match)</div>
   <div class="filters" id="filters"></div>
   <button class="reset-btn" id="resetBtn">Reset to defaults</button>
@@ -102,6 +120,7 @@
 // Data source: the fundamental_screen.py output, synced here the same
 // way buy_zone_candidates.csv is synced for the other dashboard.
 const CSV_URL = "fundamental_screen_full.csv";
+var allRows = [], sortKey = null, sortAsc = true;
 
 const FILTER_DEFS = [
   { key: "market_cap", label: "Market Cap ($)", type: "min", default: 1000000000, step: 100000000 },
@@ -164,6 +183,7 @@ function renderFilterBreakdown(){
 }
 
 window.isolateFilter = function(key){
+  if(document.getElementById("pegMax")){ document.getElementById("pegMax").value = ""; document.getElementById("pegMin").value = ""; document.getElementById("pegNote").textContent = ""; }
   let filtered;
   let label;
   if(key === "__all__"){
@@ -203,11 +223,28 @@ function buildFilterControls(){
   container.querySelectorAll("input").forEach(inp => inp.addEventListener("input", applyFilters));
 }
 
+// Quote-aware CSV parser: fields such as failed_filters contain commas inside
+// quotes, which a plain split(",") would shift into the wrong columns.
+function splitCSVLine(line){
+  const out = []; let cur = "", inQ = false;
+  for(let i = 0; i < line.length; i++){
+    const ch = line[i];
+    if(inQ){
+      if(ch === '"'){ if(line[i+1] === '"'){ cur += '"'; i++; } else inQ = false; }
+      else cur += ch;
+    } else if(ch === '"') inQ = true;
+    else if(ch === ","){ out.push(cur); cur = ""; }
+    else cur += ch;
+  }
+  out.push(cur);
+  return out;
+}
+
 function parseCSV(text){
-  const lines = text.trim().split("\n");
-  const headers = lines[0].split(",");
+  const lines = text.trim().split(/\r?\n/);
+  const headers = splitCSVLine(lines[0]);
   return lines.slice(1).map(line => {
-    const vals = line.split(",");
+    const vals = splitCSVLine(line);
     const row = {};
     headers.forEach((h, i) => {
       const raw = (vals[i] || "").trim();
@@ -223,8 +260,9 @@ function toNum(v){
   return isNaN(n) ? null : n;
 }
 
-function passesFilter(row){
+function passesFilter(row, skipPeg){
   for(const f of FILTER_DEFS){
+    if(skipPeg && f.key === "peg") continue;
     const val = toNum(row[f.key]);
     if(val === null) continue; // unknown data - don't exclude
     if(f.type === "range"){
@@ -270,8 +308,34 @@ window.sortBy = function(key){
   applyFilters();
 };
 
+function pegExplorerBounds(){
+  const max = toNum(document.getElementById("pegMax").value);
+  const min = toNum(document.getElementById("pegMin").value);
+  return { max, min, active: max !== null || min !== null };
+}
+
+const OTHER_REQUIRED = ["market_cap_ok","pe_ok","pb_ok","roce_ok","roe_ok","de_ok","opm_ok"];
+
+// Stocks with no PEG at all can never qualify here (a blank is not a pass).
+function pegExplorerRows(){
+  const b = pegExplorerBounds();
+  const withOthers = document.getElementById("pegWithOthers").checked;
+  return allRows.filter(r => {
+    const v = toNum(r.peg);
+    if(v === null) return false;
+    if(b.max !== null && v > b.max) return false;
+    if(b.min !== null && v < b.min) return false;
+    return withOthers ? OTHER_REQUIRED.every(k => r[k] !== "False") : true;
+  });
+}
+
 function applyFilters(){
-  let filtered = allRows.filter(passesFilter);
+  const peg = pegExplorerBounds();
+  const noPeg = allRows.filter(r => toNum(r.peg) === null).length;
+  let filtered = peg.active ? pegExplorerRows() : allRows.filter(r => passesFilter(r));
+  document.getElementById("pegNote").textContent = peg.active
+    ? `${filtered.length} stocks match. ${noPeg} of ${allRows.length} stocks have no PEG in the data and are left out.`
+    : "";
   filtered.sort((a,b) => {
     const av = toNum(a[sortKey]) ?? (typeof a[sortKey] === "string" ? a[sortKey] : -Infinity);
     const bv = toNum(b[sortKey]) ?? (typeof b[sortKey] === "string" ? b[sortKey] : -Infinity);
@@ -279,11 +343,29 @@ function applyFilters(){
     if(av > bv) return sortAsc ? 1 : -1;
     return 0;
   });
-  document.getElementById("summary").innerHTML = `<span>Matching:</span> ${filtered.length} <span>of</span> ${allRows.length} <span>S&P 500 stocks</span>`;
+  document.getElementById("summary").innerHTML = peg.active
+    ? `<span>PEG explorer:</span> ${filtered.length} <span>of</span> ${allRows.length} <span>S&P 500 stocks with PEG ${peg.min !== null ? "from " + peg.min + " " : ""}${peg.max !== null ? "up to " + peg.max : ""}</span>`
+    : `<span>Matching:</span> ${filtered.length} <span>of</span> ${allRows.length} <span>S&P 500 stocks</span>`;
   renderTable(filtered);
 }
 
+function setPegSort(){
+  const b = pegExplorerBounds();
+  if(b.active && sortKey !== "peg"){ sortKey = "peg"; sortAsc = true; }
+}
+["pegMax","pegMin","pegWithOthers"].forEach(id => document.getElementById(id).addEventListener("input", () => {
+  document.querySelectorAll('input[name="isolate"]').forEach(r => r.checked = false);
+  setPegSort(); applyFilters();
+}));
+document.querySelectorAll("#pegPanel button[data-peg]").forEach(btn => btn.addEventListener("click", () => {
+  document.getElementById("pegMax").value = btn.dataset.peg;
+  document.getElementById("pegMin").value = "";
+  document.querySelectorAll('input[name="isolate"]').forEach(r => r.checked = false);
+  setPegSort(); applyFilters();
+}));
+
 document.getElementById("resetBtn").addEventListener("click", () => {
+  document.getElementById("pegMax").value = ""; document.getElementById("pegMin").value = "";
   buildFilterControls();
   applyFilters();
 });
