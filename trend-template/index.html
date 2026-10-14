@@ -52,6 +52,7 @@
   <h1>TREND TEMPLATE · S&P 500</h1>
   <p class="subtitle">A separate lens (Minervini's 8-point trend template). Pure price trend. It is not part of V20 and is never combined with the V20 buy zone or the fundamental screen.</p>
 
+  <div id="freshness"></div>
   <div class="stats" id="stats"></div>
 
   <div class="card" id="bottleneck"></div>
@@ -78,6 +79,7 @@
   </p>
 </div>
 
+<script src="../shared/freshness.js"></script>
 <script>
 const DATA_URL = "trend_template.json";
 const CRIT = [
@@ -104,6 +106,7 @@ function renderStats(){
                  ["NO DATA / STALE", s.no_data_count + s.stale_count], ["LATEST BAR", s.bar_date_latest || "—"]];
   document.getElementById("stats").innerHTML = items.map(([l,n]) =>
     `<div class="stat"><div class="n">${esc(n)}</div><div class="l">${l}</div></div>`).join("");
+  if(window.FreshStrip) FreshStrip.render(document.getElementById("freshness"), {generated: s.generated_at_utc, barDate: s.bar_date_latest});
 }
 
 function renderBottleneck(){

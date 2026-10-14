@@ -55,6 +55,7 @@
   <h1>DEEP-DISCOUNT BREAKOUT · S&P 500</h1>
   <p class="subtitle">A separate lens. Stocks trading 30-50% below their industry's median price-to-book that pass a balance-sheet safety check, then wait for big buyers to show up. It is not V20 and is never combined with the V20 buy zone.</p>
 
+  <div id="freshness"></div>
   <div id="banner"></div>
   <div class="stats" id="stats"></div>
 
@@ -92,6 +93,7 @@
   </p>
 </div>
 
+<script src="../shared/freshness.js"></script>
 <script>
 // Data is already synced daily to the v20-dashboard folder, so this page reads it from there.
 const DATA_URL = "../v20-dashboard/volume_breakout_signals.json";
@@ -110,14 +112,15 @@ function banner(){
   let html = "";
   if(!data.watchlist_available){
     html = `<div class="banner warn">The weekly fundamental screen has not produced a watchlist yet, so no signals are available.</div>`;
-  } else if(age !== null && age > 5){
-    html = `<div class="banner warn">Data looks stale: the latest bar is ${esc(latest)} (${age} days ago).</div>`;
+  } else if(window.FreshStrip && latest && FreshStrip.weekdaysAfter(latest, new Date()) >= 3){
+    html = `<div class="banner warn">Data looks stale: the latest bar is ${esc(latest)}. No new prices for 3+ trading days.</div>`;
   } else if(data.buy_signal_count === 0){
     html = `<div class="banner">No BUY signals on the latest completed day (${esc(latest || "—")}). ${rows.filter(r => r.status === "VOLUME_SURGE_ONLY" || r.status === "EMA_CROSS_ONLY").length} stock(s) have one of the two conditions.</div>`;
   } else {
     html = `<div class="banner ok">${data.buy_signal_count} BUY signal(s) on ${esc(latest)}. Check the earnings flag before trusting a volume spike.</div>`;
   }
   el.innerHTML = html;
+  if(window.FreshStrip) FreshStrip.render(document.getElementById("freshness"), {generated: data.generated, barDate: latest});
 }
 
 function stats(){

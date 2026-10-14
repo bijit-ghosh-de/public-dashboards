@@ -16,6 +16,8 @@ public-dashboards/
 ├── trend-template/
 │   ├── index.html
 │   └── trend_template.json        <- synced weekdays by ai-build-2026's trend-template.yml
+├── shared/
+│   └── freshness.js               <- "Data generated / prices as of" strip used by the pages above
 └── (future dashboards go in their own subfolder here)
 ```
 
