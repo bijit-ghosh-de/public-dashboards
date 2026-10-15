@@ -1,0 +1,230 @@
+{
+ "generated_at_utc": "2026-10-15 21:57",
+ "universe_count": 503,
+ "tested_tickers": 499,
+ "last_bar": "2026-10-15",
+ "history_years": 5,
+ "rules": {
+  "target_pct": 20.0,
+  "stop": "2x ATR(14), clamped 5%-12%",
+  "time_stop_sessions": 60,
+  "entry": "next session open",
+  "slippage_round_trip_pct": 0.1,
+  "verdict_tests": {
+   "min_trades": 200,
+   "min_edge_points": 0.5,
+   "min_share_of_years_positive": 0.6
+  }
+ },
+ "setups": {
+  "A": {
+   "name": "Breakout (55-day high on volume)",
+   "verdict": "NO_EDGE",
+   "verdict_reasons": [
+    "beats the random-entry baseline (+1.51%) by only -0.36 points (need 0.5)"
+   ],
+   "main": {
+    "trades": 4025,
+    "hit_rate_pct": 16.6,
+    "stop_rate_pct": 60.6,
+    "time_stop_rate_pct": 22.7,
+    "expectancy_pct": 1.15,
+    "avg_win_pct": 13.7,
+    "avg_loss_pct": -6.19,
+    "median_days_to_target": 27.5,
+    "avg_stop_distance_pct": 6.1,
+    "worst_losing_streak": 43,
+    "yearly": {
+     "2022": {
+      "trades": 308,
+      "expectancy_pct": -0.83
+     },
+     "2023": {
+      "trades": 996,
+      "expectancy_pct": 1.78
+     },
+     "2024": {
+      "trades": 1095,
+      "expectancy_pct": 2.01
+     },
+     "2025": {
+      "trades": 901,
+      "expectancy_pct": 1.14
+     },
+     "2026": {
+      "trades": 725,
+      "expectancy_pct": -0.16
+     }
+    }
+   },
+   "baseline": {
+    "trades": 3281,
+    "hit_rate_pct": 20.1,
+    "stop_rate_pct": 60.7,
+    "time_stop_rate_pct": 19.2,
+    "expectancy_pct": 1.51,
+    "avg_win_pct": 14.97,
+    "avg_loss_pct": -6.34,
+    "median_days_to_target": 28.0,
+    "avg_stop_distance_pct": 6.3,
+    "worst_losing_streak": 37,
+    "yearly": {
+     "2022": {
+      "trades": 335,
+      "expectancy_pct": 0.58
+     },
+     "2023": {
+      "trades": 796,
+      "expectancy_pct": 2.01
+     },
+     "2024": {
+      "trades": 781,
+      "expectancy_pct": 1.44
+     },
+     "2025": {
+      "trades": 818,
+      "expectancy_pct": 2.1
+     },
+     "2026": {
+      "trades": 551,
+      "expectancy_pct": 0.56
+     }
+    }
+   },
+   "sensitivity": [
+    {
+     "variant": "stop 1.5x ATR",
+     "trades": 4102,
+     "hit_rate_pct": 15.5,
+     "expectancy_pct": 1.01
+    },
+    {
+     "variant": "stop 3x ATR",
+     "trades": 3839,
+     "hit_rate_pct": 18.9,
+     "expectancy_pct": 1.53
+    },
+    {
+     "variant": "time stop 40",
+     "trades": 4191,
+     "hit_rate_pct": 11.5,
+     "expectancy_pct": 0.8
+    },
+    {
+     "variant": "time stop 90",
+     "trades": 3862,
+     "hit_rate_pct": 22.0,
+     "expectancy_pct": 1.16
+    }
+   ]
+  },
+  "B": {
+   "name": "Pullback bounce in an uptrend",
+   "verdict": "NO_EDGE",
+   "verdict_reasons": [
+    "beats the random-entry baseline (+1.80%) by only -0.76 points (need 0.5)"
+   ],
+   "main": {
+    "trades": 4496,
+    "hit_rate_pct": 21.1,
+    "stop_rate_pct": 62.3,
+    "time_stop_rate_pct": 16.6,
+    "expectancy_pct": 1.04,
+    "avg_win_pct": 15.56,
+    "avg_loss_pct": -6.99,
+    "median_days_to_target": 26.0,
+    "avg_stop_distance_pct": 6.8,
+    "worst_losing_streak": 88,
+    "yearly": {
+     "2022": {
+      "trades": 360,
+      "expectancy_pct": 0.35
+     },
+     "2023": {
+      "trades": 903,
+      "expectancy_pct": 1.02
+     },
+     "2024": {
+      "trades": 1148,
+      "expectancy_pct": 2.41
+     },
+     "2025": {
+      "trades": 1035,
+      "expectancy_pct": 0.74
+     },
+     "2026": {
+      "trades": 1050,
+      "expectancy_pct": 0.07
+     }
+    }
+   },
+   "baseline": {
+    "trades": 3577,
+    "hit_rate_pct": 23.0,
+    "stop_rate_pct": 60.9,
+    "time_stop_rate_pct": 16.1,
+    "expectancy_pct": 1.8,
+    "avg_win_pct": 15.9,
+    "avg_loss_pct": -6.57,
+    "median_days_to_target": 26.0,
+    "avg_stop_distance_pct": 6.5,
+    "worst_losing_streak": 38,
+    "yearly": {
+     "2022": {
+      "trades": 347,
+      "expectancy_pct": 1.12
+     },
+     "2023": {
+      "trades": 858,
+      "expectancy_pct": 2.49
+     },
+     "2024": {
+      "trades": 848,
+      "expectancy_pct": 1.89
+     },
+     "2025": {
+      "trades": 904,
+      "expectancy_pct": 2.06
+     },
+     "2026": {
+      "trades": 620,
+      "expectancy_pct": 0.76
+     }
+    }
+   },
+   "sensitivity": [
+    {
+     "variant": "stop 1.5x ATR",
+     "trades": 4908,
+     "hit_rate_pct": 19.3,
+     "expectancy_pct": 0.84
+    },
+    {
+     "variant": "stop 3x ATR",
+     "trades": 3921,
+     "hit_rate_pct": 23.5,
+     "expectancy_pct": 1.48
+    },
+    {
+     "variant": "time stop 40",
+     "trades": 4838,
+     "hit_rate_pct": 15.4,
+     "expectancy_pct": 0.87
+    },
+    {
+     "variant": "time stop 90",
+     "trades": 4306,
+     "hit_rate_pct": 25.8,
+     "expectancy_pct": 1.12
+    }
+   ]
+  }
+ },
+ "biases": [
+  "Survivorship: only today's S&P 500 members, which flatters results.",
+  "Flat slippage assumption only; no commissions, no partial fills.",
+  "Before tax: gains held under a year are taxed as ordinary income.",
+  "Every signal is taken independently (no portfolio capital limit).",
+  "One market regime; a past edge may not persist."
+ ]
+}
