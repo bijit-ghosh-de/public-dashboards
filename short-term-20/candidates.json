@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-21 17:38",
- "bar_date_latest": "2026-10-20",
+ "generated_at_utc": "2026-10-22 17:35",
+ "bar_date_latest": "2026-10-21",
  "candidate_count": 0,
  "by_setup": {
   "A": 0,
@@ -21,14 +21,14 @@
   }
  },
  "hidden_by_gate": {
-  "A": 7,
-  "B": 8
+  "A": 4,
+  "B": 14
  },
  "scan": {
   "stale": 0,
   "no_data": 4,
   "scanned": 503,
-  "last_bar": "2026-10-20"
+  "last_bar": "2026-10-21"
  },
  "rows": [],
  "note": "A screen, not a recommendation. Levels are from the signal-day close; recompute from your fill."
