@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T22:21:03Z",
-  "overall": "FAIL",
+  "generated_utc": "2026-10-22T22:20:55Z",
+  "overall": "WARN",
   "dashboards": {
     "v20-dashboard": "OK",
     "fundamental-screener": "OK",
