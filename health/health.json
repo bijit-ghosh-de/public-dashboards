@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-23T22:10:35Z",
+  "generated_utc": "2026-10-25T22:09:28Z",
   "overall": "FAIL",
   "dashboards": {
-    "v20-dashboard": "OK",
+    "v20-dashboard": "FAIL",
     "fundamental-screener": "OK",
     "deep-discount-breakout": "OK",
     "trend-template": "OK",
