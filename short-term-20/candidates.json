@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-30 18:11",
- "bar_date_latest": "2026-10-29",
+ "generated_at_utc": "2026-11-02 21:55",
+ "bar_date_latest": "2026-11-02",
  "candidate_count": 0,
  "by_setup": {
   "A": 0,
@@ -10,25 +10,25 @@
   "A": {
    "verdict": "NO_EDGE",
    "reasons": [
-    "beats the random-entry baseline (+1.51%) by only -0.36 points (need 0.5)"
+    "beats the random-entry baseline (+1.35%) by only -0.14 points (need 0.5)"
    ]
   },
   "B": {
    "verdict": "NO_EDGE",
    "reasons": [
-    "beats the random-entry baseline (+1.80%) by only -0.76 points (need 0.5)"
+    "beats the random-entry baseline (+1.71%) by only -0.63 points (need 0.5)"
    ]
   }
  },
  "hidden_by_gate": {
-  "A": 12,
-  "B": 10
+  "B": 8,
+  "A": 18
  },
  "scan": {
   "stale": 0,
   "no_data": 4,
   "scanned": 503,
-  "last_bar": "2026-10-29"
+  "last_bar": "2026-11-02"
  },
  "rows": [],
  "note": "A screen, not a recommendation. Levels are from the signal-day close; recompute from your fill."
