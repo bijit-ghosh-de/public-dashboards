@@ -1,29 +1,29 @@
 ticker,start_date,end_date,num_days,range_low,range_high,pct_move,reentry_date,exit_date,days_to_sell_zone,trade_status,current_price,pct_above_low,status,fundamentally_qualified,fundamental_tier,failed_filters,insider_bonus
-AMAT,2026-09-18,2026-09-29,8,420.0,513.28,22.21,2026-10-15,,,still_holding,374.53,-10.83,IN_BUY_ZONE,True,QUALIFIED,,False
-BE,2026-09-01,2026-09-08,5,197.5,283.83,43.71,2026-10-23,,,still_holding,196.25,-0.63,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
-BE,2026-10-26,2026-10-29,4,192.15,231.66,20.56,,,,never_reentered,196.25,2.13,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
-CDNS,2026-09-18,2026-10-01,10,280.49,355.03,26.57,,,,never_reentered,329.51,17.48,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); PEG <= 2",False
-CEG,2026-10-05,2026-10-07,3,257.7,309.8,20.22,2026-10-22,,,still_holding,257.25,-0.17,IN_BUY_ZONE,False,OTHER,ROCE > 15%; Debt/Equity; Operating margin > 15%,False
-CVNA,2026-10-27,2026-10-30,4,56.57,69.84,23.46,,,,never_reentered,72.0,27.28,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity; Operating margin > 15%",False
-DELL,2026-09-02,2026-09-08,4,432.27,538.47,24.57,2026-10-30,,,still_holding,392.78,-9.14,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity; Operating margin > 15%",False
-FDXF,2026-10-29,2026-10-30,2,106.36,128.0,20.35,,,,never_reentered,131.85,23.97,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity; Operating margin > 15%",False
-FLEX,2026-10-27,2026-10-29,3,77.75,95.22,22.47,,,,never_reentered,84.2,8.3,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; Debt/Equity; Operating margin > 15%,False
-GEN,2026-10-27,2026-10-30,4,23.88,29.24,22.45,,,,never_reentered,29.89,25.17,ALREADY_RAN_PAST_HIGH,False,NEAR_MISS,Debt/Equity,False
-GLW,2026-08-31,2026-09-09,7,139.25,171.3,23.02,2026-10-14,,,still_holding,123.2,-11.53,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
-GPN,2026-10-28,2026-10-30,3,80.85,101.32,25.32,,,,never_reentered,99.63,23.23,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Debt/Equity",False
-ILMN,2026-09-11,2026-09-17,5,200.01,246.76,23.37,,,,never_reentered,226.58,13.28,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); PEG <= 2; Debt/Equity",False
-INTC,2026-09-01,2026-09-09,6,85.72,106.69,24.46,2026-10-22,,,still_holding,59.97,-30.04,BROKE_RUN_LOW,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%",False
-LITE,2026-09-04,2026-09-09,3,841.04,1026.76,22.08,2026-09-14,2026-10-01,13.0,completed,684.4,-18.62,BROKE_RUN_LOW,False,OTHER,ROCE > 15%; ROE > 15%,False
-LITE,2026-10-26,2026-10-28,3,756.0,921.0,21.83,,,,never_reentered,684.4,-9.47,IN_BUY_ZONE,False,OTHER,ROCE > 15%; ROE > 15%,False
-MRNA,2026-10-07,2026-10-09,3,182.5,225.0,23.29,2026-10-22,2026-10-22,0.0,completed,220.83,21.0,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
-MRNA,2026-10-23,2026-10-30,6,179.53,227.81,26.89,,,,never_reentered,220.83,23.0,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
-MRVL,2026-09-11,2026-09-22,8,213.63,266.0,24.51,2026-10-30,,,still_holding,171.41,-19.76,BROKE_RUN_LOW,False,NEAR_MISS,"P/E vs industry (forward, max 25% above median)",False
-NCLH,2026-10-22,2026-10-29,6,14.54,18.47,27.03,,,,never_reentered,17.94,23.38,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; Debt/Equity,False
-NTAP,2026-09-23,2026-10-02,8,192.48,231.9,20.48,,,,never_reentered,185.26,-3.75,IN_BUY_ZONE,False,OTHER,PEG <= 2; Debt/Equity,False
-PWR,2026-10-23,2026-10-30,6,527.07,650.99,23.51,,,,never_reentered,621.18,17.86,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity; Operating margin > 15%",False
-RVTY,2026-09-11,2026-09-16,4,121.61,147.5,21.29,,,,never_reentered,151.6,24.66,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%",False
-SKYD,2026-10-20,2026-10-22,3,6.87,8.46,23.14,,,,never_reentered,8.07,17.47,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%",True
-SNPS,2026-09-29,2026-10-01,3,403.33,496.95,23.21,,,,never_reentered,466.08,15.56,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%",False
-STX,2026-08-31,2026-09-08,6,763.52,925.44,21.21,2026-09-15,2026-09-22,5.0,completed,593.76,-22.23,BROKE_RUN_LOW,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity",False
-SWKS,2026-08-31,2026-09-11,9,64.65,92.3,42.77,,,,never_reentered,85.17,31.74,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; ROE > 15%; Operating margin > 15%,False
-TWLO,2026-09-21,2026-09-24,4,244.14,304.75,24.83,2026-10-16,,,still_holding,207.6,-14.97,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
+AMAT,2026-09-18,2026-09-29,8,420.0,513.28,22.21,2026-10-15,,,still_holding,381.92,-9.07,IN_BUY_ZONE,True,QUALIFIED,,False
+BE,2026-09-01,2026-09-08,5,197.5,283.83,43.71,2026-10-23,,,still_holding,214.01,8.36,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
+BE,2026-10-26,2026-10-29,4,192.15,231.66,20.56,,,,never_reentered,214.01,11.38,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
+CDNS,2026-09-18,2026-10-01,10,280.49,355.03,26.57,,,,never_reentered,323.75,15.42,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); PEG <= 2",False
+CEG,2026-10-05,2026-10-07,3,257.7,309.8,20.22,2026-10-22,,,still_holding,263.4,2.21,IN_BUY_ZONE,False,OTHER,ROCE > 15%; Debt/Equity; Operating margin > 15%,False
+CVNA,2026-10-27,2026-10-30,4,56.57,69.84,23.46,,,,never_reentered,71.28,26.0,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity; Operating margin > 15%",False
+DELL,2026-09-02,2026-09-08,4,432.27,538.47,24.57,2026-10-30,,,still_holding,408.4,-5.52,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity; Operating margin > 15%",False
+FDXF,2026-10-29,2026-10-30,2,106.36,128.0,20.35,,,,never_reentered,130.26,22.47,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity; Operating margin > 15%",False
+FLEX,2026-10-27,2026-10-29,3,77.75,95.22,22.47,,,,never_reentered,88.1,13.31,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; Debt/Equity; Operating margin > 15%,False
+GEN,2026-10-27,2026-10-30,4,23.88,29.24,22.45,,,,never_reentered,29.71,24.41,ALREADY_RAN_PAST_HIGH,False,NEAR_MISS,Debt/Equity,False
+GLW,2026-08-31,2026-09-09,7,139.25,171.3,23.02,2026-10-14,,,still_holding,126.14,-9.41,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity",False
+GPN,2026-10-28,2026-10-30,3,80.85,101.32,25.32,,,,never_reentered,98.0,21.21,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Debt/Equity",False
+ILMN,2026-09-11,2026-09-17,5,200.01,246.76,23.37,,,,never_reentered,238.21,19.1,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); PEG <= 2; Debt/Equity",False
+INTC,2026-09-01,2026-09-09,6,85.72,106.69,24.46,2026-10-22,,,still_holding,60.55,-29.36,BROKE_RUN_LOW,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%",False
+LITE,2026-09-04,2026-09-09,3,841.04,1026.76,22.08,2026-09-14,2026-10-01,13.0,completed,680.16,-19.13,BROKE_RUN_LOW,False,OTHER,ROCE > 15%; ROE > 15%,False
+LITE,2026-10-26,2026-10-28,3,756.0,921.0,21.83,,,,never_reentered,680.16,-10.03,IN_BUY_ZONE,False,OTHER,ROCE > 15%; ROE > 15%,False
+MRNA,2026-10-07,2026-10-09,3,182.5,225.0,23.29,2026-10-22,2026-10-22,0.0,completed,228.44,25.17,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
+MRNA,2026-10-23,2026-10-30,6,179.53,227.81,26.89,,,,never_reentered,228.44,27.24,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
+MRVL,2026-09-11,2026-09-22,8,213.63,266.0,24.51,2026-10-30,,,still_holding,171.97,-19.5,BROKE_RUN_LOW,False,NEAR_MISS,"P/E vs industry (forward, max 25% above median)",False
+NCLH,2026-10-22,2026-10-29,6,14.54,18.47,27.03,,,,never_reentered,17.42,19.81,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; Debt/Equity,False
+NTAP,2026-09-23,2026-10-02,8,192.48,231.9,20.48,,,,never_reentered,190.78,-0.88,IN_BUY_ZONE,False,OTHER,PEG <= 2; Debt/Equity,False
+PWR,2026-10-23,2026-10-30,6,527.07,650.99,23.51,,,,never_reentered,657.0,24.65,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; Debt/Equity; Operating margin > 15%",False
+RVTY,2026-09-11,2026-09-16,4,121.61,147.5,21.29,,,,never_reentered,163.48,34.43,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%",False
+SKYD,2026-10-20,2026-10-22,3,6.87,8.46,23.14,,,,never_reentered,8.08,17.61,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%",True
+SNPS,2026-09-29,2026-10-01,3,403.33,496.95,23.21,,,,never_reentered,462.88,14.76,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%",False
+STX,2026-08-31,2026-09-08,6,763.52,925.44,21.21,2026-09-15,2026-09-22,5.0,completed,606.38,-20.58,BROKE_RUN_LOW,False,OTHER,"P/E vs industry (forward, max 25% above median); Debt/Equity",False
+SWKS,2026-08-31,2026-09-11,9,64.65,92.3,42.77,,,,never_reentered,85.4,32.1,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; ROE > 15%; Operating margin > 15%,False
+TWLO,2026-09-21,2026-09-24,4,244.14,304.75,24.83,2026-10-16,,,still_holding,213.77,-12.44,IN_BUY_ZONE,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
