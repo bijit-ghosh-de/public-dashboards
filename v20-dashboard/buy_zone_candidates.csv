@@ -25,7 +25,6 @@ PWR,2026-10-23,2026-10-30,6,527.07,650.99,23.51,2026-11-05,,,still_holding,591.4
 RVTY,2026-09-11,2026-09-16,4,121.61,147.5,21.29,,,,never_reentered,160.72,32.16,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%",False
 SKYD,2026-10-20,2026-10-22,3,6.87,8.46,23.14,,,,never_reentered,8.7,26.64,ALREADY_RAN_PAST_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Debt/Equity; Operating margin > 15%",True
 SNPS,2026-09-29,2026-10-01,3,403.33,496.95,23.21,,,,never_reentered,466.97,15.78,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; PEG <= 2; Operating margin > 15%",False
-SWKS,2026-08-31,2026-09-11,9,64.65,92.3,42.77,,,,never_reentered,82.83,28.12,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
 SYK,2026-10-28,2026-11-04,6,282.18,342.65,21.43,,,,never_reentered,325.73,15.43,BETWEEN_LOW_AND_HIGH,False,OTHER,ROCE > 15%; Debt/Equity,False
 TWLO,2026-09-21,2026-09-24,4,244.14,304.75,24.83,2026-10-16,,,still_holding,206.64,-15.36,BROKE_RUN_LOW,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
 TWLO,2026-10-30,2026-11-04,4,180.0,217.09,20.61,,,,never_reentered,206.64,14.8,BETWEEN_LOW_AND_HIGH,False,OTHER,"P/E vs industry (forward, max 25% above median); ROCE > 15%; ROE > 15%; Operating margin > 15%",False
