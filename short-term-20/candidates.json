@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-16 22:29",
+ "generated_at_utc": "2026-11-17 21:18",
  "bar_date_latest": "2026-11-16",
  "candidate_count": 0,
  "by_setup": {
@@ -21,12 +21,12 @@
   }
  },
  "hidden_by_gate": {
-  "A": 7,
+  "A": 9,
   "B": 1
  },
  "scan": {
   "stale": 0,
-  "no_data": 3,
+  "no_data": 4,
   "scanned": 503,
   "last_bar": "2026-11-16"
  },
