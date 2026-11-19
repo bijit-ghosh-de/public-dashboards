@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-18T01:37:26Z",
-  "overall": "FAIL",
+  "generated_utc": "2026-11-19T01:13:22Z",
+  "overall": "WARN",
   "dashboards": {
-    "v20-dashboard": "WARN",
+    "v20-dashboard": "OK",
     "fundamental-screener": "OK",
     "deep-discount-breakout": "OK",
-    "trend-template": "FAIL",
+    "trend-template": "OK",
     "short-term-20": "OK"
   }
 }
